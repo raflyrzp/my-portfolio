@@ -1,0 +1,16 @@
+{
+  "name": "Rafly Rabbany Zalfa Pateda",
+  "role": "Backend Developer",
+  "location": "Jakarta, Indonesia",
+  "email": "raflyrabbany0804@gmail.com",
+  "headline": "Passionate backend developer with expertise in building robust and scalable web applications.",
+  "socials": [
+    { "label": "GitHub", "url": "https://github.com/raflyrzp" },
+    {
+      "label": "LinkedIn",
+      "url": "https://linkedin.com/in/rafly-rabbany-zalfa-pateda"
+    },
+    { "label": "Instagram", "url": "https://instagram.com/raflyrzp" }
+  ],
+  "photo": "/profile.jpg"
+}

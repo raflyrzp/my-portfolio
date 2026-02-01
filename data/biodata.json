@@ -3,14 +3,30 @@
   "role": "Backend Developer",
   "location": "Jakarta, Indonesia",
   "email": "raflyrabbany0804@gmail.com",
-  "headline": "Passionate backend developer with expertise in building robust and scalable web applications.",
+  "headline": {
+    "en": "Passionate Backend Developer specializing in building robust, scalable web applications. Currently pursuing Computer Science at Universitas Negeri Jakarta with hands-on experience in PHP, Laravel, and modern backend technologies.",
+    "id": "Backend Developer yang bersemangat dalam membangun aplikasi web yang handal dan skalabel. Saat ini sedang menempuh pendidikan di Universitas Negeri Jakarta jurusan Teknik Informatika dengan pengalaman praktis dalam PHP, Laravel, dan teknologi backend modern."
+  },
+  "about": {
+    "en": "I am a passionate Backend Developer dedicated to building robust and scalable web applications. Currently pursuing Computer Science at Universitas Negeri Jakarta. I have hands-on experience in backend development using PHP, Laravel, and other modern technologies. I am always eager to learn new technologies and contribute to challenging projects.",
+    "id": "Saya adalah seorang Backend Developer yang bersemangat dalam membangun aplikasi web yang handal dan skalabel. Saat ini sedang menempuh pendidikan di Universitas Negeri Jakarta jurusan Teknik Informatika. Saya memiliki pengalaman praktis dalam pengembangan backend menggunakan PHP, Laravel, dan teknologi modern lainnya. Saya selalu tertarik untuk mempelajari teknologi baru dan berkontribusi dalam proyek-proyek yang menantang."
+  },
   "socials": [
-    { "label": "GitHub", "url": "https://github.com/raflyrzp" },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/raflyrzp",
+      "icon": "github"
+    },
     {
       "label": "LinkedIn",
-      "url": "https://linkedin.com/in/rafly-rabbany-zalfa-pateda"
+      "url": "https://linkedin.com/in/rafly-rabbany-zalfa-pateda",
+      "icon": "linkedin"
     },
-    { "label": "Instagram", "url": "https://instagram.com/raflyrzp" }
+    {
+      "label": "Instagram",
+      "url": "https://instagram.com/raflyrzp",
+      "icon": "instagram"
+    }
   ],
   "photo": "/profile.jpg"
 }

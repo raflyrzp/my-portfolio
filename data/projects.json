@@ -1,0 +1,80 @@
+[
+  {
+    "title": "E-SPPD Management System",
+    "description": {
+      "en": "A web-based official travel warrant (SPPD) management system with SSO, approval workflow, and automated reporting features.",
+      "id": "Sistem manajemen surat perintah perjalanan dinas (SPPD) berbasis web dengan fitur SSO, approval workflow, dan reporting otomatis."
+    },
+    "year": "2024",
+    "tags": ["Laravel", "PHP", "MySQL", "SSO", "REST API"],
+    "cover": "/projects/e-sppd.png",
+    "link": null,
+    "repo": "https://github.com/raflyrzp/e-sppd",
+    "featured": true
+  },
+  {
+    "title": "Academic Information System (SIAKAD)",
+    "description": {
+      "en": "An academic information system for managing student data, course registration (KRS), grade reports (KHS), and class schedules with external API integration.",
+      "id": "Sistem informasi akademik untuk mengelola data mahasiswa, KRS, KHS, dan jadwal perkuliahan dengan integrasi API eksternal."
+    },
+    "year": "2024",
+    "tags": ["Node.js", "Express", "Prisma", "PostgreSQL", "REST API"],
+    "cover": "/projects/siakad.png",
+    "link": null,
+    "repo": "https://github.com/raflyrzp/siakad",
+    "featured": true
+  },
+  {
+    "title": "Personal Portfolio Website",
+    "description": {
+      "en": "A personal portfolio website with modern design, smooth animations, and parallax effects using Next.js and Framer Motion.",
+      "id": "Website portfolio personal dengan desain modern, animasi smooth, dan efek parallax menggunakan Next.js dan Framer Motion."
+    },
+    "year": "2024",
+    "tags": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    "cover": "/projects/portfolio.png",
+    "link": "https://raflyrzp.vercel.app",
+    "repo": "https://github.com/raflyrzp/my-portfolio",
+    "featured": true
+  },
+  {
+    "title": "REST API Authentication Service",
+    "description": {
+      "en": "A microservice for authentication with JWT, OAuth2, and role-based access control (RBAC).",
+      "id": "Microservice untuk autentikasi dengan JWT, OAuth2, dan role-based access control (RBAC)."
+    },
+    "year": "2023",
+    "tags": ["Node.js", "Express", "JWT", "MongoDB"],
+    "cover": "/projects/auth-api.png",
+    "link": null,
+    "repo": "https://github.com/raflyrzp/auth-service",
+    "featured": false
+  },
+  {
+    "title": "Inventory Management System",
+    "description": {
+      "en": "An inventory management application with barcode scanning, stock tracking, and real-time reporting features.",
+      "id": "Aplikasi manajemen inventaris barang dengan fitur barcode scanning, stock tracking, dan laporan real-time."
+    },
+    "year": "2023",
+    "tags": ["Laravel", "Vue.js", "MySQL", "REST API"],
+    "cover": "/projects/inventory.png",
+    "link": null,
+    "repo": "https://github.com/raflyrzp/inventory",
+    "featured": false
+  },
+  {
+    "title": "Task Management App",
+    "description": {
+      "en": "A task management application with drag-and-drop, deadline reminders, and team collaboration features.",
+      "id": "Aplikasi manajemen tugas dengan fitur drag-and-drop, deadline reminder, dan kolaborasi tim."
+    },
+    "year": "2023",
+    "tags": ["React", "Node.js", "Socket.io", "MongoDB"],
+    "cover": "/projects/taskman.png",
+    "link": null,
+    "repo": "https://github.com/raflyrzp/taskman",
+    "featured": false
+  }
+]

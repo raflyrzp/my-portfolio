@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "experience": "Experience",
+    "certificates": "Certificates",
+    "contact": "Contact",
+    "letsTalk": "Let's Talk"
+  },
+  "hero": {
+    "available": "Available for opportunities",
+    "greeting": "Hi, I'm",
+    "viewProjects": "View Projects",
+    "contactMe": "Contact Me",
+    "openToWork": "Open to Work",
+    "basedIn": "Based in"
+  },
+  "about": {
+    "title": "About",
+    "me": "Me",
+    "description": "I'm a passionate Backend Developer with expertise in building robust and scalable web applications. I love turning complex problems into simple, beautiful, and intuitive solutions.",
+    "yearsExperience": "Years Experience",
+    "projectsCompleted": "Projects Completed",
+    "certificates": "Certificates",
+    "connectWithMe": "Connect with me"
+  },
+  "projects": {
+    "featured": "Featured",
+    "title": "Projects",
+    "subtitle": "Some of my recent work that I'm proud of",
+    "viewAll": "View All Projects",
+    "viewProject": "View Project",
+    "liveDemo": "Live Demo",
+    "sourceCode": "Source Code"
+  },
+  "experience": {
+    "work": "Work",
+    "title": "Experience",
+    "subtitle": "My professional journey so far",
+    "viewAll": "View All Experience"
+  },
+  "skills": {
+    "title": "Skills &",
+    "technologies": "Technologies",
+    "subtitle": "Technologies and tools I work with to bring ideas to life"
+  },
+  "certificates": {
+    "licenses": "Licenses &",
+    "title": "Certificates",
+    "subtitle": "Professional certifications and achievements",
+    "viewAll": "View All Certificates",
+    "featured": "Featured"
+  },
+  "contact": {
+    "letsWork": "Let's Work",
+    "together": "Together",
+    "description": "Have a project in mind or want to collaborate? Feel free to reach out. I'm always open to discussing new opportunities.",
+    "location": "Location",
+    "findMeOn": "Or find me on",
+    "messageSent": "Message Sent!",
+    "thankYou": "Thank you for reaching out. I'll get back to you soon.",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "message": "Message",
+    "messagePlaceholder": "Tell me about your project...",
+    "sending": "Sending...",
+    "sendMessage": "Send Message"
+  },
+  "footer": {
+    "description": "Backend Developer passionate about building robust and scalable web applications.",
+    "quickLinks": "Quick Links",
+    "getInTouch": "Get in Touch",
+    "projectInMind": "Have a project in mind? Let's talk about it.",
+    "allRights": "All rights reserved.",
+    "builtWith": "Built with",
+    "using": "using Next.js & Framer Motion"
+  },
+  "pages": {
+    "allProjects": "All Projects",
+    "allProjectsDesc": "A collection of my work - from web applications to APIs and everything in between.",
+    "workExperience": "Work Experience",
+    "workExperienceDesc": "My professional journey so far - from internships to freelance projects.",
+    "licensesAndCertificates": "Licenses & Certificates",
+    "licensesAndCertificatesDesc": "Professional certifications and achievements that validate my skills and knowledge.",
+    "home": "Home",
+    "positions": "positions",
+    "projects": "projects",
+    "certificates": "certificates"
+  }
+}

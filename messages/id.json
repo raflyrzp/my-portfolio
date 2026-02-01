@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "projects": "Proyek",
+    "experience": "Pengalaman",
+    "certificates": "Sertifikat",
+    "contact": "Kontak",
+    "letsTalk": "Hubungi Saya"
+  },
+  "hero": {
+    "available": "Tersedia untuk kesempatan baru",
+    "greeting": "Halo, Saya",
+    "viewProjects": "Lihat Proyek",
+    "contactMe": "Hubungi Saya",
+    "openToWork": "Terbuka untuk Kerja",
+    "basedIn": "Berlokasi di"
+  },
+  "about": {
+    "title": "Tentang",
+    "me": "Saya",
+    "description": "Saya adalah Backend Developer yang bersemangat dengan keahlian dalam membangun aplikasi web yang handal dan skalabel. Saya senang mengubah masalah kompleks menjadi solusi yang sederhana, indah, dan intuitif.",
+    "yearsExperience": "Tahun Pengalaman",
+    "projectsCompleted": "Proyek Selesai",
+    "certificates": "Sertifikat",
+    "connectWithMe": "Terhubung dengan saya"
+  },
+  "projects": {
+    "featured": "Unggulan",
+    "title": "Proyek",
+    "subtitle": "Beberapa karya terbaru yang saya banggakan",
+    "viewAll": "Lihat Semua Proyek",
+    "viewProject": "Lihat Proyek",
+    "liveDemo": "Demo",
+    "sourceCode": "Kode Sumber"
+  },
+  "experience": {
+    "work": "Pengalaman",
+    "title": "Kerja",
+    "subtitle": "Perjalanan profesional saya sejauh ini",
+    "viewAll": "Lihat Semua Pengalaman"
+  },
+  "skills": {
+    "title": "Keahlian &",
+    "technologies": "Teknologi",
+    "subtitle": "Teknologi dan alat yang saya gunakan untuk mewujudkan ide"
+  },
+  "certificates": {
+    "licenses": "Lisensi &",
+    "title": "Sertifikat",
+    "subtitle": "Sertifikasi profesional dan pencapaian",
+    "viewAll": "Lihat Semua Sertifikat",
+    "featured": "Unggulan"
+  },
+  "contact": {
+    "letsWork": "Mari Bekerja",
+    "together": "Bersama",
+    "description": "Punya proyek atau ingin berkolaborasi? Jangan ragu untuk menghubungi. Saya selalu terbuka untuk mendiskusikan peluang baru.",
+    "location": "Lokasi",
+    "findMeOn": "Atau temukan saya di",
+    "messageSent": "Pesan Terkirim!",
+    "thankYou": "Terima kasih telah menghubungi. Saya akan segera membalas.",
+    "name": "Nama",
+    "namePlaceholder": "Nama Anda",
+    "message": "Pesan",
+    "messagePlaceholder": "Ceritakan tentang proyek Anda...",
+    "sending": "Mengirim...",
+    "sendMessage": "Kirim Pesan"
+  },
+  "footer": {
+    "description": "Backend Developer yang bersemangat membangun aplikasi web yang handal dan skalabel.",
+    "quickLinks": "Tautan Cepat",
+    "getInTouch": "Hubungi Saya",
+    "projectInMind": "Punya proyek? Mari diskusikan.",
+    "allRights": "Hak cipta dilindungi.",
+    "builtWith": "Dibuat dengan",
+    "using": "menggunakan Next.js & Framer Motion"
+  },
+  "pages": {
+    "allProjects": "Semua Proyek",
+    "allProjectsDesc": "Kumpulan karya saya - dari aplikasi web hingga API dan semuanya.",
+    "workExperience": "Pengalaman Kerja",
+    "workExperienceDesc": "Perjalanan profesional saya sejauh ini - dari magang hingga proyek freelance.",
+    "licensesAndCertificates": "Lisensi & Sertifikat",
+    "licensesAndCertificatesDesc": "Sertifikasi profesional dan pencapaian yang memvalidasi keahlian dan pengetahuan saya.",
+    "home": "Beranda",
+    "positions": "posisi",
+    "projects": "proyek",
+    "certificates": "sertifikat"
+  }
+}

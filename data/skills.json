@@ -1,0 +1,57 @@
+[
+  {
+    "category": "Backend Development",
+    "icon": "server",
+    "items": [
+      "PHP",
+      "Laravel",
+      "Node.js",
+      "Express.js",
+      "Hapi.js",
+      "REST API",
+      "GraphQL"
+    ]
+  },
+  {
+    "category": "Frontend Development",
+    "icon": "layout",
+    "items": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Vue.js",
+      "Tailwind CSS"
+    ]
+  },
+  {
+    "category": "Database",
+    "icon": "database",
+    "items": [
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "Prisma ORM",
+      "Eloquent"
+    ]
+  },
+  {
+    "category": "DevOps & Tools",
+    "icon": "terminal",
+    "items": ["Git", "GitHub", "Docker", "Linux", "Nginx", "Vercel", "CI/CD"]
+  },
+  {
+    "category": "Other Skills",
+    "icon": "star",
+    "items": [
+      "Agile/Scrum",
+      "API Design",
+      "System Design",
+      "Problem Solving",
+      "Team Collaboration"
+    ]
+  }
+]

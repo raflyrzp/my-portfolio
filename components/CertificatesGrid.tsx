@@ -1,69 +1,57 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
+import { useState } from "react";
 import type { Certificate } from "@/types";
-import { useTranslations } from "next-intl";
 
-interface CertificatesProps {
+interface CertificatesGridProps {
   items: Certificate[];
-  showViewAll?: boolean;
 }
 
-export default function Certificates({
-  items,
-  showViewAll = true,
-}: CertificatesProps) {
-  const t = useTranslations("certificates");
+export default function CertificatesGrid({ items }: CertificatesGridProps) {
+  const [filter, setFilter] = useState<string>("all");
 
-  if (!items || items.length === 0) return null;
+  if (!items || items.length === 0) {
+    return (
+      <div className="text-center py-20">
+        <p className="text-[var(--text-muted)]">No certificates found.</p>
+      </div>
+    );
+  }
+
+  // Get unique issuers for filter
+  const issuers = ["all", ...new Set(items.map((c) => c.issuer))];
+
+  const filteredItems =
+    filter === "all" ? items : items.filter((c) => c.issuer === filter);
 
   return (
-    <section id="certificates" className="container-pad section-pad">
-      {/* Section Header */}
-      <div className="section-header">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="title-lg">
-            {t("licenses")} <span className="text-gradient">{t("title")}</span>
-          </h2>
-          <p className="muted mt-2">{t("subtitle")}</p>
-        </motion.div>
-
-        {showViewAll && items.length > 3 && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
+    <div>
+      {/* Filter Tabs */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="flex flex-wrap gap-2 mb-8"
+      >
+        {issuers.map((issuer) => (
+          <button
+            key={issuer}
+            onClick={() => setFilter(issuer)}
+            className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+              filter === issuer
+                ? "bg-gradient-to-r from-[#6366f1] to-[#ec4899] text-white"
+                : "bg-[var(--bg-tertiary)] text-[var(--text-secondary)] hover:text-white hover:bg-[var(--bg-card)]"
+            }`}
           >
-            <Link href="/certificates" className="view-all">
-              {t("viewAll")}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="m9 18 6-6-6-6" />
-              </svg>
-            </Link>
-          </motion.div>
-        )}
-      </div>
+            {issuer === "all" ? "All" : issuer}
+          </button>
+        ))}
+      </motion.div>
 
-      {/* Certificates Grid */}
+      {/* Grid */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {items.map((cert, i) => (
+        {filteredItems.map((cert, i) => (
           <motion.a
             key={cert.title + i}
             href={cert.url || "#"}
@@ -71,9 +59,10 @@ export default function Certificates({
             rel={cert.url ? "noopener noreferrer" : undefined}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ delay: i * 0.1, duration: 0.5 }}
-            className="group card overflow-hidden"
+            viewport={{ once: true }}
+            transition={{ delay: (i % 6) * 0.1, duration: 0.5 }}
+            layout
+            className="group card overflow-hidden relative"
           >
             {/* Thumbnail */}
             <div className="relative aspect-video rounded-xl overflow-hidden bg-[var(--bg-tertiary)] mb-4 -mx-1.5 -mt-1.5">
@@ -105,10 +94,10 @@ export default function Certificates({
               {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg-primary)] via-transparent to-transparent opacity-60" />
 
-              {/* Badge */}
+              {/* Featured Badge */}
               {cert.featured && (
                 <div className="absolute top-3 right-3 px-2 py-1 rounded-full bg-[#6366f1] text-[10px] font-semibold">
-                  {t("featured")}
+                  Featured
                 </div>
               )}
             </div>
@@ -119,14 +108,17 @@ export default function Certificates({
                 {cert.title}
               </h3>
 
-              <div className="flex items-center gap-2 text-sm text-[var(--text-secondary)] mb-3">
+              <div className="flex items-center gap-2 text-sm text-[var(--text-secondary)] mb-2">
                 <span className="text-[#818cf8]">{cert.issuer}</span>
-                <span className="text-[var(--text-muted)]">·</span>
-                <span>{cert.issued}</span>
+              </div>
+
+              <div className="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-3">
+                <span>Issued: {cert.issued}</span>
+                {cert.expires && <span>· Expires: {cert.expires}</span>}
               </div>
 
               {cert.credentialId && (
-                <p className="text-xs text-[var(--text-muted)] mb-3 font-mono">
+                <p className="text-xs text-[var(--text-muted)] mb-3 font-mono truncate">
                   ID: {cert.credentialId}
                 </p>
               )}
@@ -151,7 +143,7 @@ export default function Certificates({
               )}
             </div>
 
-            {/* Arrow Icon */}
+            {/* Arrow */}
             <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-[var(--bg-tertiary)] flex items-center justify-center opacity-0 -translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -168,6 +160,6 @@ export default function Certificates({
           </motion.a>
         ))}
       </div>
-    </section>
+    </div>
   );
 }

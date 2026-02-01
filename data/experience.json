@@ -1,0 +1,41 @@
+[
+  {
+    "company": "Dinas Komunikasi, Informatika dan Statistik DKI Jakarta",
+    "role": "Web Developer Intern",
+    "type": "Internship",
+    "start": "Aug 2024",
+    "end": "Dec 2024",
+    "description": {
+      "en": "Developed and maintained internal web applications to support office operations. Collaborated with the IT team in implementing new features and optimizing system performance.",
+      "id": "Mengembangkan dan memelihara aplikasi web internal untuk mendukung operasional dinas. Berkolaborasi dengan tim IT dalam implementasi fitur-fitur baru dan optimisasi performa sistem."
+    },
+    "skills": ["PHP", "Laravel", "MySQL", "Git"],
+    "logo": "/company/diskominfotik.png"
+  },
+  {
+    "company": "Universitas Negeri Jakarta",
+    "role": "Teaching Assistant - Web Programming",
+    "type": "Part-time",
+    "start": "Feb 2024",
+    "end": "Jul 2024",
+    "description": {
+      "en": "Assisted lecturers in teaching Web Programming courses. Guided students in practical sessions and helped them complete programming assignments.",
+      "id": "Membantu dosen dalam mengajar mata kuliah Pemrograman Web. Membimbing mahasiswa dalam praktikum dan membantu menyelesaikan tugas-tugas pemrograman."
+    },
+    "skills": ["HTML", "CSS", "JavaScript", "PHP"],
+    "logo": "/company/unj.png"
+  },
+  {
+    "company": "Freelance",
+    "role": "Web Developer",
+    "type": "Freelance",
+    "start": "Jan 2023",
+    "end": "Present",
+    "description": {
+      "en": "Worked on various freelance projects including website development, web applications, and information systems for various clients.",
+      "id": "Mengerjakan berbagai proyek freelance meliputi pengembangan website, aplikasi web, dan sistem informasi untuk berbagai klien."
+    },
+    "skills": ["Laravel", "Next.js", "MySQL", "API Development"],
+    "logo": "/company/freelance.png"
+  }
+]

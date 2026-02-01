@@ -1,0 +1,90 @@
+[
+  {
+    "title": "Back-End Developer",
+    "issuer": "Dicoding Indonesia",
+    "issued": "Dec 2024",
+    "expires": "Dec 2027",
+    "credentialId": "DICODING-BACKEND-2024",
+    "url": "https://www.dicoding.com/certificates/",
+    "thumbnail": "/certificates/dicoding-backend.png",
+    "skills": ["Node.js", "Hapi.js", "REST API", "PostgreSQL"],
+    "featured": true
+  },
+  {
+    "title": "Belajar Membuat Aplikasi Web dengan React",
+    "issuer": "Dicoding Indonesia",
+    "issued": "Nov 2024",
+    "expires": "Nov 2027",
+    "credentialId": "DICODING-REACT-2024",
+    "url": "https://www.dicoding.com/certificates/",
+    "thumbnail": "/certificates/dicoding-react.png",
+    "skills": ["React", "JavaScript", "SPA", "State Management"],
+    "featured": true
+  },
+  {
+    "title": "Belajar Fundamental Aplikasi Back-End",
+    "issuer": "Dicoding Indonesia",
+    "issued": "Oct 2024",
+    "expires": "Oct 2027",
+    "credentialId": "DICODING-FUNDAMENTAL-BE-2024",
+    "url": "https://www.dicoding.com/certificates/",
+    "thumbnail": "/certificates/dicoding-fundamental-be.png",
+    "skills": ["Node.js", "NPM", "REST API", "Backend Architecture"],
+    "featured": true
+  },
+  {
+    "title": "Laravel: Restful API",
+    "issuer": "Udemy",
+    "issued": "Sep 2024",
+    "expires": null,
+    "credentialId": "UC-LARAVEL-API-2024",
+    "url": "https://www.udemy.com/certificate/",
+    "thumbnail": "/certificates/udemy-laravel.png",
+    "skills": ["Laravel", "PHP", "REST API", "Authentication"],
+    "featured": false
+  },
+  {
+    "title": "Belajar Dasar Pemrograman JavaScript",
+    "issuer": "Dicoding Indonesia",
+    "issued": "Aug 2024",
+    "expires": "Aug 2027",
+    "credentialId": "DICODING-JS-DASAR-2024",
+    "url": "https://www.dicoding.com/certificates/",
+    "thumbnail": "/certificates/dicoding-js.png",
+    "skills": ["JavaScript", "ES6", "OOP", "Asynchronous"],
+    "featured": false
+  },
+  {
+    "title": "MySQL Database Administration",
+    "issuer": "Coursera",
+    "issued": "Jul 2024",
+    "expires": null,
+    "credentialId": "COURSERA-MYSQL-2024",
+    "url": "https://www.coursera.org/verify/",
+    "thumbnail": "/certificates/coursera-mysql.png",
+    "skills": ["MySQL", "Database Design", "SQL", "Performance Tuning"],
+    "featured": false
+  },
+  {
+    "title": "Git & GitHub Fundamentals",
+    "issuer": "LinkedIn Learning",
+    "issued": "Jun 2024",
+    "expires": null,
+    "credentialId": "LINKEDIN-GIT-2024",
+    "url": "https://www.linkedin.com/learning/certificates/",
+    "thumbnail": "/certificates/linkedin-git.png",
+    "skills": ["Git", "GitHub", "Version Control", "Collaboration"],
+    "featured": false
+  },
+  {
+    "title": "Belajar Dasar Pemrograman Web",
+    "issuer": "Dicoding Indonesia",
+    "issued": "May 2024",
+    "expires": "May 2027",
+    "credentialId": "DICODING-WEB-DASAR-2024",
+    "url": "https://www.dicoding.com/certificates/",
+    "thumbnail": "/certificates/dicoding-web.png",
+    "skills": ["HTML", "CSS", "JavaScript", "Responsive Design"],
+    "featured": false
+  }
+]

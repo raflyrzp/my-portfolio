@@ -3,13 +3,13 @@
     "category": "Backend Development",
     "icon": "server",
     "items": [
+      "REST API",
       "PHP",
       "Laravel",
       "Node.js",
       "Express.js",
-      "Hapi.js",
-      "REST API",
-      "GraphQL"
+      "Django",
+      "Adonis.js"
     ]
   },
   {

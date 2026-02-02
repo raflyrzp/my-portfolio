@@ -3,8 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import type { Certificate } from "@/types";
+import { useState } from "react";
+import type { Certificate, CertificateFileType } from "@/types";
 import { useTranslations } from "next-intl";
+import CertificateViewer from "./CertificateViewer";
 
 interface CertificatesProps {
   items: Certificate[];
@@ -16,8 +18,36 @@ export default function Certificates({
   showViewAll = true,
 }: CertificatesProps) {
   const t = useTranslations("certificates");
+  const [viewerOpen, setViewerOpen] = useState(false);
+  const [selectedCert, setSelectedCert] = useState<{
+    file: string;
+    fileType: CertificateFileType;
+    title: string;
+  } | null>(null);
 
   if (!items || items.length === 0) return null;
+
+  const handleCertificateClick = (
+    e: React.MouseEvent,
+    cert: Certificate
+  ) => {
+    // If certificate has a file, open the viewer
+    if (cert.file && cert.fileType) {
+      e.preventDefault();
+      setSelectedCert({
+        file: cert.file,
+        fileType: cert.fileType,
+        title: cert.title,
+      });
+      setViewerOpen(true);
+    }
+    // Otherwise, let the default link behavior happen (open url)
+  };
+
+  const closeViewer = () => {
+    setViewerOpen(false);
+    setSelectedCert(null);
+  };
 
   return (
     <section id="certificates" className="container-pad section-pad">
@@ -66,18 +96,26 @@ export default function Certificates({
         {items.map((cert, i) => (
           <motion.a
             key={cert.title + i}
-            href={cert.url || "#"}
-            target={cert.url ? "_blank" : undefined}
-            rel={cert.url ? "noopener noreferrer" : undefined}
+            href={cert.file ? "#" : cert.url || "#"}
+            target={!cert.file && cert.url ? "_blank" : undefined}
+            rel={!cert.file && cert.url ? "noopener noreferrer" : undefined}
+            onClick={(e) => handleCertificateClick(e, cert)}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ delay: i * 0.1, duration: 0.5 }}
-            className="group card overflow-hidden"
+            className="group card overflow-hidden cursor-pointer"
           >
             {/* Thumbnail */}
             <div className="relative aspect-video rounded-xl overflow-hidden bg-[var(--bg-tertiary)] mb-4 -mx-1.5 -mt-1.5">
-              {cert.thumbnail ? (
+              {cert.file ? (
+                <Image
+                  src={cert.file}
+                  alt={cert.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              ) : cert.thumbnail ? (
                 <Image
                   src={cert.thumbnail}
                   alt={cert.title}
@@ -109,6 +147,29 @@ export default function Certificates({
               {cert.featured && (
                 <div className="absolute top-3 right-3 px-2 py-1 rounded-full bg-[#6366f1] text-[10px] font-semibold">
                   {t("featured")}
+                </div>
+              )}
+
+              {/* View Certificate Overlay */}
+              {cert.file && (
+                <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white text-sm font-medium flex items-center gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                      <circle cx="12" cy="12" r="3" />
+                    </svg>
+                    View Certificate
+                  </div>
                 </div>
               )}
             </div>
@@ -168,6 +229,17 @@ export default function Certificates({
           </motion.a>
         ))}
       </div>
+
+      {/* Certificate Viewer Modal */}
+      {selectedCert && (
+        <CertificateViewer
+          isOpen={viewerOpen}
+          onClose={closeViewer}
+          file={selectedCert.file}
+          fileType={selectedCert.fileType}
+          title={selectedCert.title}
+        />
+      )}
     </section>
   );
 }

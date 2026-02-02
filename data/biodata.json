@@ -1,15 +1,15 @@
 {
   "name": "Rafly Rabbany Zalfa Pateda",
-  "role": "Backend Developer",
+  "role": "Web Developer",
   "location": "Jakarta, Indonesia",
   "email": "raflyrabbany0804@gmail.com",
   "headline": {
-    "en": "Passionate Backend Developer specializing in building robust, scalable web applications. Currently pursuing Computer Science at Universitas Negeri Jakarta with hands-on experience in PHP, Laravel, and modern backend technologies.",
-    "id": "Backend Developer yang bersemangat dalam membangun aplikasi web yang handal dan skalabel. Saat ini sedang menempuh pendidikan di Universitas Negeri Jakarta jurusan Teknik Informatika dengan pengalaman praktis dalam PHP, Laravel, dan teknologi backend modern."
+    "en": "Web Developer who turns ideas into reliable, scalable web solutions. Passionate about clean code, real-world impact, and building products that actually get used.",
+    "id": "Web Developer yang mengubah ide menjadi solusi web yang andal dan skalabel, dengan fokus pada kualitas kode dan dampak nyata bagi pengguna."
   },
   "about": {
-    "en": "I am a passionate Backend Developer dedicated to building robust and scalable web applications. Currently pursuing Computer Science at Universitas Negeri Jakarta. I have hands-on experience in backend development using PHP, Laravel, and other modern technologies. I am always eager to learn new technologies and contribute to challenging projects.",
-    "id": "Saya adalah seorang Backend Developer yang bersemangat dalam membangun aplikasi web yang handal dan skalabel. Saat ini sedang menempuh pendidikan di Universitas Negeri Jakarta jurusan Teknik Informatika. Saya memiliki pengalaman praktis dalam pengembangan backend menggunakan PHP, Laravel, dan teknologi modern lainnya. Saya selalu tertarik untuk mempelajari teknologi baru dan berkontribusi dalam proyek-proyek yang menantang."
+    "en": "I am a Web Developer who enjoys building web applications that are not only functional but also reliable and ready to grow. I like working on real projects where structure, scalability, and clarity truly matter.\nCurrently studying Computer Science at Universitas Negeri Jakarta, I have hands-on experience using PHP, Laravel, and modern web technologies to deliver practical solutions. I pay close attention to clean architecture, maintainable code, and smooth collaboration with clients or teams.\nFor me, web development is not just about writing code. It is about understanding problems, committing to solutions, and continuously improving the product over time.",
+    "id": "Saya adalah seorang Web Developer yang menikmati proses membangun aplikasi web yang tidak hanya berjalan tetapi juga siap berkembang. Saya terbiasa mengerjakan proyek nyata di mana struktur, skalabilitas, dan kejelasan sistem menjadi hal yang penting.\nSaat ini saya menempuh pendidikan Ilmu Komputer di Universitas Negeri Jakarta dan memiliki pengalaman langsung menggunakan PHP, Laravel, serta teknologi web modern untuk menghasilkan solusi yang praktis. Saya memperhatikan arsitektur yang rapi, kode yang mudah dirawat, serta komunikasi yang baik dengan klien maupun tim.\nBagi saya, web development bukan hanya tentang menulis kode. Ini tentang memahami kebutuhan, berkomitmen pada solusi, dan terus meningkatkan kualitas produk yang dibangun."
   },
   "socials": [
     {

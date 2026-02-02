@@ -42,6 +42,8 @@ export type Skill = {
   items: string[];
 };
 
+export type CertificateFileType = "png" | "jpg" | "jpeg";
+
 export type Certificate = {
   title: string;
   issuer: string;
@@ -50,6 +52,8 @@ export type Certificate = {
   credentialId?: string;
   url?: string;
   thumbnail?: string;
+  file?: string;
+  fileType?: CertificateFileType;
   skills?: string[];
   featured?: boolean;
 };

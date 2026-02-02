@@ -2,79 +2,79 @@
   {
     "title": "E-SPPD Management System",
     "description": {
-      "en": "A web-based official travel warrant (SPPD) management system with SSO, approval workflow, and automated reporting features.",
-      "id": "Sistem manajemen surat perintah perjalanan dinas (SPPD) berbasis web dengan fitur SSO, approval workflow, dan reporting otomatis."
+      "en": "A web-based official travel management system designed to simplify SPPD submission, approval workflows, and reporting. Integrated with Single Sign-On (SSO) to ensure secure access and seamless authentication across systems.",
+      "id": "Sistem manajemen perjalanan dinas berbasis web yang dirancang untuk menyederhanakan pengajuan SPPD, alur persetujuan, dan pembuatan laporan. Terintegrasi dengan Single Sign-On (SSO) untuk akses yang aman dan autentikasi yang lebih efisien."
     },
-    "year": "2024",
+    "year": "2026",
     "tags": ["Laravel", "PHP", "MySQL", "SSO", "REST API"],
     "cover": "/projects/e-sppd.png",
-    "link": null,
-    "repo": "https://github.com/raflyrzp/e-sppd",
+    "link": "https://dinas.unj.ac.id",
+    "repo": null,
     "featured": true
+  },
+  {
+    "title": "Inspira LMS",
+    "description": {
+      "en": "A Learning Management System built to streamline digital learning between teachers and students. Enables material distribution, assignment submission, attendance tracking, and class management through a centralized web platform.",
+      "id": "Learning Management System yang dibangun untuk mempermudah proses pembelajaran digital antara guru dan siswa. Mendukung distribusi materi, pengumpulan tugas, presensi online, serta manajemen kelas dalam satu platform terpusat."
+    },
+    "year": "2024",
+    "tags": ["Laravel", "Bootstrap", "JavaScript", "MySQL"],
+    "cover": "/projects/inspira.png",
+    "link": null,
+    "repo": "https://github.com/raflyrzp/inspira",
+    "featured": true
+  },
+  {
+    "title": "Academunch",
+    "description": {
+      "en": "A digital transaction system for school canteens and banks, allowing students to top up balances and purchase items online. Built to improve transaction efficiency and reduce manual processes within the school environment.",
+      "id": "Sistem transaksi digital untuk kantin dan bank sekolah yang memungkinkan siswa melakukan top up saldo dan pembelian secara online. Dibangun untuk meningkatkan efisiensi transaksi dan mengurangi proses manual."
+    },
+    "year": "2024",
+    "tags": ["Laravel", "Bootstrap", "JavaScript", "MySQL"],
+    "cover": "/projects/academunch.png",
+    "link": null,
+    "repo": "https://github.com/raflyrzp/academunch",
+    "featured": true
+  },
+  {
+    "title": "64Mart POS System",
+    "description": {
+      "en": "A Point of Sale application designed to speed up canteen transactions using barcode scanning and real-time inventory management. Focused on usability, transaction accuracy, and operational efficiency.",
+      "id": "Aplikasi Point of Sale yang dirancang untuk mempercepat transaksi kantin melalui pemindaian barcode dan manajemen stok secara real-time. Fokus pada kemudahan penggunaan, akurasi transaksi, dan efisiensi operasional."
+    },
+    "year": "2023",
+    "tags": ["Laravel", "Bootstrap", "JavaScript", "MySQL"],
+    "cover": "/projects/64mart.png",
+    "link": null,
+    "repo": "https://github.com/raflyrzp/64mart",
+    "featured": false
   },
   {
     "title": "Academic Information System (SIAKAD)",
     "description": {
-      "en": "An academic information system for managing student data, course registration (KRS), grade reports (KHS), and class schedules with external API integration.",
-      "id": "Sistem informasi akademik untuk mengelola data mahasiswa, KRS, KHS, dan jadwal perkuliahan dengan integrasi API eksternal."
+      "en": "An academic information system for managing student data, course registration, grade reports, and class schedules. Integrated with external APIs to support scalable academic operations.",
+      "id": "Sistem informasi akademik untuk pengelolaan data mahasiswa, pengisian KRS, KHS, dan jadwal perkuliahan. Terintegrasi dengan API eksternal untuk mendukung sistem akademik yang skalabel."
     },
     "year": "2024",
     "tags": ["Node.js", "Express", "Prisma", "PostgreSQL", "REST API"],
     "cover": "/projects/siakad.png",
     "link": null,
-    "repo": "https://github.com/raflyrzp/siakad",
-    "featured": true
+    "repo": null,
+    "featured": false
   },
   {
     "title": "Personal Portfolio Website",
     "description": {
-      "en": "A personal portfolio website with modern design, smooth animations, and parallax effects using Next.js and Framer Motion.",
-      "id": "Website portfolio personal dengan desain modern, animasi smooth, dan efek parallax menggunakan Next.js dan Framer Motion."
+      "en": "A personal portfolio website showcasing projects and experience with a modern interface, smooth animations, and responsive design to create a strong first impression for clients and recruiters.",
+      "id": "Website portfolio personal yang menampilkan proyek dan pengalaman dengan tampilan modern, animasi halus, dan desain responsif untuk memberikan kesan profesional kepada klien dan recruiter."
     },
     "year": "2024",
     "tags": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     "cover": "/projects/portfolio.png",
     "link": "https://raflyrzp.vercel.app",
     "repo": "https://github.com/raflyrzp/my-portfolio",
-    "featured": true
-  },
-  {
-    "title": "REST API Authentication Service",
-    "description": {
-      "en": "A microservice for authentication with JWT, OAuth2, and role-based access control (RBAC).",
-      "id": "Microservice untuk autentikasi dengan JWT, OAuth2, dan role-based access control (RBAC)."
-    },
-    "year": "2023",
-    "tags": ["Node.js", "Express", "JWT", "MongoDB"],
-    "cover": "/projects/auth-api.png",
-    "link": null,
-    "repo": "https://github.com/raflyrzp/auth-service",
-    "featured": false
-  },
-  {
-    "title": "Inventory Management System",
-    "description": {
-      "en": "An inventory management application with barcode scanning, stock tracking, and real-time reporting features.",
-      "id": "Aplikasi manajemen inventaris barang dengan fitur barcode scanning, stock tracking, dan laporan real-time."
-    },
-    "year": "2023",
-    "tags": ["Laravel", "Vue.js", "MySQL", "REST API"],
-    "cover": "/projects/inventory.png",
-    "link": null,
-    "repo": "https://github.com/raflyrzp/inventory",
-    "featured": false
-  },
-  {
-    "title": "Task Management App",
-    "description": {
-      "en": "A task management application with drag-and-drop, deadline reminders, and team collaboration features.",
-      "id": "Aplikasi manajemen tugas dengan fitur drag-and-drop, deadline reminder, dan kolaborasi tim."
-    },
-    "year": "2023",
-    "tags": ["React", "Node.js", "Socket.io", "MongoDB"],
-    "cover": "/projects/taskman.png",
-    "link": null,
-    "repo": "https://github.com/raflyrzp/taskman",
     "featured": false
   }
 ]

@@ -1,41 +1,80 @@
 [
   {
-    "company": "Dinas Komunikasi, Informatika dan Statistik DKI Jakarta",
-    "role": "Web Developer Intern",
+    "company": "UPT TIK Universitas Negeri Jakarta",
+    "role": "Website Developer",
     "type": "Internship",
-    "start": "Aug 2024",
-    "end": "Dec 2024",
-    "description": {
-      "en": "Developed and maintained internal web applications to support office operations. Collaborated with the IT team in implementing new features and optimizing system performance.",
-      "id": "Mengembangkan dan memelihara aplikasi web internal untuk mendukung operasional dinas. Berkolaborasi dengan tim IT dalam implementasi fitur-fitur baru dan optimisasi performa sistem."
-    },
-    "skills": ["PHP", "Laravel", "MySQL", "Git"],
-    "logo": "/company/diskominfotik.png"
-  },
-  {
-    "company": "Universitas Negeri Jakarta",
-    "role": "Teaching Assistant - Web Programming",
-    "type": "Part-time",
-    "start": "Feb 2024",
-    "end": "Jul 2024",
-    "description": {
-      "en": "Assisted lecturers in teaching Web Programming courses. Guided students in practical sessions and helped them complete programming assignments.",
-      "id": "Membantu dosen dalam mengajar mata kuliah Pemrograman Web. Membimbing mahasiswa dalam praktikum dan membantu menyelesaikan tugas-tugas pemrograman."
-    },
-    "skills": ["HTML", "CSS", "JavaScript", "PHP"],
-    "logo": "/company/unj.png"
-  },
-  {
-    "company": "Freelance",
-    "role": "Web Developer",
-    "type": "Freelance",
-    "start": "Jan 2023",
+    "start": "Nov 2025",
     "end": "Present",
     "description": {
-      "en": "Worked on various freelance projects including website development, web applications, and information systems for various clients.",
-      "id": "Mengerjakan berbagai proyek freelance meliputi pengembangan website, aplikasi web, dan sistem informasi untuk berbagai klien."
+      "en": "Developing and maintaining internal web systems to support university digital services. Actively involved in implementing backend logic, improving system reliability, and collaborating with teams to deliver efficient and maintainable web solutions.",
+      "id": "Mengembangkan dan memelihara sistem web internal untuk mendukung layanan digital universitas. Terlibat langsung dalam implementasi logika backend, peningkatan keandalan sistem, serta kolaborasi tim untuk menghasilkan solusi web yang efisien dan mudah dikembangkan."
     },
-    "skills": ["Laravel", "Next.js", "MySQL", "API Development"],
-    "logo": "/company/freelance.png"
+    "skills": ["PHP", "JavaScript", "Backend Web Development", "Communication"],
+    "logo": "/company/upt-tik-unj.png"
+  },
+  {
+    "company": "SMK Negeri 64 Jakarta",
+    "role": "Web Development Trainer",
+    "type": "Part-time",
+    "start": "Nov 2024",
+    "end": "Jan 2025",
+    "description": {
+      "en": "Delivered a two-month intensive training program for the Student Competency Competition in Web Technology. Taught WordPress-based website development, backend development using Laravel, and frontend development with React.js. Mentored students through hands-on practice, focusing on best practices, clean architecture, and competition readiness.",
+      "id": "Mengajar program pelatihan intensif selama dua bulan untuk Lomba Kompetensi Siswa bidang Web Technology. Membawakan materi pengembangan website dengan WordPress, backend menggunakan Laravel, serta frontend dengan React.js. Membimbing siswa secara langsung dengan fokus pada best practice, arsitektur yang rapi, dan kesiapan lomba."
+    },
+    "skills": ["Teaching", "WordPress", "Laravel", "React.js", "Full-Stack Development", "Communication"],
+    "logo": "/company/smk64.png"
+  },
+  {
+    "company": "SMK Negeri 64 Jakarta",
+    "role": "Project Leader",
+    "type": "Freelance",
+    "start": "Apr 2024",
+    "end": "May 2024",
+    "description": {
+      "en": "Led the development of a Learning Management System for a school environment. Managed project planning, backend development using Laravel, and frontend implementation with Bootstrap and JavaScript. Ensured system integration and conducted user testing for features such as class management, online quizzes, and grading systems.",
+      "id": "Memimpin pengembangan Learning Management System untuk lingkungan sekolah. Bertanggung jawab atas perencanaan proyek, pengembangan backend menggunakan Laravel, serta implementasi frontend dengan Bootstrap dan JavaScript. Mengelola integrasi sistem dan pengujian pengguna untuk fitur manajemen kelas, kuis online, dan sistem penilaian."
+    },
+    "skills": ["Leadership", "Laravel", "Project Management", "MySQL", "Bootstrap", "JavaScript"],
+    "logo": "/company/smk64.png"
+  },
+  {
+    "company": "SMK Negeri 64 Jakarta",
+    "role": "Project Leader",
+    "type": "Freelance",
+    "start": "Oct 2023",
+    "end": "Nov 2023",
+    "description": {
+      "en": "Led the development of a Point of Sale application designed to streamline sales transactions and inventory management. Handled backend development with Laravel, frontend implementation using Bootstrap and JavaScript, and system deployment. Focused on performance, usability, and operational efficiency.",
+      "id": "Memimpin pengembangan aplikasi Point of Sale untuk mempermudah transaksi penjualan dan manajemen inventori. Bertanggung jawab pada backend menggunakan Laravel, frontend dengan Bootstrap dan JavaScript, serta proses deployment sistem. Proyek difokuskan pada performa, kemudahan penggunaan, dan efisiensi operasional."
+    },
+    "skills": ["Laravel", "Bootstrap", "JavaScript", "MySQL", "Project Management", "Time Management"],
+    "logo": "/company/64mart.png"
+  },
+  {
+    "company": "Matata Edu Inovasi",
+    "role": "Web Developer",
+    "type": "Internship",
+    "start": "Feb 2023",
+    "end": "Jun 2023",
+    "description": {
+      "en": "Worked as a web developer focusing on backend development. Designed and implemented server-side logic, managed databases, and ensured seamless integration with the frontend to deliver a stable and efficient web platform.",
+      "id": "Bekerja sebagai web developer dengan fokus pada pengembangan backend. Merancang dan mengimplementasikan logika server, mengelola database, serta memastikan integrasi yang lancar dengan frontend untuk menghasilkan platform web yang stabil dan efisien."
+    },
+    "skills": ["PHP", "CodeIgniter", "MySQL", "Project Management"],
+    "logo": "/company/matata-edu.png"
+  },
+  {
+    "company": "MTRYOUT",
+    "role": "Web Designer",
+    "type": "Internship",
+    "start": "Feb 2023",
+    "end": "Jun 2023",
+    "description": {
+      "en": "Designed and built multiple landing pages using WordPress for an education startup. Contributed to content creation through article writing and basic multimedia production, helping strengthen the company’s digital presence.",
+      "id": "Merancang dan membangun berbagai landing page menggunakan WordPress untuk startup di bidang pendidikan. Berkontribusi dalam pembuatan konten melalui penulisan artikel dan produksi multimedia sederhana untuk meningkatkan kehadiran digital perusahaan."
+    },
+    "skills": ["WordPress", "UX", "Copywriting", "Content Creation", "Multimedia"],
+    "logo": "/company/mtryout.png"
   }
 ]

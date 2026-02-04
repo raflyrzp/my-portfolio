@@ -27,10 +27,7 @@ export default function Certificates({
 
   if (!items || items.length === 0) return null;
 
-  const handleCertificateClick = (
-    e: React.MouseEvent,
-    cert: Certificate
-  ) => {
+  const handleCertificateClick = (e: React.MouseEvent, cert: Certificate) => {
     // If certificate has a file, open the viewer
     if (cert.file && cert.fileType) {
       e.preventDefault();
@@ -64,7 +61,7 @@ export default function Certificates({
           <p className="muted mt-2">{t("subtitle")}</p>
         </motion.div>
 
-        {showViewAll && items.length > 3 && (
+        {showViewAll && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

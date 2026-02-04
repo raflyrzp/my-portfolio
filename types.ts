@@ -21,7 +21,7 @@ export type Project = {
   tags: string[];
   cover: string;
   link?: string | null;
-  repo?: string | null;
+  repo?: string | { label: string; url: string }[] | null;
   featured?: boolean;
 };
 

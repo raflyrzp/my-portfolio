@@ -34,7 +34,7 @@ export default function Experience({
           <p className="muted mt-2">{t("subtitle")}</p>
         </motion.div>
 
-        {showViewAll && items.length > 2 && (
+        {showViewAll && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -94,7 +94,9 @@ export default function Experience({
                       <h3 className="text-xl font-bold group-hover:text-[#818cf8] transition-colors">
                         {exp.role}
                       </h3>
-                      <p className="text-[#818cf8] font-medium">{exp.company}</p>
+                      <p className="text-[#818cf8] font-medium">
+                        {exp.company}
+                      </p>
                     </div>
                     <div className="flex items-center gap-3 text-sm">
                       {exp.type && (

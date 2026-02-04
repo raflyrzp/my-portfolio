@@ -146,14 +146,30 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                 </a>
               )}
               {project.repo && (
-                <a
-                  href={project.repo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-ghost btn text-sm"
-                >
-                  {t("sourceCode")}
-                </a>
+                <>
+                  {typeof project.repo === "string" ? (
+                    <a
+                      href={project.repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-ghost btn text-sm"
+                    >
+                      {t("sourceCode")}
+                    </a>
+                  ) : (
+                    project.repo.map((r, i) => (
+                      <a
+                        key={i}
+                        href={r.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-ghost btn text-sm"
+                      >
+                        {r.label}
+                      </a>
+                    ))
+                  )}
+                </>
               )}
             </div>
           </div>
@@ -227,14 +243,30 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             </a>
           )}
           {project.repo && (
-            <a
-              href={project.repo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-outline btn text-sm"
-            >
-              GitHub
-            </a>
+            <>
+              {typeof project.repo === "string" ? (
+                <a
+                  href={project.repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-outline btn text-sm"
+                >
+                  GitHub
+                </a>
+              ) : (
+                project.repo.map((r, i) => (
+                  <a
+                    key={i}
+                    href={r.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-outline btn text-sm"
+                  >
+                    {r.label}
+                  </a>
+                ))
+              )}
+            </>
           )}
         </div>
       </div>

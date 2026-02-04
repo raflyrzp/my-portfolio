@@ -24,7 +24,8 @@ export default function ProjectsGrid({ items }: ProjectsGridProps) {
     <div className="grid md:grid-cols-2 gap-8">
       {items.map((project, i) => {
         // Get description based on current locale
-        const description = project.description[locale] || project.description.en;
+        const description =
+          project.description[locale] || project.description.en;
 
         return (
           <motion.article
@@ -71,14 +72,30 @@ export default function ProjectsGrid({ items }: ProjectsGridProps) {
                   </a>
                 )}
                 {project.repo && (
-                  <a
-                    href={project.repo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-ghost btn text-xs px-3 py-2"
-                  >
-                    GitHub
-                  </a>
+                  <>
+                    {typeof project.repo === "string" ? (
+                      <a
+                        href={project.repo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-ghost btn text-xs px-3 py-2"
+                      >
+                        GitHub
+                      </a>
+                    ) : (
+                      project.repo.map((r, i) => (
+                        <a
+                          key={i}
+                          href={r.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn-ghost btn text-xs px-3 py-2"
+                        >
+                          {r.label}
+                        </a>
+                      ))
+                    )}
+                  </>
                 )}
               </div>
             </div>

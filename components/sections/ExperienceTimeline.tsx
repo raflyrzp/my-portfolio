@@ -21,13 +21,10 @@ export default function ExperienceTimeline({ items }: ExperienceTimelineProps) {
 
   return (
     <div className="relative max-w-4xl mx-auto">
-      {/* Timeline Line */}
-      <div className="absolute left-4 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#6366f1] via-[#ec4899] to-[#06b6d4]" />
+      <div className="absolute left-4 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#4f46e5] via-[#d946ef] to-[#06b6d4]" />
 
-      {/* Experience Items */}
       <div className="space-y-12">
         {items.map((exp, i) => {
-          // Get description based on current locale
           const description = exp.description[locale] || exp.description.en;
 
           return (
@@ -37,54 +34,44 @@ export default function ExperienceTimeline({ items }: ExperienceTimelineProps) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className={`relative flex flex-col md:flex-row gap-8 ${
-                i % 2 === 0 ? "md:flex-row-reverse" : ""
-              }`}
+              className={`relative flex flex-col md:flex-row gap-8 ${i % 2 === 0 ? "md:flex-row-reverse" : ""}`}
             >
-              {/* Timeline Dot */}
-              <div className="absolute left-4 md:left-1/2 -translate-x-1/2 top-0 w-4 h-4 rounded-full bg-gradient-to-br from-[#6366f1] to-[#ec4899] shadow-lg shadow-[#6366f1]/30 z-10">
-                <div className="absolute inset-1 rounded-full bg-[var(--bg-primary)]" />
+              <div className="absolute left-4 md:left-1/2 -translate-x-1/2 top-0 w-4 h-4 rounded-full bg-gradient-to-br from-[#4f46e5] to-[#d946ef] shadow-lg shadow-[#4f46e5]/20 z-10">
+                <div className="absolute inset-1 rounded-full bg-white" />
               </div>
 
-              {/* Date (Mobile: inline, Desktop: side) */}
               <div
-                className={`md:w-1/2 ${
-                  i % 2 === 0 ? "md:text-left md:pr-12" : "md:text-right md:pl-12"
-                } pl-10 md:pl-0`}
+                className={`md:w-1/2 ${i % 2 === 0 ? "md:text-left md:pr-12" : "md:text-right md:pl-12"} pl-10 md:pl-0`}
               >
                 <div className="inline-flex items-center gap-3 mb-2 md:mb-0">
                   {exp.type && <span className="tag text-xs">{exp.type}</span>}
-                  <span className="text-sm text-[#818cf8] font-medium">
+                  <span className="text-sm text-[var(--color-primary)] font-medium">
                     {exp.start} — {exp.end}
                   </span>
                 </div>
               </div>
 
-              {/* Content */}
               <div
-                className={`md:w-1/2 ${
-                  i % 2 === 0 ? "md:pr-12" : "md:pl-12"
-                } pl-10 md:pl-0`}
+                className={`md:w-1/2 ${i % 2 === 0 ? "md:pr-12" : "md:pl-12"} pl-10 md:pl-0`}
               >
-                <div className="card p-6 group hover:border-[#6366f1]/30">
-                  {/* Header */}
-                  <h3 className="text-xl font-bold group-hover:text-[#818cf8] transition-colors mb-1">
+                <div className="card p-6 group hover:border-[var(--color-primary)]/20">
+                  <h3 className="text-xl font-bold group-hover:text-[var(--color-primary)] transition-colors mb-1">
                     {exp.role}
                   </h3>
-                  <p className="text-[#818cf8] font-medium mb-4">{exp.company}</p>
+                  <p className="text-[var(--color-primary)] font-medium mb-4">
+                    {exp.company}
+                  </p>
 
-                  {/* Description */}
                   <p className="text-[var(--text-secondary)] leading-relaxed mb-5">
                     {description}
                   </p>
 
-                  {/* Skills */}
                   {exp.skills && exp.skills.length > 0 && (
                     <div className="flex flex-wrap gap-2">
                       {exp.skills.map((skill) => (
                         <span
                           key={skill}
-                          className="text-xs px-3 py-1.5 rounded-full bg-[rgba(99,102,241,0.1)] text-[#a5b4fc] border border-[rgba(99,102,241,0.2)]"
+                          className="text-xs px-3 py-1.5 rounded-full bg-[rgba(79,70,229,0.08)] text-[var(--color-primary)] border border-[rgba(79,70,229,0.12)]"
                         >
                           {skill}
                         </span>

@@ -7,7 +7,7 @@ import {
   getFeaturedCertificates,
   getSkills,
 } from "@/lib/getData";
-import HomePage from "@/components/HomePage";
+import HomePage from "@/components/sections/HomePage";
 
 export default async function Page() {
   const [

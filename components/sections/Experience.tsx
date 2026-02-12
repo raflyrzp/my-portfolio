@@ -21,7 +21,6 @@ export default function Experience({
 
   return (
     <section id="experience" className="container-pad section-pad">
-      {/* Section Header */}
       <div className="section-header">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -61,15 +60,11 @@ export default function Experience({
         )}
       </div>
 
-      {/* Timeline */}
       <div className="relative">
-        {/* Timeline Line */}
-        <div className="absolute left-4 md:left-8 top-0 bottom-0 w-px bg-gradient-to-b from-[#6366f1]/50 via-[#ec4899]/50 to-transparent" />
+        <div className="absolute left-4 md:left-8 top-0 bottom-0 w-px bg-gradient-to-b from-[var(--color-primary)]/40 via-[#d946ef]/40 to-transparent" />
 
-        {/* Experience Items */}
         <div className="space-y-8">
           {items.map((exp, i) => {
-            // Get description based on current locale
             const description = exp.description[locale] || exp.description.en;
 
             return (
@@ -81,20 +76,17 @@ export default function Experience({
                 transition={{ delay: i * 0.1, duration: 0.5 }}
                 className="relative pl-12 md:pl-20"
               >
-                {/* Timeline Dot */}
-                <div className="absolute left-2 md:left-6 top-2 w-4 h-4 rounded-full bg-gradient-to-br from-[#6366f1] to-[#ec4899] shadow-lg shadow-[#6366f1]/30">
-                  <div className="absolute inset-1 rounded-full bg-[var(--bg-primary)]" />
+                <div className="absolute left-2 md:left-6 top-2 w-4 h-4 rounded-full bg-gradient-to-br from-[#4f46e5] to-[#d946ef] shadow-lg shadow-[#4f46e5]/20">
+                  <div className="absolute inset-1 rounded-full bg-white" />
                 </div>
 
-                {/* Card */}
-                <div className="card group hover:border-[#6366f1]/30">
-                  {/* Header */}
+                <div className="card group hover:border-[var(--color-primary)]/20">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
                     <div>
-                      <h3 className="text-xl font-bold group-hover:text-[#818cf8] transition-colors">
+                      <h3 className="text-xl font-bold group-hover:text-[var(--color-primary)] transition-colors">
                         {exp.role}
                       </h3>
-                      <p className="text-[#818cf8] font-medium">
+                      <p className="text-[var(--color-primary)] font-medium">
                         {exp.company}
                       </p>
                     </div>
@@ -108,18 +100,16 @@ export default function Experience({
                     </div>
                   </div>
 
-                  {/* Description */}
                   <p className="text-[var(--text-secondary)] leading-relaxed mb-4">
                     {description}
                   </p>
 
-                  {/* Skills */}
                   {exp.skills && exp.skills.length > 0 && (
                     <div className="flex flex-wrap gap-2">
                       {exp.skills.map((skill) => (
                         <span
                           key={skill}
-                          className="text-xs px-3 py-1 rounded-full bg-[rgba(99,102,241,0.1)] text-[#a5b4fc]"
+                          className="text-xs px-3 py-1 rounded-full bg-[rgba(79,70,229,0.08)] text-[var(--color-primary)]"
                         >
                           {skill}
                         </span>

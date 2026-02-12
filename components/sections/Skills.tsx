@@ -97,7 +97,6 @@ export default function Skills({ items }: { items: Skill[] }) {
 
   return (
     <section id="skills" className="container-pad section-pad">
-      {/* Section Header */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -111,7 +110,6 @@ export default function Skills({ items }: { items: Skill[] }) {
         <p className="muted mt-2 max-w-2xl mx-auto">{t("subtitle")}</p>
       </motion.div>
 
-      {/* Skills Grid */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {items.map((skill, i) => (
           <motion.div
@@ -122,28 +120,18 @@ export default function Skills({ items }: { items: Skill[] }) {
             transition={{ delay: i * 0.1, duration: 0.5 }}
             className="card group"
           >
-            {/* Header */}
             <div className="flex items-center gap-4 mb-5">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#6366f1]/20 to-[#ec4899]/20 flex items-center justify-center text-[#818cf8] group-hover:text-[#ec4899] transition-colors">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#4f46e5]/10 to-[#d946ef]/10 flex items-center justify-center text-[var(--color-primary)] group-hover:text-[#d946ef] transition-colors">
                 {iconMap[skill.icon || "star"] || iconMap.star}
               </div>
               <h3 className="text-lg font-bold">{skill.category}</h3>
             </div>
 
-            {/* Skills List */}
             <div className="flex flex-wrap gap-2">
-              {skill.items.map((item, j) => (
-                <motion.span
-                  key={item}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 + j * 0.05 }}
-                  whileHover={{ scale: 1.05 }}
-                  className="tag cursor-default"
-                >
+              {skill.items.map((item) => (
+                <span key={item} className="tag cursor-default">
                   {item}
-                </motion.span>
+                </span>
               ))}
             </div>
           </motion.div>

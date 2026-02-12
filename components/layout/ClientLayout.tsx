@@ -2,8 +2,8 @@
 
 import { NextIntlClientProvider } from "next-intl";
 import { LanguageProvider } from "@/lib/LanguageContext";
-import BubbleNav from "@/components/BubbleNav";
-import BackgroundEffects from "@/components/BackgroundEffects";
+import BubbleNav from "@/components/layout/BubbleNav";
+import BackgroundEffects from "@/components/layout/BackgroundEffects";
 
 interface ClientLayoutProps {
   children: React.ReactNode;

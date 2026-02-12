@@ -1,8 +1,8 @@
 "use client";
 
-import PageHeader from "@/components/PageHeader";
-import ExperienceTimeline from "@/components/ExperienceTimeline";
-import Footer from "@/components/Footer";
+import PageHeader from "@/components/ui/PageHeader";
+import ExperienceTimeline from "@/components/sections/ExperienceTimeline";
+import Footer from "@/components/layout/Footer";
 import type { Experience, Bio } from "@/types";
 
 interface ExperiencePageClientProps {

@@ -1,8 +1,8 @@
 "use client";
 
-import PageHeader from "@/components/PageHeader";
-import ProjectsGrid from "@/components/ProjectsGrid";
-import Footer from "@/components/Footer";
+import PageHeader from "@/components/ui/PageHeader";
+import ProjectsGrid from "@/components/sections/ProjectsGrid";
+import Footer from "@/components/layout/Footer";
 import type { Project, Bio } from "@/types";
 
 interface ProjectsPageClientProps {

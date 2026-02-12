@@ -1,8 +1,8 @@
 "use client";
 
-import PageHeader from "@/components/PageHeader";
-import CertificatesGrid from "@/components/CertificatesGrid";
-import Footer from "@/components/Footer";
+import PageHeader from "@/components/ui/PageHeader";
+import CertificatesGrid from "@/components/sections/CertificatesGrid";
+import Footer from "@/components/layout/Footer";
 import type { Certificate, Bio } from "@/types";
 
 interface CertificatesPageClientProps {

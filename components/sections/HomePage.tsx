@@ -1,19 +1,19 @@
 "use client";
 
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Projects from "@/components/Projects";
-import Experience from "@/components/Experience";
-import Skills from "@/components/Skills";
-import Certificates from "@/components/Certificates";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import Hero from "@/components/sections/Hero";
+import About from "@/components/sections/About";
+import Projects from "@/components/sections/Projects";
+import Experience from "@/components/sections/Experience";
+import Skills from "@/components/sections/Skills";
+import Certificates from "@/components/sections/Certificates";
+import Contact from "@/components/sections/Contact";
+import Footer from "@/components/layout/Footer";
 import type {
   Bio,
   Project,
   Experience as ExpType,
-  Certificate,
   Skill,
+  Certificate,
 } from "@/types";
 
 interface HomePageProps {
@@ -43,10 +43,10 @@ export default function HomePage({
         projectCount={allProjects.length}
         certificateCount={allCertificates.length}
       />
-      <Projects items={featuredProjects} showViewAll={true} />
-      <Experience items={experiences} showViewAll={true} />
+      <Projects items={featuredProjects} />
+      <Experience items={experiences} />
       <Skills items={skills} />
-      <Certificates items={featuredCertificates} showViewAll={true} />
+      <Certificates items={featuredCertificates} />
       <Contact bio={bio} />
       <Footer bio={bio} />
     </main>

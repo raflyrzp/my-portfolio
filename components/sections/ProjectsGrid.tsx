@@ -23,7 +23,6 @@ export default function ProjectsGrid({ items }: ProjectsGridProps) {
   return (
     <div className="grid md:grid-cols-2 gap-8">
       {items.map((project, i) => {
-        // Get description based on current locale
         const description =
           project.description[locale] || project.description.en;
 
@@ -36,7 +35,6 @@ export default function ProjectsGrid({ items }: ProjectsGridProps) {
             transition={{ delay: i * 0.1, duration: 0.5 }}
             className="group card overflow-hidden"
           >
-            {/* Image */}
             <div className="relative aspect-video rounded-xl overflow-hidden bg-[var(--bg-tertiary)] mb-5 -mx-1.5 -mt-1.5">
               <Image
                 src={project.cover}
@@ -44,22 +42,18 @@ export default function ProjectsGrid({ items }: ProjectsGridProps) {
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg-primary)]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-              {/* Year Badge */}
-              <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-[var(--bg-primary)]/80 backdrop-blur-sm text-xs font-medium">
+              <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm text-xs font-medium text-[var(--text-primary)]">
                 {project.year}
               </div>
 
-              {/* Featured Badge */}
               {project.featured && (
-                <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-[#6366f1] text-xs font-semibold">
+                <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-[var(--color-primary)] text-white text-xs font-semibold">
                   ⭐ Featured
                 </div>
               )}
 
-              {/* Quick Actions */}
               <div className="absolute bottom-3 left-3 right-3 flex gap-2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
                 {project.link && (
                   <a
@@ -100,16 +94,14 @@ export default function ProjectsGrid({ items }: ProjectsGridProps) {
               </div>
             </div>
 
-            {/* Content */}
             <div>
-              <h3 className="text-xl font-bold mb-3 group-hover:text-[#818cf8] transition-colors">
+              <h3 className="text-xl font-bold mb-3 group-hover:text-[var(--color-primary)] transition-colors">
                 {project.title}
               </h3>
               <p className="text-[var(--text-secondary)] text-sm leading-relaxed mb-4 line-clamp-2">
                 {description}
               </p>
 
-              {/* Tags */}
               <div className="flex flex-wrap gap-2">
                 {project.tags.slice(0, 4).map((tag) => (
                   <span key={tag} className="tag text-xs">

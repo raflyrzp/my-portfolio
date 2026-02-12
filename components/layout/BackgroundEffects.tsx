@@ -3,10 +3,7 @@
 export default function BackgroundEffects() {
   return (
     <>
-      {/* Grid Pattern */}
       <div className="bg-grid" aria-hidden="true" />
-
-      {/* Gradient Blobs */}
       <div
         className="bg-gradient-blur bg-blob-1"
         style={{ top: "-200px", left: "-200px", background: "#6366f1" }}
@@ -14,7 +11,7 @@ export default function BackgroundEffects() {
       />
       <div
         className="bg-gradient-blur bg-blob-2"
-        style={{ top: "40%", right: "-300px", background: "#ec4899" }}
+        style={{ top: "40%", right: "-300px", background: "#d946ef" }}
         aria-hidden="true"
       />
       <div

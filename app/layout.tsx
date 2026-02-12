@@ -2,7 +2,7 @@ import "./globals.css";
 import { Inter, Space_Grotesk } from "next/font/google";
 import type { Metadata } from "next";
 import { getMessages, getLocale } from "next-intl/server";
-import ClientLayout from "@/components/ClientLayout";
+import ClientLayout from "@/components/layout/ClientLayout";
 
 const inter = Inter({
   subsets: ["latin"],

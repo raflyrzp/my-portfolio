@@ -22,11 +22,9 @@ export default function CertificateViewer({
 }: CertificateViewerProps) {
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        onClose();
-      }
+      if (e.key === "Escape") onClose();
     },
-    [onClose]
+    [onClose],
   );
 
   useEffect(() => {
@@ -47,27 +45,24 @@ export default function CertificateViewer({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
           onClick={onClose}
         >
-          {/* Modal Content */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.9 }}
+            exit={{ opacity: 0, scale: 0.95 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="relative w-full max-w-5xl max-h-[90vh] bg-[var(--bg-secondary)] rounded-2xl overflow-hidden shadow-2xl"
+            className="relative w-full max-w-5xl max-h-[90vh] bg-white rounded-2xl overflow-hidden shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Header */}
-            <div className="flex items-center justify-between p-4 border-b border-[var(--border-color)]">
+            <div className="flex items-center justify-between p-4 border-b border-slate-100">
               <h3 className="font-semibold text-lg truncate pr-4">{title}</h3>
               <div className="flex items-center gap-2">
-                {/* Download Button */}
                 <a
                   href={file}
                   download={`${title}.${fileType}`}
-                  className="p-2 rounded-lg bg-[var(--bg-tertiary)] hover:bg-[var(--bg-card)] transition-colors"
+                  className="p-2 rounded-lg bg-[var(--bg-tertiary)] hover:bg-[var(--bg-secondary)] transition-colors"
                   title="Download"
                 >
                   <svg
@@ -86,10 +81,9 @@ export default function CertificateViewer({
                     <line x1="12" y1="15" x2="12" y2="3" />
                   </svg>
                 </a>
-                {/* Close Button */}
                 <button
                   onClick={onClose}
-                  className="p-2 rounded-lg bg-[var(--bg-tertiary)] hover:bg-[var(--bg-card)] transition-colors"
+                  className="p-2 rounded-lg bg-[var(--bg-tertiary)] hover:bg-[var(--bg-secondary)] transition-colors"
                   title="Close (Esc)"
                 >
                   <svg
@@ -110,7 +104,6 @@ export default function CertificateViewer({
               </div>
             </div>
 
-            {/* Content */}
             <div className="overflow-auto max-h-[calc(90vh-80px)]">
               <div className="relative w-full min-h-[400px] flex items-center justify-center p-4">
                 <Image

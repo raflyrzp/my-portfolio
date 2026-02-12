@@ -9,7 +9,6 @@ import { useLanguage } from "@/lib/LanguageContext";
 import { useTranslations } from "next-intl";
 
 export default function BubbleNav() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
   const { locale, setLocale, isPending } = useLanguage();
@@ -24,14 +23,6 @@ export default function BubbleNav() {
   ];
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  useEffect(() => {
     setIsMobileMenuOpen(false);
   }, [pathname]);
 
@@ -42,9 +33,8 @@ export default function BubbleNav() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 pointer-events-none">
-      <div className="container-pad pt-4 md:pt-6">
-        <nav className="flex items-center justify-between">
-          {/* Logo Bubble */}
+      <div className="container-pad pt-4 md:pt-6 w-full">
+        <nav className="flex items-center justify-between gap-2 w-full">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -55,10 +45,10 @@ export default function BubbleNav() {
               href="/"
               className={clsx(
                 "inline-flex items-center px-4 py-2.5 rounded-full",
-                "bg-[rgba(0,0,0,0.8)] backdrop-blur-xl",
-                "border border-white/20",
-                "shadow-lg shadow-black/20",
-                "hover:border-[#6366f1]/50 hover:shadow-[#6366f1]/20",
+                "bg-white/90 backdrop-blur-md",
+                "border border-slate-200",
+                "shadow-md shadow-slate-200/50",
+                "hover:border-[var(--color-primary)]/30 hover:shadow-lg",
                 "transition-all duration-300",
               )}
             >
@@ -68,7 +58,6 @@ export default function BubbleNav() {
             </Link>
           </motion.div>
 
-          {/* Navigation Bubbles - Desktop */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -88,13 +77,13 @@ export default function BubbleNav() {
                     "inline-flex items-center px-4 py-2 rounded-full text-sm font-medium",
                     "transition-all duration-300",
                     isActive(link.href)
-                      ? "bg-gradient-to-r from-[#6366f1] to-[#8b5cf6] text-white shadow-lg shadow-[#6366f1]/30"
+                      ? "bg-gradient-to-r from-[#4f46e5] to-[#7c3aed] text-white shadow-lg shadow-[#4f46e5]/20"
                       : [
-                          "bg-[rgba(0,0,0,0.8)] backdrop-blur-xl",
-                          "border border-white/20",
-                          "text-white/90 hover:text-white",
-                          "hover:border-[#6366f1]/50 hover:bg-[rgba(99,102,241,0.15)]",
-                          "shadow-lg shadow-black/20",
+                          "bg-white/90 backdrop-blur-md",
+                          "border border-slate-200",
+                          "text-[var(--text-secondary)] hover:text-[var(--text-primary)]",
+                          "hover:border-[var(--color-primary)]/30 hover:bg-[rgba(79,70,229,0.06)]",
+                          "shadow-md shadow-slate-200/50",
                         ],
                   )}
                 >
@@ -104,24 +93,22 @@ export default function BubbleNav() {
             ))}
           </motion.div>
 
-          {/* Right Side - Language Toggle & CTA */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="hidden md:flex items-center gap-3 pointer-events-auto"
           >
-            {/* Language Toggle */}
             <button
               onClick={() => setLocale(locale === "en" ? "id" : "en")}
               disabled={isPending}
               className={clsx(
                 "inline-flex items-center gap-2 px-3 py-2 rounded-full text-sm font-medium",
-                "bg-[rgba(0,0,0,0.8)] backdrop-blur-xl",
-                "border border-white/20",
-                "text-white/90 hover:text-white",
-                "hover:border-[#6366f1]/50 hover:bg-[rgba(99,102,241,0.15)]",
-                "shadow-lg shadow-black/20",
+                "bg-white/90 backdrop-blur-md",
+                "border border-slate-200",
+                "text-[var(--text-secondary)] hover:text-[var(--text-primary)]",
+                "hover:border-[var(--color-primary)]/30",
+                "shadow-md shadow-slate-200/50",
                 "transition-all duration-300",
                 isPending && "opacity-70",
               )}
@@ -130,14 +117,13 @@ export default function BubbleNav() {
               <span>{locale === "en" ? "EN" : "ID"}</span>
             </button>
 
-            {/* CTA Bubble */}
             <a
               href="mailto:raflyrabbany0804@gmail.com"
               className={clsx(
                 "inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-semibold",
-                "bg-gradient-to-r from-[#6366f1] to-[#8b5cf6]",
-                "text-white shadow-lg shadow-[#6366f1]/30",
-                "hover:shadow-xl hover:shadow-[#6366f1]/40 hover:scale-105",
+                "bg-gradient-to-r from-[#4f46e5] to-[#7c3aed]",
+                "text-white shadow-lg shadow-[#4f46e5]/20",
+                "hover:shadow-xl hover:shadow-[#4f46e5]/30 hover:scale-105",
                 "transition-all duration-300",
               )}
             >
@@ -156,7 +142,6 @@ export default function BubbleNav() {
             </a>
           </motion.div>
 
-          {/* Mobile Menu Button */}
           <motion.button
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -164,9 +149,9 @@ export default function BubbleNav() {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className={clsx(
               "md:hidden inline-flex items-center justify-center w-11 h-11 rounded-full pointer-events-auto",
-              "bg-[rgba(0,0,0,0.8)] backdrop-blur-xl",
-              "border border-white/20",
-              "shadow-lg shadow-black/20",
+              "bg-white/90 backdrop-blur-md",
+              "border border-slate-200",
+              "shadow-md shadow-slate-200/50",
               "transition-all duration-300",
             )}
             aria-label="Toggle menu"
@@ -174,19 +159,19 @@ export default function BubbleNav() {
             <div className="relative w-5 h-4">
               <span
                 className={clsx(
-                  "absolute left-0 w-5 h-0.5 bg-white transition-all duration-300",
+                  "absolute left-0 w-5 h-0.5 bg-slate-700 transition-all duration-300",
                   isMobileMenuOpen ? "top-1.5 rotate-45" : "top-0",
                 )}
               />
               <span
                 className={clsx(
-                  "absolute left-0 top-1.5 w-5 h-0.5 bg-white transition-all duration-300",
+                  "absolute left-0 top-1.5 w-5 h-0.5 bg-slate-700 transition-all duration-300",
                   isMobileMenuOpen && "opacity-0",
                 )}
               />
               <span
                 className={clsx(
-                  "absolute left-0 w-5 h-0.5 bg-white transition-all duration-300",
+                  "absolute left-0 w-5 h-0.5 bg-slate-700 transition-all duration-300",
                   isMobileMenuOpen ? "top-1.5 -rotate-45" : "top-3",
                 )}
               />
@@ -194,7 +179,6 @@ export default function BubbleNav() {
           </motion.button>
         </nav>
 
-        {/* Mobile Menu */}
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div
@@ -207,9 +191,9 @@ export default function BubbleNav() {
               <div
                 className={clsx(
                   "rounded-2xl p-4",
-                  "bg-[rgba(0,0,0,0.9)] backdrop-blur-xl",
-                  "border border-white/20",
-                  "shadow-xl shadow-black/30",
+                  "bg-white/95 backdrop-blur-md",
+                  "border border-slate-200",
+                  "shadow-xl shadow-slate-200/50",
                 )}
               >
                 <div className="flex flex-col gap-2">
@@ -220,21 +204,20 @@ export default function BubbleNav() {
                       className={clsx(
                         "px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200",
                         isActive(link.href)
-                          ? "bg-gradient-to-r from-[#6366f1] to-[#8b5cf6] text-white"
-                          : "text-white/80 hover:text-white hover:bg-white/10",
+                          ? "bg-gradient-to-r from-[#4f46e5] to-[#7c3aed] text-white"
+                          : "text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-slate-50",
                       )}
                     >
                       {link.label}
                     </Link>
                   ))}
 
-                  <div className="h-px bg-white/10 my-2" />
+                  <div className="h-px bg-slate-100 my-2" />
 
-                  {/* Mobile Language Toggle */}
                   <button
                     onClick={() => setLocale(locale === "en" ? "id" : "en")}
                     disabled={isPending}
-                    className="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-white/80 hover:text-white hover:bg-white/10 transition-all duration-200"
+                    className="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-slate-50 transition-all duration-200"
                   >
                     <span className="text-lg">
                       {locale === "en" ? "🇺🇸" : "🇮🇩"}
@@ -244,7 +227,7 @@ export default function BubbleNav() {
 
                   <a
                     href="mailto:raflyrabbany0804@gmail.com"
-                    className="mt-2 flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gradient-to-r from-[#6366f1] to-[#8b5cf6] text-white text-sm font-semibold"
+                    className="mt-2 flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gradient-to-r from-[#4f46e5] to-[#7c3aed] text-white text-sm font-semibold"
                   >
                     {t("letsTalk")}
                     <svg

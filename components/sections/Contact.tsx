@@ -24,26 +24,15 @@ export default function Contact({ bio }: { bio: Bio }) {
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: formState.name,
-          email: formState.email,
-          message: formState.message,
-        }),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formState),
       });
 
       const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.error || "Failed to send message");
-      }
+      if (!response.ok) throw new Error(data.error || "Failed to send message");
 
       setSubmitted(true);
       setFormState({ name: "", email: "", message: "" });
-
-      // Reset after 3 seconds
       setTimeout(() => setSubmitted(false), 3000);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Something went wrong");
@@ -54,13 +43,11 @@ export default function Contact({ bio }: { bio: Bio }) {
 
   return (
     <section id="contact" className="container-pad section-pad relative">
-      {/* Background Decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-[#6366f1]/10 via-[#ec4899]/10 to-[#06b6d4]/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-[#4f46e5]/6 via-[#d946ef]/6 to-[#06b6d4]/6 rounded-full blur-3xl" />
       </div>
 
       <div className="relative grid lg:grid-cols-2 gap-12 lg:gap-16">
-        {/* Left Column - Info */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -75,13 +62,12 @@ export default function Contact({ bio }: { bio: Bio }) {
             {t("description")}
           </p>
 
-          {/* Contact Info */}
           <div className="space-y-4 mb-8">
             <a
               href={`mailto:${bio.email}`}
-              className="flex items-center gap-4 p-4 rounded-xl bg-[var(--bg-card)] border border-white/5 hover:border-[#6366f1]/30 transition-all group"
+              className="flex items-center gap-4 p-4 rounded-xl bg-white border border-slate-200 hover:border-[var(--color-primary)]/30 hover:shadow-md transition-all group"
             >
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#6366f1]/20 to-[#ec4899]/20 flex items-center justify-center text-[#818cf8] group-hover:text-[#ec4899] transition-colors">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#4f46e5]/10 to-[#d946ef]/10 flex items-center justify-center text-[var(--color-primary)] group-hover:text-[#d946ef] transition-colors">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -103,8 +89,8 @@ export default function Contact({ bio }: { bio: Bio }) {
               </div>
             </a>
 
-            <div className="flex items-center gap-4 p-4 rounded-xl bg-[var(--bg-card)] border border-white/5">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#6366f1]/20 to-[#ec4899]/20 flex items-center justify-center text-[#818cf8]">
+            <div className="flex items-center gap-4 p-4 rounded-xl bg-white border border-slate-200">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#4f46e5]/10 to-[#d946ef]/10 flex items-center justify-center text-[var(--color-primary)]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -129,7 +115,6 @@ export default function Contact({ bio }: { bio: Bio }) {
             </div>
           </div>
 
-          {/* Social Links */}
           <div>
             <p className="text-sm text-[var(--text-muted)] mb-4">
               {t("findMeOn")}
@@ -150,7 +135,6 @@ export default function Contact({ bio }: { bio: Bio }) {
           </div>
         </motion.div>
 
-        {/* Right Column - Form */}
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -164,7 +148,7 @@ export default function Contact({ bio }: { bio: Bio }) {
                 animate={{ opacity: 1, scale: 1 }}
                 className="text-center py-12"
               >
-                <div className="w-16 h-16 rounded-full bg-[#22c55e]/20 flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 rounded-full bg-[#22c55e]/10 flex items-center justify-center mx-auto mb-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
@@ -185,7 +169,7 @@ export default function Contact({ bio }: { bio: Bio }) {
             ) : (
               <>
                 {error && (
-                  <div className="p-4 rounded-lg bg-red-500/10 border border-red-500/20 text-red-400 text-sm">
+                  <div className="p-4 rounded-lg bg-red-50 border border-red-200 text-red-600 text-sm">
                     {error}
                   </div>
                 )}

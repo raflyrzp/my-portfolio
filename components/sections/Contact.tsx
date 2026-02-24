@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import type { Bio } from "@/types";
 import { useTranslations } from "next-intl";
+import { socialIcons } from "@/components/ui/SocialIcons";
 
 export default function Contact({ bio }: { bio: Bio }) {
   const t = useTranslations("contact");
@@ -116,18 +117,19 @@ export default function Contact({ bio }: { bio: Bio }) {
           </div>
 
           <div>
-            <p className="text-sm text-[var(--text-muted)] mb-4">
+            <p className="text-sm text-[var(--text-muted)] mb-3">
               {t("findMeOn")}
             </p>
-            <div className="flex gap-3">
+            <div className="flex flex-wrap gap-3">
               {bio.socials.map((social) => (
                 <a
                   key={social.url}
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-ghost btn text-sm"
+                  className="flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200 text-[var(--text-secondary)] hover:text-[var(--color-primary)] hover:border-[var(--color-primary)]/30 transition-all text-sm"
                 >
+                  {socialIcons[social.icon || social.label.toLowerCase()]}
                   {social.label}
                 </a>
               ))}

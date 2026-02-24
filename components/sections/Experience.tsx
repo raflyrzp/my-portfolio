@@ -107,10 +107,7 @@ export default function Experience({
                   {exp.skills && exp.skills.length > 0 && (
                     <div className="flex flex-wrap gap-2">
                       {exp.skills.map((skill) => (
-                        <span
-                          key={skill}
-                          className="text-xs px-3 py-1 rounded-full bg-[rgba(79,70,229,0.08)] text-[var(--color-primary)]"
-                        >
+                        <span key={skill} className="tag text-xs">
                           {skill}
                         </span>
                       ))}

@@ -7,6 +7,7 @@ import { useState } from "react";
 import type { Certificate, CertificateFileType } from "@/types";
 import { useTranslations } from "next-intl";
 import CertificateViewer from "@/components/ui/CertificateViewer";
+import CertificateDetailModal from "@/components/ui/CertificateDetailModal";
 
 interface CertificatesProps {
   items: Certificate[];
@@ -24,19 +25,30 @@ export default function Certificates({
     fileType: CertificateFileType;
     title: string;
   } | null>(null);
+  const [detailModalOpen, setDetailModalOpen] = useState(false);
+  const [detailCert, setDetailCert] = useState<Certificate | null>(null);
 
   if (!items || items.length === 0) return null;
 
   const handleCertificateClick = (e: React.MouseEvent, cert: Certificate) => {
-    if (cert.file && cert.fileType) {
-      e.preventDefault();
-      setSelectedCert({
-        file: cert.file,
-        fileType: cert.fileType,
-        title: cert.title,
-      });
-      setViewerOpen(true);
-    }
+    e.preventDefault();
+    setDetailCert(cert);
+    setDetailModalOpen(true);
+  };
+
+  const closeDetailModal = () => {
+    setDetailModalOpen(false);
+    setDetailCert(null);
+  };
+
+  const handleViewImage = (certData: {
+    file: string;
+    fileType: CertificateFileType;
+    title: string;
+  }) => {
+    closeDetailModal();
+    setSelectedCert(certData);
+    setViewerOpen(true);
   };
 
   const closeViewer = () => {
@@ -185,15 +197,12 @@ export default function Certificates({
               {cert.skills && cert.skills.length > 0 && (
                 <div className="flex flex-wrap gap-1.5">
                   {cert.skills.slice(0, 3).map((skill) => (
-                    <span
-                      key={skill}
-                      className="text-[10px] px-2 py-1 rounded-full bg-[rgba(79,70,229,0.08)] text-[var(--color-primary)]"
-                    >
+                    <span key={skill} className="tag text-[10px]">
                       {skill}
                     </span>
                   ))}
                   {cert.skills.length > 3 && (
-                    <span className="text-[10px] px-2 py-1 rounded-full bg-[var(--bg-tertiary)] text-[var(--text-muted)]">
+                    <span className="text-[10px] px-2 py-1 rounded-full bg-[var(--bg-tertiary)] text-[var(--text-muted)] border border-slate-200">
                       +{cert.skills.length - 3}
                     </span>
                   )}
@@ -227,6 +236,13 @@ export default function Certificates({
           title={selectedCert.title}
         />
       )}
+
+      <CertificateDetailModal
+        isOpen={detailModalOpen}
+        onClose={closeDetailModal}
+        certificate={detailCert}
+        onViewImage={handleViewImage}
+      />
     </section>
   );
 }

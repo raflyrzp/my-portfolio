@@ -49,19 +49,24 @@ export default function CertificateDetailModal({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-end sm:items-center justify-center sm:p-4 bg-black/60 backdrop-blur-sm"
           onClick={onClose}
         >
           <motion.div
-            initial={{ opacity: 0, scale: 0.95, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.95, y: 20 }}
-            transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="relative w-full max-w-2xl max-h-[90vh] bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-2xl flex flex-col"
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 100 }}
+            transition={{ type: "spring", damping: 28, stiffness: 300 }}
+            className="relative w-full sm:max-w-2xl max-h-[92vh] sm:max-h-[90vh] bg-white dark:bg-slate-900 rounded-t-2xl sm:rounded-2xl overflow-hidden shadow-2xl flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
+            {/* Mobile drag handle */}
+            <div className="sm:hidden flex justify-center pt-2 pb-1 flex-shrink-0">
+              <div className="w-10 h-1 rounded-full bg-slate-300 dark:bg-slate-600" />
+            </div>
+
             {/* Header with image */}
-            <div className="relative w-full h-48 sm:h-56 md:h-64 flex-shrink-0 bg-[var(--bg-tertiary)]">
+            <div className="relative w-full h-40 sm:h-56 md:h-64 flex-shrink-0 bg-[var(--bg-tertiary)]">
               {certificate.file ? (
                 <Image
                   src={certificate.file}
@@ -135,7 +140,7 @@ export default function CertificateDetailModal({
             </div>
 
             {/* Content */}
-            <div className="overflow-y-auto flex-1 p-6">
+            <div className="overflow-y-auto flex-1 p-4 sm:p-6">
               {/* Issuer & Date info */}
               <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-6 pb-4 border-b border-slate-100 dark:border-slate-800">
                 <div className="flex items-center gap-2">

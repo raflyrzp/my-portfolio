@@ -31,7 +31,13 @@
     "viewAll": "Lihat Semua Proyek",
     "viewProject": "Lihat Proyek",
     "liveDemo": "Demo",
-    "sourceCode": "Kode Sumber"
+    "sourceCode": "Kode Sumber",
+    "problem": "Masalah",
+    "planning": "Perencanaan",
+    "architecture": "Arsitektur",
+    "result": "Hasil",
+    "techStack": "Teknologi",
+    "overview": "Ringkasan"
   },
   "experience": {
     "work": "Pengalaman",

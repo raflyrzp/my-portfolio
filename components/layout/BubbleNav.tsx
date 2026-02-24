@@ -167,7 +167,7 @@ export default function BubbleNav() {
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#4f46e5] to-[#7c3aed] flex items-center justify-center shadow-md shadow-[#4f46e5]/20 group-hover:shadow-lg group-hover:shadow-[#4f46e5]/30 transition-all duration-300">
                 <span className="text-white font-bold text-sm">R</span>
               </div>
-              <span className="text-gradient font-bold text-base tracking-tight hidden sm:inline">
+              <span className="text-gradient font-bold text-base tracking-tight">
                 raflyrzp
               </span>
             </Link>

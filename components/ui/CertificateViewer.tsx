@@ -45,17 +45,22 @@ export default function CertificateViewer({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-end sm:items-center justify-center sm:p-4 bg-black/60 backdrop-blur-sm"
           onClick={onClose}
         >
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.95 }}
-            transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="relative w-full max-w-5xl max-h-[90vh] bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-2xl"
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 100 }}
+            transition={{ type: "spring", damping: 28, stiffness: 300 }}
+            className="relative w-full sm:max-w-5xl max-h-[92vh] sm:max-h-[90vh] bg-white dark:bg-slate-900 rounded-t-2xl sm:rounded-2xl overflow-hidden shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
+            {/* Mobile drag handle */}
+            <div className="sm:hidden flex justify-center pt-2 pb-1 flex-shrink-0">
+              <div className="w-10 h-1 rounded-full bg-slate-300 dark:bg-slate-600" />
+            </div>
+
             <div className="flex items-center justify-between p-4 border-b border-slate-100 dark:border-slate-800">
               <h3 className="font-semibold text-lg truncate pr-4">{title}</h3>
               <div className="flex items-center gap-2">
@@ -104,8 +109,8 @@ export default function CertificateViewer({
               </div>
             </div>
 
-            <div className="overflow-auto max-h-[calc(90vh-80px)]">
-              <div className="relative w-full min-h-[400px] flex items-center justify-center p-4">
+            <div className="overflow-auto max-h-[calc(92vh-80px)] sm:max-h-[calc(90vh-80px)]">
+              <div className="relative w-full min-h-[250px] sm:min-h-[400px] flex items-center justify-center p-2 sm:p-4">
                 <Image
                   src={file}
                   alt={title}

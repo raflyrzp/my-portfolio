@@ -31,7 +31,13 @@
     "viewAll": "View All Projects",
     "viewProject": "View Project",
     "liveDemo": "Live Demo",
-    "sourceCode": "Source Code"
+    "sourceCode": "Source Code",
+    "problem": "Problem",
+    "planning": "Planning",
+    "architecture": "Architecture",
+    "result": "Result",
+    "techStack": "Tech Stack",
+    "overview": "Overview"
   },
   "experience": {
     "work": "Work",

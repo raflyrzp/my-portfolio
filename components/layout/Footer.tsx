@@ -25,8 +25,8 @@ export default function Footer({ bio }: { bio: Bio }) {
         <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-[#6366f1]/5 rounded-full blur-3xl" />
       </div>
 
-      <div className="container-pad py-16 relative">
-        <div className="grid md:grid-cols-3 gap-12 mb-12">
+      <div className="container-pad py-10 sm:py-16 relative">
+        <div className="grid md:grid-cols-3 gap-8 sm:gap-12 mb-8 sm:mb-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -23,6 +23,10 @@ export type Project = {
   link?: string | null;
   repo?: string | { label: string; url: string }[] | null;
   featured?: boolean;
+  problem?: LocalizedString;
+  planning?: LocalizedString;
+  architecture?: LocalizedString;
+  result?: LocalizedString;
 };
 
 export type Experience = {

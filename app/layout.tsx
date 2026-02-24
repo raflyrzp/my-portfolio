@@ -17,9 +17,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Rafly Rabbany Z.P. | Backend Developer",
+  title: "Rafly Rabbany Z.P. | Web Developer",
   description:
-    "Passionate Backend Developer specializing in building robust, scalable web applications. Portfolio showcasing projects, experience, and skills.",
+    "Passionate Web Developer specializing in building robust, scalable web applications. Portfolio showcasing projects, experience, and skills.",
   keywords: [
     "Backend Developer",
     "Web Developer",
@@ -31,17 +31,17 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Rafly Rabbany Zalfa Pateda" }],
   openGraph: {
-    title: "Rafly Rabbany Z.P. | Backend Developer",
+    title: "Rafly Rabbany Z.P. | Web Developer",
     description:
-      "Passionate Backend Developer specializing in building robust, scalable web applications.",
+      "Passionate Web Developer specializing in building robust, scalable web applications.",
     type: "website",
     locale: "id_ID",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rafly Rabbany Z.P. | Backend Developer",
+    title: "Rafly Rabbany Z.P. | Web Developer",
     description:
-      "Passionate Backend Developer specializing in building robust, scalable web applications.",
+      "Passionate Web Developer specializing in building robust, scalable web applications.",
   },
   metadataBase: new URL("https://raflyrzp.vercel.app"),
 };

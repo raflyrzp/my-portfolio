@@ -10,7 +10,7 @@
   "about": {
     "en": "I am a Web Developer focused on building reliable and scalable web applications. Currently studying Computer Science at Universitas Negeri Jakarta, I have hands-on experience with PHP, Laravel, and modern web technologies. I value clean architecture, maintainable code, and effective collaboration. For me, web development is about solving problems and continuously improving products.",
     "id": "Saya adalah Web Developer yang berfokus membangun aplikasi web yang andal dan skalabel. Saat ini saya menempuh studi Ilmu Komputer di Universitas Negeri Jakarta dengan pengalaman menggunakan PHP, Laravel, dan teknologi web modern. Saya mengutamakan arsitektur yang rapi, kode yang mudah dirawat, serta kolaborasi yang efektif. Bagi saya, web development adalah tentang menyelesaikan masalah dan terus meningkatkan kualitas produk."
-  }
+  },
   "socials": [
     {
       "label": "GitHub",

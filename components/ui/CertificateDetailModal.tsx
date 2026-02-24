@@ -57,11 +57,11 @@ export default function CertificateDetailModal({
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="relative w-full max-w-2xl max-h-[90vh] bg-white rounded-2xl overflow-hidden shadow-2xl"
+            className="relative w-full max-w-2xl max-h-[90vh] bg-white rounded-2xl overflow-hidden shadow-2xl flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header with image */}
-            <div className="relative aspect-video w-full bg-[var(--bg-tertiary)]">
+            <div className="relative w-full h-48 sm:h-56 md:h-64 flex-shrink-0 bg-[var(--bg-tertiary)]">
               {certificate.file ? (
                 <Image
                   src={certificate.file}
@@ -135,7 +135,7 @@ export default function CertificateDetailModal({
             </div>
 
             {/* Content */}
-            <div className="overflow-auto max-h-[calc(90vh-56.25vw)] p-6">
+            <div className="overflow-y-auto flex-1 p-6">
               {/* Issuer & Date info */}
               <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-6 pb-4 border-b border-slate-100">
                 <div className="flex items-center gap-2">

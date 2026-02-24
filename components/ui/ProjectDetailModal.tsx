@@ -57,11 +57,11 @@ export default function ProjectDetailModal({
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="relative w-full max-w-3xl max-h-[90vh] bg-white rounded-2xl overflow-hidden shadow-2xl"
+            className="relative w-full max-w-3xl max-h-[90vh] bg-white rounded-2xl overflow-hidden shadow-2xl flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header with image */}
-            <div className="relative aspect-video w-full bg-[var(--bg-tertiary)]">
+            <div className="relative w-full h-48 sm:h-56 md:h-64 flex-shrink-0 bg-[var(--bg-tertiary)]">
               <Image
                 src={project.cover}
                 alt={project.title}
@@ -112,7 +112,7 @@ export default function ProjectDetailModal({
             </div>
 
             {/* Content */}
-            <div className="overflow-auto max-h-[calc(90vh-56.25vw)] p-6">
+            <div className="overflow-y-auto flex-1 p-6">
               {/* Description */}
               <div className="mb-6">
                 <h3 className="text-sm font-semibold text-[var(--text-muted)] uppercase tracking-wider mb-3">

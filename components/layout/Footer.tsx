@@ -112,7 +112,15 @@ export default function Footer({ bio }: { bio: Bio }) {
             © {currentYear} {bio.name}. {t("allRights")}
           </p>
           <p className="text-sm text-[var(--text-muted)]">
-            {t("builtWith")} <span className="text-[#ec4899]">♥</span>{" "}
+            {t("builtWith")}{" "}
+            <span className="relative inline-block group cursor-default">
+              <span className="text-[#ec4899] group-hover:opacity-0 transition-opacity duration-300">
+                ♥
+              </span>
+              <span className="absolute inset-0 flex items-center justify-center text-[#ec4899] font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                Yaya
+              </span>
+            </span>{" "}
             {t("using")}
           </p>
         </div>

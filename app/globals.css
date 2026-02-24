@@ -322,6 +322,8 @@ body {
   background-size: 60px 60px;
   pointer-events: none;
   z-index: -1;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .dark .bg-grid {
@@ -339,10 +341,41 @@ body {
   opacity: 0.2;
   pointer-events: none;
   z-index: -1;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+@media (max-width: 768px) {
+  .bg-gradient-blur {
+    width: 300px;
+    height: 300px;
+    filter: blur(100px);
+    opacity: 0.15;
+  }
 }
 
 .dark .bg-gradient-blur {
   opacity: 0.12;
+}
+
+@media (max-width: 768px) {
+  .dark .bg-gradient-blur {
+    opacity: 0.08;
+  }
+}
+
+/* Reduce animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .bg-gradient-blur {
+    display: none;
+  }
+  .text-gradient {
+    animation: none;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 .bg-blob-1 {

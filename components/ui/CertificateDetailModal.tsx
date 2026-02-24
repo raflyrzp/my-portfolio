@@ -60,11 +60,6 @@ export default function CertificateDetailModal({
             className="relative w-full sm:max-w-2xl max-h-[92vh] sm:max-h-[90vh] bg-white dark:bg-slate-900 rounded-t-2xl sm:rounded-2xl overflow-hidden shadow-2xl flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Mobile drag handle */}
-            <div className="sm:hidden flex justify-center pt-2 pb-1 flex-shrink-0">
-              <div className="w-10 h-1 rounded-full bg-slate-300 dark:bg-slate-600" />
-            </div>
-
             {/* Header with image */}
             <div className="relative w-full h-40 sm:h-56 md:h-64 flex-shrink-0 bg-[var(--bg-tertiary)]">
               {certificate.file ? (
@@ -73,7 +68,8 @@ export default function CertificateDetailModal({
                   alt={certificate.title}
                   fill
                   className="object-cover"
-                  priority
+                  sizes="(max-width: 768px) 100vw, 672px"
+                  loading="lazy"
                 />
               ) : certificate.thumbnail ? (
                 <Image
@@ -81,7 +77,8 @@ export default function CertificateDetailModal({
                   alt={certificate.title}
                   fill
                   className="object-cover"
-                  priority
+                  sizes="(max-width: 768px) 100vw, 672px"
+                  loading="lazy"
                 />
               ) : (
                 <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-[#4f46e5]/10 to-[#d946ef]/10">
@@ -106,7 +103,7 @@ export default function CertificateDetailModal({
               {/* Close button */}
               <button
                 onClick={onClose}
-                className="absolute top-4 right-4 p-2 rounded-full bg-black/30 backdrop-blur-sm text-white hover:bg-black/50 transition-colors"
+                className="absolute top-4 right-4 p-2 rounded-full bg-slate-800 dark:bg-slate-700 text-white hover:bg-slate-700 dark:hover:bg-slate-600 transition-colors shadow-lg"
                 title="Close (Esc)"
               >
                 <svg

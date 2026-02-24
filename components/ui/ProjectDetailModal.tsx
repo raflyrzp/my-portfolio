@@ -162,11 +162,6 @@ export default function ProjectDetailModal({
             className="relative w-full sm:max-w-3xl max-h-[92vh] sm:max-h-[90vh] bg-white dark:bg-slate-900 rounded-t-2xl sm:rounded-2xl overflow-hidden shadow-2xl flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Mobile drag handle */}
-            <div className="sm:hidden flex justify-center pt-2 pb-1 flex-shrink-0">
-              <div className="w-10 h-1 rounded-full bg-slate-300 dark:bg-slate-600" />
-            </div>
-
             {/* Header with image */}
             <div className="relative w-full h-40 sm:h-56 md:h-64 flex-shrink-0 bg-[var(--bg-tertiary)]">
               <Image
@@ -174,14 +169,15 @@ export default function ProjectDetailModal({
                 alt={project.title}
                 fill
                 className="object-cover"
-                priority
+                sizes="(max-width: 768px) 100vw, 768px"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
               {/* Close button */}
               <button
                 onClick={onClose}
-                className="absolute top-4 right-4 p-2 rounded-full bg-black/30 backdrop-blur-sm text-white hover:bg-black/50 transition-colors"
+                className="absolute top-4 right-4 p-2 rounded-full bg-slate-800 dark:bg-slate-700 text-white hover:bg-slate-700 dark:hover:bg-slate-600 transition-colors shadow-lg"
                 title="Close (Esc)"
               >
                 <svg

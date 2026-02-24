@@ -56,11 +56,6 @@ export default function CertificateViewer({
             className="relative w-full sm:max-w-5xl max-h-[92vh] sm:max-h-[90vh] bg-white dark:bg-slate-900 rounded-t-2xl sm:rounded-2xl overflow-hidden shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Mobile drag handle */}
-            <div className="sm:hidden flex justify-center pt-2 pb-1 flex-shrink-0">
-              <div className="w-10 h-1 rounded-full bg-slate-300 dark:bg-slate-600" />
-            </div>
-
             <div className="flex items-center justify-between p-4 border-b border-slate-100 dark:border-slate-800">
               <h3 className="font-semibold text-lg truncate pr-4">{title}</h3>
               <div className="flex items-center gap-2">
@@ -88,7 +83,7 @@ export default function CertificateViewer({
                 </a>
                 <button
                   onClick={onClose}
-                  className="p-2 rounded-lg bg-[var(--bg-tertiary)] hover:bg-[var(--bg-secondary)] transition-colors"
+                  className="p-2 rounded-lg bg-slate-800 dark:bg-slate-700 text-white hover:bg-slate-700 dark:hover:bg-slate-600 transition-colors shadow-md"
                   title="Close (Esc)"
                 >
                   <svg
@@ -117,7 +112,8 @@ export default function CertificateViewer({
                   width={1200}
                   height={800}
                   className="object-contain max-w-full h-auto rounded-lg"
-                  priority
+                  sizes="(max-width: 768px) 100vw, 1200px"
+                  loading="lazy"
                 />
               </div>
             </div>

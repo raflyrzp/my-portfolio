@@ -1,6 +1,6 @@
 [
   {
-    "title": "E-SPPD Management System",
+    "title": "E-SPPD",
     "description": {
       "en": "A web-based official travel management system designed to simplify SPPD submission, approval workflows, and reporting. Integrated with Single Sign-On (SSO) to ensure secure access and seamless authentication across systems.",
       "id": "Sistem manajemen perjalanan dinas berbasis web yang dirancang untuk menyederhanakan pengajuan SPPD, alur persetujuan, dan pembuatan laporan. Terintegrasi dengan Single Sign-On (SSO) untuk akses yang aman dan autentikasi yang lebih efisien."
@@ -119,14 +119,14 @@
     "title": "Sistem Informasi Akademik (SIAKAD) V3",
     "description": {
       "en": "An academic information system for managing student data, course registration, grade reports, and class schedules. Integrated with external APIs to support scalable academic operations.",
-      "id": "Sistem informasi akademik untuk pengelolaan data mahasiswa, pengisian KRS, KHS, dan jadwal perkuliahan. Terintegrasi dengan API eksternal untuk mendukung sistem akademik yang skalabel."
+      "id": "Sistem informasi akademik untuk pengelolaan data mahasiswa, pengisian KRS, KHS, jadwal perkuliahan dan bimbingan. Terintegrasi dengan API eksternal untuk mendukung sistem akademik yang skalabel."
     },
-    "year": "2024",
+    "year": "2026",
     "tags": ["Node.js", "Express", "Prisma", "PostgreSQL", "REST API"],
     "cover": "/projects/no-image.png",
     "link": null,
     "repo": null,
-    "featured": false,
+    "featured": true,
     "problem": {
       "en": "The previous SIAKAD versions suffered from performance issues during peak registration periods, rigid data models that couldn't accommodate curriculum changes, and tightly-coupled architecture making feature updates difficult.",
       "id": "Versi SIAKAD sebelumnya mengalami masalah performa saat periode pendaftaran puncak, model data yang kaku dan tidak dapat mengakomodasi perubahan kurikulum, serta arsitektur tightly-coupled yang menyulitkan pembaruan fitur."
@@ -244,7 +244,7 @@
       "en": "Trashure is a community-based waste reporting website that implements a leaderboard system to boost public participation and engagement, encouraging users to actively report waste issues while fostering a cleaner environment through collaboration and gamification.",
       "id": "Trashure adalah website pelaporan sampah berbasis komunitas yang menerapkan sistem leaderboard untuk meningkatkan partisipasi dan antusiasme masyarakat, dengan mendorong pengguna aktif melaporkan permasalahan sampah sekaligus menciptakan lingkungan yang lebih bersih melalui pendekatan kolaboratif dan gamifikasi."
     },
-    "year": "2024",
+    "year": "2025",
     "tags": ["PHP", "Laravel", "MySQL"],
     "cover": "/projects/no-image.png",
     "link": "",
@@ -273,7 +273,7 @@
       "en": "A personal portfolio website showcasing projects and experience with a modern interface, smooth animations, and responsive design to create a strong first impression for clients and recruiters.",
       "id": "Website portfolio personal yang menampilkan proyek dan pengalaman dengan tampilan modern, animasi halus, dan desain responsif untuk memberikan kesan profesional kepada klien dan recruiter."
     },
-    "year": "2024",
+    "year": "2025",
     "tags": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     "cover": "/projects/no-image.png",
     "link": "",
@@ -311,7 +311,7 @@
       "en": "A mobile news application designed to deliver up-to-date information through a clean and intuitive interface, enabling users to easily browse, read, and stay informed with the latest news anytime and anywhere.",
       "id": "Aplikasi mobile berita yang dirancang untuk menyajikan informasi terkini melalui antarmuka yang bersih dan intuitif, sehingga pengguna dapat dengan mudah menjelajah, membaca, dan tetap terinformasi kapan saja dan di mana saja."
     },
-    "year": "2024",
+    "year": "2023",
     "tags": ["Kotlin", "Mobile App", "Android"],
     "cover": "/projects/no-image.png",
     "link": "",

@@ -180,7 +180,14 @@
       "id": "Charivest adalah website penggalangan dana berbasis blockchain yang saya kembangkan untuk memastikan transparansi dan keamanan donasi, dengan pencatatan transaksi yang immutable dan dapat dilacak secara real-time menggunakan teknologi blockchain dan smart contract."
     },
     "year": "2025",
-    "tags": ["Next.js", "TypeScript", "Tailwind CSS", "Blockchain", "Smart Contract", "Web3"],
+    "tags": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Blockchain",
+      "Smart Contract",
+      "Web3"
+    ],
     "cover": "/projects/no-image.png",
     "link": "",
     "repo": "https://github.com/raflyrzp/charivest",
@@ -232,35 +239,6 @@
     }
   },
   {
-    "title": "ShiftUp",
-    "description": {
-      "en": "ShiftUp is a website development service platform that offers custom website development alongside a collection of ready-to-use website templates available for purchase, enabling businesses and individuals to obtain professional websites through a fast, flexible, and efficient process.",
-      "id": "ShiftUp adalah website penyedia jasa pembuatan website yang menawarkan layanan pengembangan website kustom serta berbagai template website siap pakai yang dapat dibeli oleh pengguna, sehingga memudahkan bisnis dan individu untuk memiliki website profesional dengan proses yang cepat, fleksibel, dan efisien."
-    },
-    "year": "2024",
-    "tags": ["Adonis.js", "TypeScript", "sqlite"],
-    "cover": "/projects/no-image.png",
-    "link": "",
-    "repo": "https://github.com/raflyrzp/shiftup",
-    "featured": false,
-    "problem": {
-      "en": "Small businesses and individuals struggle to find affordable web development services. Existing platforms either offer only templates without customization or only custom development at high costs. There was no unified platform bridging both options.",
-      "id": "Bisnis kecil dan individu kesulitan menemukan layanan pengembangan web yang terjangkau. Platform yang ada hanya menawarkan template tanpa kustomisasi atau hanya pengembangan kustom dengan biaya tinggi. Tidak ada platform terpadu yang menjembatani kedua opsi."
-    },
-    "planning": {
-      "en": "Designed a dual-service platform: a template marketplace for quick deployment and a custom development request system. Planned features include template catalog with previews, shopping cart, order management, and a project request form for custom work.",
-      "id": "Merancang platform layanan ganda: marketplace template untuk deployment cepat dan sistem permintaan pengembangan kustom. Fitur yang direncanakan termasuk katalog template dengan preview, keranjang belanja, manajemen pesanan, dan formulir permintaan proyek untuk pekerjaan kustom."
-    },
-    "architecture": {
-      "en": "Adonis.js (Node.js MVC framework) with TypeScript for backend logic and server-rendered views. SQLite for lightweight data storage suitable for the platform's scale. Authentication and session management handled by Adonis built-in modules.",
-      "id": "Adonis.js (framework MVC Node.js) dengan TypeScript untuk logika backend dan tampilan server-rendered. SQLite untuk penyimpanan data ringan yang sesuai skala platform. Autentikasi dan manajemen sesi ditangani oleh modul bawaan Adonis."
-    },
-    "result": {
-      "en": "Launched a functional platform where users can browse and purchase website templates or request custom development. The unified platform simplified the process of getting a professional website for small businesses.",
-      "id": "Meluncurkan platform fungsional di mana pengguna dapat menjelajah dan membeli template website atau meminta pengembangan kustom. Platform terpadu menyederhanakan proses mendapatkan website profesional untuk bisnis kecil."
-    }
-  },
-  {
     "title": "Trashure",
     "description": {
       "en": "Trashure is a community-based waste reporting website that implements a leaderboard system to boost public participation and engagement, encouraging users to actively report waste issues while fostering a cleaner environment through collaboration and gamification.",
@@ -287,35 +265,6 @@
     "result": {
       "en": "The gamification approach successfully increased reporting activity. The leaderboard created healthy competition among community members. Reported areas received faster cleanup responses due to organized and validated reports with photo evidence.",
       "id": "Pendekatan gamifikasi berhasil meningkatkan aktivitas pelaporan. Leaderboard menciptakan kompetisi sehat antar anggota komunitas. Area yang dilaporkan mendapat respons pembersihan lebih cepat berkat laporan terorganisir dan tervalidasi dengan bukti foto."
-    }
-  },
-  {
-    "title": "Facegram",
-    "description": {
-      "en": "Facegram is a simple social media website that allows users to create posts and follow each other, designed with a focus on ease of use and core functionality to showcase basic social interactions within a digital platform.",
-      "id": "Facegram adalah website media sosial sederhana yang memungkinkan pengguna untuk membuat unggahan dan saling mengikuti, dirancang dengan fokus pada kemudahan penggunaan dan fungsionalitas inti untuk menampilkan interaksi sosial dasar dalam sebuah platform digital."
-    },
-    "year": "2024",
-    "tags": ["PHP", "Laravel", "MySQL", "React.js", "Bootstrap"],
-    "cover": "/projects/no-image.png",
-    "link": "",
-    "repo": "https://github.com/raflyrzp/facegram",
-    "featured": false,
-    "problem": {
-      "en": "Needed to build a social media platform from the ground up to understand full-stack development patterns: user authentication, relationship systems (follow/unfollow), content feeds, and real-time interactions between users.",
-      "id": "Perlu membangun platform media sosial dari awal untuk memahami pola pengembangan full-stack: autentikasi pengguna, sistem relasi (follow/unfollow), feed konten, dan interaksi real-time antar pengguna."
-    },
-    "planning": {
-      "en": "Planned core social media features: user registration/login, profile management, post creation with images, follow/unfollow system, personalized feed based on followed users, and like/comment interactions.",
-      "id": "Merencanakan fitur inti media sosial: registrasi/login pengguna, manajemen profil, pembuatan postingan dengan gambar, sistem follow/unfollow, feed personal berdasarkan pengguna yang diikuti, dan interaksi like/komentar."
-    },
-    "architecture": {
-      "en": "Laravel API backend with React.js frontend (SPA). MySQL for relational data (users, posts, follows, likes). Bootstrap for responsive styling. RESTful API design with token-based authentication. Image uploads managed through Laravel storage.",
-      "id": "Backend API Laravel dengan frontend React.js (SPA). MySQL untuk data relasional (users, posts, follows, likes). Bootstrap untuk styling responsif. Desain RESTful API dengan autentikasi berbasis token. Upload gambar dikelola melalui Laravel storage."
-    },
-    "result": {
-      "en": "Built a functional social media clone demonstrating full-stack capabilities. The follow-based feed algorithm successfully filters and prioritizes content. The project served as an excellent learning exercise in API design and React state management.",
-      "id": "Membangun klon media sosial fungsional yang mendemonstrasikan kemampuan full-stack. Algoritma feed berbasis follow berhasil memfilter dan memprioritaskan konten. Proyek ini menjadi latihan yang sangat baik dalam desain API dan manajemen state React."
     }
   },
   {

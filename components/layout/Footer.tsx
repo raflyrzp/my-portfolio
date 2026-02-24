@@ -20,12 +20,12 @@ export default function Footer({ bio }: { bio: Bio }) {
   ];
 
   return (
-    <footer className="relative border-t border-slate-200 dark:border-slate-800 bg-[var(--bg-secondary)]">
+    <footer className="relative border-t border-slate-200 dark:border-slate-800 bg-[var(--bg-secondary)] pb-[env(safe-area-inset-bottom)]">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-[#6366f1]/5 rounded-full blur-3xl" />
       </div>
 
-      <div className="container-pad py-10 sm:py-16 relative">
+      <div className="container-pad pt-10 pb-6 sm:py-16 relative">
         <div className="grid md:grid-cols-3 gap-8 sm:gap-12 mb-8 sm:mb-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -107,11 +107,11 @@ export default function Footer({ bio }: { bio: Bio }) {
           </motion.div>
         </div>
 
-        <div className="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-[var(--text-muted)]">
+        <div className="pt-6 sm:pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row items-center justify-between gap-3 sm:gap-4">
+          <p className="text-xs sm:text-sm text-[var(--text-muted)]">
             © {currentYear} {bio.name}. {t("allRights")}
           </p>
-          <p className="text-sm text-[var(--text-muted)]">
+          <p className="text-xs sm:text-sm text-[var(--text-muted)]">
             {t("builtWith")}{" "}
             <span className="relative inline-flex items-center group cursor-default">
               <span className="text-[#ec4899] group-hover:scale-125 transition-transform duration-300">

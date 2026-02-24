@@ -144,7 +144,7 @@ export default function Certificates({
                   </svg>
                 </div>
               )}
-              <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-white/60 dark:from-slate-900/60 via-transparent to-transparent" />
 
               {cert.featured && (
                 <div className="absolute top-3 right-3 px-2 py-1 rounded-full bg-[var(--color-primary)] text-white text-[10px] font-semibold">
@@ -202,7 +202,7 @@ export default function Certificates({
                     </span>
                   ))}
                   {cert.skills.length > 3 && (
-                    <span className="text-[10px] px-2 py-1 rounded-full bg-[var(--bg-tertiary)] text-[var(--text-muted)] border border-slate-200">
+                    <span className="text-[10px] px-2 py-1 rounded-full bg-[var(--bg-tertiary)] text-[var(--text-muted)] border border-slate-200 dark:border-slate-700">
                       +{cert.skills.length - 3}
                     </span>
                   )}

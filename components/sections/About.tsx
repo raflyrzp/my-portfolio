@@ -53,7 +53,7 @@ export default function About({
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="text-center p-4 rounded-2xl bg-white border border-slate-100 shadow-sm"
+                className="text-center p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 shadow-sm"
               >
                 <div className="text-2xl md:text-3xl font-bold text-gradient mb-1">
                   {stat.value}
@@ -76,7 +76,7 @@ export default function About({
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200 text-[var(--text-secondary)] hover:text-[var(--color-primary)] hover:border-[var(--color-primary)]/30 transition-all text-sm"
+                  className="flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-[var(--text-secondary)] hover:text-[var(--color-primary)] hover:border-[var(--color-primary)]/30 transition-all text-sm"
                 >
                   {socialIcons[social.icon || social.label.toLowerCase()]}
                   {social.label}
@@ -95,7 +95,7 @@ export default function About({
         >
           <div className="relative">
             <div className="card overflow-hidden">
-              <div className="flex items-center gap-2 mb-4 pb-4 border-b border-slate-100">
+              <div className="flex items-center gap-2 mb-4 pb-4 border-b border-slate-100 dark:border-slate-700">
                 <div className="w-3 h-3 rounded-full bg-[#ff5f56]" />
                 <div className="w-3 h-3 rounded-full bg-[#ffbd2e]" />
                 <div className="w-3 h-3 rounded-full bg-[#27ca40]" />
@@ -108,7 +108,8 @@ export default function About({
                 <code>
                   <span className="text-[#7c3aed]">const</span>{" "}
                   <span className="text-[#2563eb]">developer</span>{" "}
-                  <span className="text-slate-700">=</span> {"{"}
+                  <span className="text-slate-700 dark:text-slate-300">=</span>{" "}
+                  {"{"}
                   {"\n"}
                   {"  "}
                   <span className="text-[#059669]">name</span>:{" "}

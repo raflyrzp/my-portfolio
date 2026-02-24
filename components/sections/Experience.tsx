@@ -77,7 +77,7 @@ export default function Experience({
                 className="relative pl-12 md:pl-20"
               >
                 <div className="absolute left-2 md:left-6 top-2 w-4 h-4 rounded-full bg-gradient-to-br from-[#4f46e5] to-[#d946ef] shadow-lg shadow-[#4f46e5]/20">
-                  <div className="absolute inset-1 rounded-full bg-white" />
+                  <div className="absolute inset-1 rounded-full bg-white dark:bg-slate-900" />
                 </div>
 
                 <div className="card group hover:border-[var(--color-primary)]/20">

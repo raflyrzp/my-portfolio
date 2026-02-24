@@ -58,8 +58,14 @@ export default async function RootLayout({
     <html
       lang={locale}
       className={`${inter.variable} ${spaceGrotesk.variable}`}
+      suppressHydrationWarning
     >
       <body className="antialiased">
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.classList.add('dark')}}catch(e){}})()`,
+          }}
+        />
         <ClientLayout locale={locale} messages={messages}>
           {children}
         </ClientLayout>

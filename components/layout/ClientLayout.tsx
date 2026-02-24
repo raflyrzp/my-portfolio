@@ -2,6 +2,7 @@
 
 import { NextIntlClientProvider } from "next-intl";
 import { LanguageProvider } from "@/lib/LanguageContext";
+import { ThemeProvider } from "@/lib/ThemeContext";
 import BubbleNav from "@/components/layout/BubbleNav";
 import BackgroundEffects from "@/components/layout/BackgroundEffects";
 
@@ -19,9 +20,11 @@ export default function ClientLayout({
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       <LanguageProvider>
-        <BackgroundEffects />
-        <BubbleNav />
-        {children}
+        <ThemeProvider>
+          <BackgroundEffects />
+          <BubbleNav />
+          {children}
+        </ThemeProvider>
       </LanguageProvider>
     </NextIntlClientProvider>
   );

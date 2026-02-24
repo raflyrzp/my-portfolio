@@ -57,7 +57,7 @@ export default function CertificateDetailModal({
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="relative w-full max-w-2xl max-h-[90vh] bg-white rounded-2xl overflow-hidden shadow-2xl flex flex-col"
+            className="relative w-full max-w-2xl max-h-[90vh] bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-2xl flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header with image */}
@@ -137,7 +137,7 @@ export default function CertificateDetailModal({
             {/* Content */}
             <div className="overflow-y-auto flex-1 p-6">
               {/* Issuer & Date info */}
-              <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-6 pb-4 border-b border-slate-100">
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-6 pb-4 border-b border-slate-100 dark:border-slate-800">
                 <div className="flex items-center gap-2">
                   <span className="text-sm font-semibold text-[var(--color-primary)]">
                     {certificate.issuer}
@@ -198,7 +198,7 @@ export default function CertificateDetailModal({
               )}
 
               {/* Action buttons */}
-              <div className="flex flex-wrap gap-3 pt-4 border-t border-slate-100">
+              <div className="flex flex-wrap gap-3 pt-4 border-t border-slate-100 dark:border-slate-800">
                 {certificate.file && certificate.fileType && onViewImage && (
                   <button
                     onClick={() =>

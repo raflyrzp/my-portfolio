@@ -37,7 +37,7 @@ export default function ExperienceTimeline({ items }: ExperienceTimelineProps) {
               className={`relative flex flex-col md:flex-row gap-8 ${i % 2 === 0 ? "md:flex-row-reverse" : ""}`}
             >
               <div className="absolute left-4 md:left-1/2 -translate-x-1/2 top-0 w-4 h-4 rounded-full bg-gradient-to-br from-[#4f46e5] to-[#d946ef] shadow-lg shadow-[#4f46e5]/20 z-10">
-                <div className="absolute inset-1 rounded-full bg-white" />
+                <div className="absolute inset-1 rounded-full bg-white dark:bg-slate-900" />
               </div>
 
               <div

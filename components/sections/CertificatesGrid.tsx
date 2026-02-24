@@ -74,7 +74,7 @@ export default function CertificatesGrid({ items }: CertificatesGridProps) {
             className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
               filter === issuer
                 ? "bg-gradient-to-r from-[#4f46e5] to-[#d946ef] text-white shadow-md"
-                : "bg-white text-[var(--text-secondary)] border border-slate-200 hover:text-[var(--text-primary)] hover:border-[var(--color-primary)]/30"
+                : "bg-white dark:bg-slate-800 text-[var(--text-secondary)] border border-slate-200 dark:border-slate-700 hover:text-[var(--text-primary)] hover:border-[var(--color-primary)]/30"
             }`}
           >
             {issuer === "all" ? "All" : issuer}
@@ -130,7 +130,7 @@ export default function CertificatesGrid({ items }: CertificatesGridProps) {
                   </svg>
                 </div>
               )}
-              <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-white/60 dark:from-slate-900/60 via-transparent to-transparent" />
 
               {cert.featured && (
                 <div className="absolute top-3 right-3 px-2 py-1 rounded-full bg-[var(--color-primary)] text-white text-[10px] font-semibold">
@@ -191,7 +191,7 @@ export default function CertificatesGrid({ items }: CertificatesGridProps) {
                     </span>
                   ))}
                   {cert.skills.length > 3 && (
-                    <span className="text-[10px] px-2 py-1 rounded-full bg-[var(--bg-tertiary)] text-[var(--text-muted)] border border-slate-200">
+                    <span className="text-[10px] px-2 py-1 rounded-full bg-[var(--bg-tertiary)] text-[var(--text-muted)] border border-slate-200 dark:border-slate-700">
                       +{cert.skills.length - 3}
                     </span>
                   )}

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import { useLanguage } from "@/lib/LanguageContext";
+import { useTheme } from "@/lib/ThemeContext";
 import { useTranslations } from "next-intl";
 
 export default function BubbleNav() {
@@ -13,6 +14,7 @@ export default function BubbleNav() {
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
   const { locale, setLocale, isPending } = useLanguage();
+  const { theme, toggleTheme } = useTheme();
   const t = useTranslations("nav");
 
   const navLinks = [
@@ -142,11 +144,11 @@ export default function BubbleNav() {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className={clsx(
             "pointer-events-auto relative rounded-2xl transition-all duration-500",
-            "bg-white/80 backdrop-blur-xl",
-            "border border-white/60",
+            "bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl",
+            "border border-white/60 dark:border-slate-700/60",
             scrolled
-              ? "shadow-lg shadow-slate-900/10 bg-white/90"
-              : "shadow-md shadow-slate-200/50",
+              ? "shadow-lg shadow-slate-900/10 dark:shadow-black/30 bg-white/90 dark:bg-slate-900/90"
+              : "shadow-md shadow-slate-200/50 dark:shadow-black/20",
           )}
         >
           {/* Gradient glow line */}
@@ -171,7 +173,7 @@ export default function BubbleNav() {
             </Link>
 
             {/* Desktop nav links */}
-            <div className="hidden md:flex items-center gap-1 bg-[var(--bg-secondary)]/60 rounded-xl p-1">
+            <div className="hidden md:flex items-center gap-1 bg-[var(--bg-secondary)]/60 dark:bg-slate-800/60 rounded-xl p-1">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
@@ -180,7 +182,7 @@ export default function BubbleNav() {
                     "relative flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-sm font-medium transition-all duration-300",
                     isActive(link.href)
                       ? "text-white"
-                      : "text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-white/80",
+                      : "text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-white/80 dark:hover:bg-slate-700/80",
                   )}
                 >
                   {isActive(link.href) && (
@@ -221,7 +223,56 @@ export default function BubbleNav() {
                 <span className="text-xs">{locale === "en" ? "EN" : "ID"}</span>
               </button>
 
-              <div className="w-px h-5 bg-slate-200" />
+              <button
+                onClick={toggleTheme}
+                className={clsx(
+                  "flex items-center justify-center w-9 h-9 rounded-lg",
+                  "text-[var(--text-secondary)] hover:text-[var(--text-primary)]",
+                  "hover:bg-[var(--bg-secondary)]/60",
+                  "transition-all duration-300",
+                )}
+                aria-label="Toggle theme"
+              >
+                {theme === "dark" ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="4" />
+                    <path d="M12 2v2" />
+                    <path d="M12 20v2" />
+                    <path d="m4.93 4.93 1.41 1.41" />
+                    <path d="m17.66 17.66 1.41 1.41" />
+                    <path d="M2 12h2" />
+                    <path d="M20 12h2" />
+                    <path d="m6.34 17.66-1.41 1.41" />
+                    <path d="m19.07 4.93-1.41 1.41" />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                  </svg>
+                )}
+              </button>
+
+              <div className="w-px h-5 bg-slate-200 dark:bg-slate-700" />
 
               <a
                 href="mailto:raflyrabbany0804@gmail.com"
@@ -291,7 +342,7 @@ export default function BubbleNav() {
                 transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
                 className="md:hidden overflow-hidden"
               >
-                <div className="px-4 pb-4 border-t border-slate-100/80">
+                <div className="px-4 pb-4 border-t border-slate-100/80 dark:border-slate-700/80">
                   <div className="flex flex-col gap-1 pt-3">
                     {navLinks.map((link, index) => (
                       <motion.div
@@ -315,7 +366,7 @@ export default function BubbleNav() {
                       </motion.div>
                     ))}
 
-                    <div className="h-px bg-slate-100 my-2" />
+                    <div className="h-px bg-slate-100 dark:bg-slate-700 my-2" />
 
                     <button
                       onClick={() => setLocale(locale === "en" ? "id" : "en")}
@@ -326,6 +377,52 @@ export default function BubbleNav() {
                         {locale === "en" ? "🇺🇸" : "🇮🇩"}
                       </span>
                       <span>{locale === "en" ? "English" : "Indonesia"}</span>
+                    </button>
+
+                    <button
+                      onClick={toggleTheme}
+                      className="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-secondary)]/60 transition-all duration-200"
+                    >
+                      {theme === "dark" ? (
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="18"
+                          height="18"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <circle cx="12" cy="12" r="4" />
+                          <path d="M12 2v2" />
+                          <path d="M12 20v2" />
+                          <path d="m4.93 4.93 1.41 1.41" />
+                          <path d="m17.66 17.66 1.41 1.41" />
+                          <path d="M2 12h2" />
+                          <path d="M20 12h2" />
+                          <path d="m6.34 17.66-1.41 1.41" />
+                          <path d="m19.07 4.93-1.41 1.41" />
+                        </svg>
+                      ) : (
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="18"
+                          height="18"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                        </svg>
+                      )}
+                      <span>
+                        {theme === "dark" ? "Light Mode" : "Dark Mode"}
+                      </span>
                     </button>
 
                     <a

@@ -84,7 +84,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         <div className="relative group">
           <div className="absolute inset-0 bg-gradient-to-br from-[#4f46e5]/10 via-transparent to-[#d946ef]/10 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-          <div className="relative aspect-video rounded-2xl overflow-hidden bg-[var(--bg-tertiary)] border border-slate-200 group-hover:border-[var(--color-primary)]/20 transition-all duration-500">
+          <div className="relative aspect-video rounded-2xl overflow-hidden bg-[var(--bg-tertiary)] border border-slate-200 dark:border-slate-700 group-hover:border-[var(--color-primary)]/20 transition-all duration-500">
             <Image
               src={project.cover}
               alt={project.title}

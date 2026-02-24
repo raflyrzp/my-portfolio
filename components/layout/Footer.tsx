@@ -20,7 +20,7 @@ export default function Footer({ bio }: { bio: Bio }) {
   ];
 
   return (
-    <footer className="relative border-t border-slate-200 bg-[var(--bg-secondary)]">
+    <footer className="relative border-t border-slate-200 dark:border-slate-800 bg-[var(--bg-secondary)]">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-[#6366f1]/5 rounded-full blur-3xl" />
       </div>
@@ -45,7 +45,7 @@ export default function Footer({ bio }: { bio: Bio }) {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full flex items-center justify-center bg-white border border-slate-200 text-[var(--text-secondary)] hover:text-[var(--color-primary)] hover:border-[var(--color-primary)]/30 hover:shadow-md transition-all duration-300"
+                  className="w-10 h-10 rounded-full flex items-center justify-center bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-[var(--text-secondary)] hover:text-[var(--color-primary)] hover:border-[var(--color-primary)]/30 hover:shadow-md transition-all duration-300"
                   aria-label={social.label}
                 >
                   {socialIcons[social.icon || social.label.toLowerCase()] || (
@@ -107,18 +107,22 @@ export default function Footer({ bio }: { bio: Bio }) {
           </motion.div>
         </div>
 
-        <div className="pt-8 border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-[var(--text-muted)]">
             © {currentYear} {bio.name}. {t("allRights")}
           </p>
           <p className="text-sm text-[var(--text-muted)]">
             {t("builtWith")}{" "}
-            <span className="relative inline-block group cursor-default">
-              <span className="text-[#ec4899] group-hover:opacity-0 transition-opacity duration-300">
+            <span className="relative inline-flex items-center group cursor-default">
+              <span className="text-[#ec4899] group-hover:scale-125 transition-transform duration-300">
                 ♥
               </span>
-              <span className="absolute inset-0 flex items-center justify-center text-[#ec4899] font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-                Yaya
+              {/* Speech bubble */}
+              <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 pointer-events-none opacity-0 group-hover:opacity-100 scale-90 group-hover:scale-100 transition-all duration-300 ease-out">
+                <span className="relative block px-3 py-1.5 rounded-lg bg-[#ec4899] text-white text-xs font-semibold whitespace-nowrap shadow-lg">
+                  Yaya
+                  <span className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#ec4899]" />
+                </span>
               </span>
             </span>{" "}
             {t("using")}

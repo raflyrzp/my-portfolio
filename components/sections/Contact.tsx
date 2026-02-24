@@ -66,7 +66,7 @@ export default function Contact({ bio }: { bio: Bio }) {
           <div className="space-y-4 mb-8">
             <a
               href={`mailto:${bio.email}`}
-              className="flex items-center gap-4 p-4 rounded-xl bg-white border border-slate-200 hover:border-[var(--color-primary)]/30 hover:shadow-md transition-all group"
+              className="flex items-center gap-4 p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-[var(--color-primary)]/30 hover:shadow-md transition-all group"
             >
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#4f46e5]/10 to-[#d946ef]/10 flex items-center justify-center text-[var(--color-primary)] group-hover:text-[#d946ef] transition-colors">
                 <svg
@@ -90,7 +90,7 @@ export default function Contact({ bio }: { bio: Bio }) {
               </div>
             </a>
 
-            <div className="flex items-center gap-4 p-4 rounded-xl bg-white border border-slate-200">
+            <div className="flex items-center gap-4 p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#4f46e5]/10 to-[#d946ef]/10 flex items-center justify-center text-[var(--color-primary)]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -127,7 +127,7 @@ export default function Contact({ bio }: { bio: Bio }) {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200 text-[var(--text-secondary)] hover:text-[var(--color-primary)] hover:border-[var(--color-primary)]/30 transition-all text-sm"
+                  className="flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-[var(--text-secondary)] hover:text-[var(--color-primary)] hover:border-[var(--color-primary)]/30 transition-all text-sm"
                 >
                   {socialIcons[social.icon || social.label.toLowerCase()]}
                   {social.label}
@@ -171,7 +171,7 @@ export default function Contact({ bio }: { bio: Bio }) {
             ) : (
               <>
                 {error && (
-                  <div className="p-4 rounded-lg bg-red-50 border border-red-200 text-red-600 text-sm">
+                  <div className="p-4 rounded-lg bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-600 dark:text-red-400 text-sm">
                     {error}
                   </div>
                 )}

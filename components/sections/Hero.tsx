@@ -98,7 +98,7 @@ export default function Hero({ bio }: { bio: Bio }) {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-11 h-11 rounded-full flex items-center justify-center bg-white border border-slate-200 text-[var(--text-secondary)] hover:text-[var(--color-primary)] hover:border-[var(--color-primary)]/30 hover:shadow-md transition-all duration-300"
+                  className="w-11 h-11 rounded-full flex items-center justify-center bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-[var(--text-secondary)] hover:text-[var(--color-primary)] hover:border-[var(--color-primary)]/30 hover:shadow-md transition-all duration-300"
                   aria-label={social.label}
                 >
                   {socialIcons[social.icon || social.label.toLowerCase()] || (
@@ -121,7 +121,7 @@ export default function Hero({ bio }: { bio: Bio }) {
               <div className="relative w-[200px] h-[200px] sm:w-[240px] sm:h-[240px] md:w-[300px] md:h-[300px] lg:w-[340px] lg:h-[340px] mx-auto">
                 <div className="absolute -inset-4 rounded-3xl border-2 border-dashed border-[var(--color-primary)]/15 animate-[spin_30s_linear_infinite]" />
 
-                <div className="relative w-full h-full rounded-3xl overflow-hidden border-2 border-slate-200 bg-[var(--bg-tertiary)]">
+                <div className="relative w-full h-full rounded-3xl overflow-hidden border-2 border-slate-200 dark:border-slate-700 bg-[var(--bg-tertiary)]">
                   <Image
                     src={bio.photo}
                     alt={bio.name}
@@ -129,7 +129,7 @@ export default function Hero({ bio }: { bio: Bio }) {
                     className="object-cover"
                     priority
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-white/20 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-white/20 dark:from-slate-900/30 via-transparent to-transparent" />
                 </div>
 
                 <motion.div
@@ -139,7 +139,7 @@ export default function Hero({ bio }: { bio: Bio }) {
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
-                  className="absolute right-0 -top-2 sm:right-0 sm:top-4 md:-right-6 md:top-8 lg:-right-8 lg:top-12 px-3 py-2 sm:px-4 sm:py-3 rounded-xl bg-white/90 backdrop-blur-sm border border-slate-200 shadow-lg translate-x-4 sm:translate-x-6 md:translate-x-0"
+                  className="absolute right-0 -top-2 sm:right-0 sm:top-4 md:-right-6 md:top-8 lg:-right-8 lg:top-12 px-3 py-2 sm:px-4 sm:py-3 rounded-xl bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm border border-slate-200 dark:border-slate-700 shadow-lg translate-x-4 sm:translate-x-6 md:translate-x-0"
                 >
                   <div className="flex items-center gap-2">
                     <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#22c55e]" />
@@ -157,7 +157,7 @@ export default function Hero({ bio }: { bio: Bio }) {
                     ease: "easeInOut",
                     delay: 1,
                   }}
-                  className="absolute left-0 -bottom-2 sm:left-0 sm:bottom-4 md:-left-6 md:bottom-8 lg:-left-8 lg:bottom-12 px-3 py-2 sm:px-4 sm:py-3 rounded-xl bg-white/90 backdrop-blur-sm border border-slate-200 shadow-lg -translate-x-4 sm:-translate-x-6 md:translate-x-0"
+                  className="absolute left-0 -bottom-2 sm:left-0 sm:bottom-4 md:-left-6 md:bottom-8 lg:-left-8 lg:bottom-12 px-3 py-2 sm:px-4 sm:py-3 rounded-xl bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm border border-slate-200 dark:border-slate-700 shadow-lg -translate-x-4 sm:-translate-x-6 md:translate-x-0"
                 >
                   <div className="flex items-center gap-2 sm:gap-3">
                     <span className="text-xl sm:text-2xl">🚀</span>

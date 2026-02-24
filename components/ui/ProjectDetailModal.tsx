@@ -57,7 +57,7 @@ export default function ProjectDetailModal({
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="relative w-full max-w-3xl max-h-[90vh] bg-white rounded-2xl overflow-hidden shadow-2xl flex flex-col"
+            className="relative w-full max-w-3xl max-h-[90vh] bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-2xl flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header with image */}
@@ -138,7 +138,7 @@ export default function ProjectDetailModal({
               </div>
 
               {/* Action buttons */}
-              <div className="flex flex-wrap gap-3 pt-4 border-t border-slate-100">
+              <div className="flex flex-wrap gap-3 pt-4 border-t border-slate-100 dark:border-slate-800">
                 {project.link && (
                   <a
                     href={project.link}

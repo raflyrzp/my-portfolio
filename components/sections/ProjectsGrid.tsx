@@ -60,7 +60,7 @@ export default function ProjectsGrid({ items }: ProjectsGridProps) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm text-xs font-medium text-[var(--text-primary)]">
+                <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm text-xs font-medium text-[var(--text-primary)]">
                   {project.year}
                 </div>
 
@@ -107,7 +107,7 @@ export default function ProjectsGrid({ items }: ProjectsGridProps) {
                     </span>
                   ))}
                   {project.tags.length > 4 && (
-                    <span className="text-xs px-2 py-1 rounded-full bg-[var(--bg-tertiary)] text-[var(--text-muted)] border border-slate-200">
+                    <span className="text-xs px-2 py-1 rounded-full bg-[var(--bg-tertiary)] text-[var(--text-muted)] border border-slate-200 dark:border-slate-700">
                       +{project.tags.length - 4}
                     </span>
                   )}

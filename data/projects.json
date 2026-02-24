@@ -39,7 +39,7 @@
     "cover": "/projects/inspira.png",
     "link": null,
     "repo": "https://github.com/raflyrzp/inspira",
-    "featured": true,
+    "featured": false,
     "problem": {
       "en": "Schools lacked a unified digital platform for managing learning activities. Teachers distributed materials through various channels (WhatsApp, email), making it hard for students to track assignments. Attendance was paper-based and prone to manipulation.",
       "id": "Sekolah tidak memiliki platform digital terpadu untuk mengelola aktivitas pembelajaran. Guru mendistribusikan materi melalui berbagai saluran (WhatsApp, email), menyulitkan siswa untuk melacak tugas. Presensi masih berbasis kertas dan rentan manipulasi."
@@ -68,7 +68,7 @@
     "cover": "/projects/academunch.png",
     "link": null,
     "repo": "https://github.com/raflyrzp/academunch",
-    "featured": true,
+    "featured": false,
     "problem": {
       "en": "School canteen transactions were entirely cash-based, causing long queues during breaks, difficulty tracking spending, and challenges in managing canteen inventory. The school bank also lacked a digital system for student balance management.",
       "id": "Transaksi kantin sekolah sepenuhnya berbasis tunai, menyebabkan antrean panjang saat istirahat, kesulitan melacak pengeluaran, dan tantangan dalam mengelola inventaris kantin. Bank sekolah juga tidak memiliki sistem digital untuk manajemen saldo siswa."
@@ -155,7 +155,7 @@
     "cover": "/projects/portfolio.png",
     "link": "https://raflyrzp.vercel.app",
     "repo": "https://github.com/raflyrzp/my-portfolio",
-    "featured": false,
+    "featured": true,
     "problem": {
       "en": "Needed a professional online presence to showcase skills and projects effectively. Generic resume formats fail to communicate the depth and quality of technical work. Required multi-language support for broader audience reach.",
       "id": "Membutuhkan kehadiran online profesional untuk menampilkan keahlian dan proyek secara efektif. Format resume generik gagal mengkomunikasikan kedalaman dan kualitas pekerjaan teknis. Membutuhkan dukungan multi-bahasa untuk jangkauan audiens yang lebih luas."

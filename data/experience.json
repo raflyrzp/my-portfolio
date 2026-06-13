@@ -6,8 +6,8 @@
     "start": "Nov 2025",
     "end": "Now",
     "description": {
-      "en": "Developing and maintaining internal web systems to support university digital services. Actively involved in implementing backend logic, improving system reliability, and collaborating with teams to deliver efficient and maintainable web solutions.",
-      "id": "Mengembangkan dan memelihara sistem web internal untuk mendukung layanan digital universitas. Terlibat langsung dalam implementasi logika backend, peningkatan keandalan sistem, serta kolaborasi tim untuk menghasilkan solusi web yang efisien dan mudah dikembangkan."
+      "en": "Stepping into my current role, I took on the responsibility of shaping the university's digital ecosystem from the inside. Day to day, I dive deep into backend architecture, building robust logic and ensuring internal systems run reliably to support thousands of daily users. It is an ongoing journey of turning complex technical challenges into smooth, scalable, and maintainable university-wide web solutions.",
+      "id": "Melalui peran ini, saya bertanggung jawab untuk ikut mengembangkan ekosistem digital internal universitas. Setiap harinya, saya fokus pada arsitektur backend, membangun logika sistem yang kokoh, serta menjaga keandalan platform demi mendukung kebutuhan ribuan pengguna harian. Proyek ini menjadi ruang belajar yang dinamis untuk meramu tantangan teknis yang kompleks menjadi solusi web yang stabil dan berskala besar."
     },
     "skills": ["PHP", "JavaScript", "Backend Web Development", "Communication"],
     "logo": "/company/upt-tik-unj.png"
@@ -19,10 +19,17 @@
     "start": "Nov 2024",
     "end": "Jan 2025",
     "description": {
-      "en": "Delivered a two-month intensive training program for the Student Competency Competition in Web Technology. Taught WordPress-based website development, backend development using Laravel, and frontend development with React.js. Mentored students through hands-on practice, focusing on best practices, clean architecture, and competition readiness.",
-      "id": "Mengajar program pelatihan intensif selama dua bulan untuk Lomba Kompetensi Siswa bidang Web Technology. Membawakan materi pengembangan website dengan WordPress, backend menggunakan Laravel, serta frontend dengan React.js. Membimbing siswa secara langsung dengan fokus pada best practice, arsitektur yang rapi, dan kesiapan lomba."
+      "en": "Driven by a passion to share what I had learned, I transitioned into a mentoring role to prepare young minds for the rigorous Student Competency Competition. Over two intense months, I guided students through the full spectrum of web development—from the fundamentals of WordPress to complex architectures in Laravel and React.js. It was deeply rewarding to watch them transform hands-on practice into clean, competition-ready code.",
+      "id": "Berawal dari keinginan untuk membagikan pengalaman, saya dipercaya menjadi mentor dalam mempersiapkan siswa menghadapi kompetisi LKS (Lomba Kompetensi Siswa) bidang Web Technology. Selama dua bulan intensif, saya membimbing mereka mempelajari peta pengembangan web secara menyeluruh—mulai dari dasaran WordPress hingga arsitektur modern berbasis Laravel dan React.js hingga mereka mampu menulis kode yang rapi dan siap tanding."
     },
-    "skills": ["Teaching", "WordPress", "Laravel", "React.js", "Full-Stack Development", "Communication"],
+    "skills": [
+      "Teaching",
+      "WordPress",
+      "Laravel",
+      "React.js",
+      "Full-Stack Development",
+      "Communication"
+    ],
     "logo": "/company/smk64.png"
   },
   {
@@ -32,10 +39,17 @@
     "start": "Apr 2024",
     "end": "May 2024",
     "description": {
-      "en": "Led the development of a Learning Management System for a school environment. Managed project planning, backend development using Laravel, and frontend implementation with Bootstrap and JavaScript. Ensured system integration and conducted user testing for features such as class management, online quizzes, and grading systems.",
-      "id": "Memimpin pengembangan Learning Management System untuk lingkungan sekolah. Bertanggung jawab atas perencanaan proyek, pengembangan backend menggunakan Laravel, serta implementasi frontend dengan Bootstrap dan JavaScript. Mengelola integrasi sistem dan pengujian pengguna untuk fitur manajemen kelas, kuis online, dan sistem penilaian."
+      "en": "Returning to the school environment with a leadership mindset, I spearheaded the creation of a comprehensive Learning Management System. Balancing project planning with core development, I used Laravel and JavaScript to bring critical features like virtual classrooms, online quizzes, and grading pipelines to life. The real victory was bridging the gap between design and user experience through meticulous real-world testing.",
+      "id": "Kembali berkolaborasi dengan pihak sekolah, kali ini saya memimpin tim dalam merancang dan membangun platform Learning Management System (LMS). Selain mengelola perencanaan manajemen proyek, saya juga turun langsung mengembangkan fitur utama seperti manajemen kelas, kuis daring, dan penilaian menggunakan Laravel dan JavaScript, serta memastikan performanya lewat pengujian pengguna yang matang."
     },
-    "skills": ["Leadership", "Laravel", "Project Management", "MySQL", "Bootstrap", "JavaScript"],
+    "skills": [
+      "Leadership",
+      "Laravel",
+      "Project Management",
+      "MySQL",
+      "Bootstrap",
+      "JavaScript"
+    ],
     "logo": "/company/smk64.png"
   },
   {
@@ -45,10 +59,17 @@
     "start": "Oct 2023",
     "end": "Nov 2023",
     "description": {
-      "en": "Led the development of a Point of Sale application designed to streamline sales transactions and inventory management. Handled backend development with Laravel, frontend implementation using Bootstrap and JavaScript, and system deployment. Focused on performance, usability, and operational efficiency.",
-      "id": "Memimpin pengembangan aplikasi Point of Sale untuk mempermudah transaksi penjualan dan manajemen inventori. Bertanggung jawab pada backend menggunakan Laravel, frontend dengan Bootstrap dan JavaScript, serta proses deployment sistem. Proyek difokuskan pada performa, kemudahan penggunaan, dan efisiensi operasional."
+      "en": "This marked my first major milestone as a team leader, taking charge of a Point of Sale application to streamline real school business operations. I guided the project from an abstract concept to a fully deployed system, engineering the backend logic with Laravel while polishing the interface. The journey taught me how to blend technical performance with operational usability under tight timelines.",
+      "id": "Proyek ini menjadi tonggak awal saya dalam memimpin sebuah tim pengembang untuk membangun aplikasi Point of Sale (POS) guna digitalisasi unit usaha sekolah. Saya mengawal prosesnya dari perancangan konsep awal hingga aplikasi siap digunakan, merancang struktur backend dengan Laravel, serta menyelaraskan performa teknis dengan kemudahan operasional di kasir."
     },
-    "skills": ["Laravel", "Bootstrap", "JavaScript", "MySQL", "Project Management", "Time Management"],
+    "skills": [
+      "Laravel",
+      "Bootstrap",
+      "JavaScript",
+      "MySQL",
+      "Project Management",
+      "Time Management"
+    ],
     "logo": "/company/64mart.png"
   },
   {
@@ -58,8 +79,8 @@
     "start": "Feb 2023",
     "end": "Jun 2023",
     "description": {
-      "en": "Worked as a web developer focusing on backend development. Designed and implemented server-side logic, managed databases, and ensured seamless integration with the frontend to deliver a stable and efficient web platform.",
-      "id": "Bekerja sebagai web developer dengan fokus pada pengembangan backend. Merancang dan mengimplementasikan logika server, mengelola database, serta memastikan integrasi yang lancar dengan frontend untuk menghasilkan platform web yang stabil dan efisien."
+      "en": "During this period, I chose to specialize and sharpen my technical depth, fully dedicating myself to backend engineering. I spent my time designing server-side logic and managing database structures using PHP and CodeIgniter. Working closely with frontend developers, I learned the art of building seamless data flows to ensure the web platform felt stable, fast, and unified.",
+      "id": "Pada periode magang ini, saya memutuskan untuk memperdalam spesialisasi di area backend engineering. Tugas utama saya adalah merancang logika server serta mengelola basis data menggunakan PHP dan CodeIgniter. Melalui kolaborasi erat dengan pengembang frontend, saya belajar banyak hal seputar integrasi API dan penyaluran data yang efisien demi stabilitas platform."
     },
     "skills": ["PHP", "CodeIgniter", "MySQL", "Project Management"],
     "logo": "/company/matata-edu.png"
@@ -71,10 +92,16 @@
     "start": "Feb 2023",
     "end": "Jun 2023",
     "description": {
-      "en": "Designed and built multiple landing pages using WordPress for an education startup. Contributed to content creation through article writing and basic multimedia production, helping strengthen the company’s digital presence.",
-      "id": "Merancang dan membangun berbagai landing page menggunakan WordPress untuk startup di bidang pendidikan. Berkontribusi dalam pembuatan konten melalui penulisan artikel dan produksi multimedia sederhana untuk meningkatkan kehadiran digital perusahaan."
+      "en": "My professional journey began here, where I learned how an edtech startup operates. I was tasked with shaping the company's first digital impressions, crafting dynamic landing pages via WordPress. Beyond design, I experimented with content writing and basic multimedia production, gaining a foundational understanding of how visual design directly drives user engagement.",
+      "id": "Awal perjalanan profesional saya dimulai di startup edukasi digital ini. Saya bertanggung jawab merancang dan menyusun beberapa landing page responsif menggunakan WordPress untuk kebutuhan promosi. Selain fokus pada visual, saya juga belajar menulis konten artikel dan mengolah multimedia dasar untuk meningkatkan keterikatan pengguna."
     },
-    "skills": ["WordPress", "UX", "Copywriting", "Content Creation", "Multimedia"],
+    "skills": [
+      "WordPress",
+      "UX",
+      "Copywriting",
+      "Content Creation",
+      "Multimedia"
+    ],
     "logo": "/company/mtryout.png"
   }
 ]

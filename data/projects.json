@@ -2,8 +2,8 @@
   {
     "title": "E-SPPD",
     "description": {
-      "en": "A web-based official travel management system designed to simplify SPPD submission, approval workflows, and reporting. Integrated with Single Sign-On (SSO) to ensure secure access and seamless authentication across systems.",
-      "id": "Sistem manajemen perjalanan dinas berbasis web yang dirancang untuk menyederhanakan pengajuan SPPD, alur persetujuan, dan pembuatan laporan. Terintegrasi dengan Single Sign-On (SSO) untuk akses yang aman dan autentikasi yang lebih efisien."
+      "en": "A central web initiative built to completely transform how official travel warrants are requested, approved, and tracked across institutions.",
+      "id": "Inisiatif web terpusat yang dibangun untuk mengubah total bagaimana surat perintah perjalanan dinas diajukan, disetujui, dan dilacak di seluruh institusi."
     },
     "year": "2026",
     "tags": ["Laravel", "PHP", "MySQL", "SSO", "REST API"],
@@ -12,27 +12,27 @@
     "repo": null,
     "featured": true,
     "problem": {
-      "en": "The existing official travel (SPPD) process relied on manual paperwork, causing delays in submission, approval bottlenecks, and difficulty generating consolidated reports. Staff had to navigate multiple systems with separate logins, leading to inefficiency and security concerns.",
-      "id": "Proses perjalanan dinas (SPPD) yang ada masih mengandalkan dokumen manual, menyebabkan keterlambatan pengajuan, hambatan persetujuan, dan kesulitan dalam membuat laporan terkonsolidasi. Staf harus mengakses beberapa sistem dengan login terpisah, menyebabkan ketidakefisienan dan masalah keamanan."
+      "en": "The existing official travel workflow was deeply bogged down by slow, manual paperwork. Bottlenecks in multi-level approvals were common, consolidated reports took days to build, and staff constantly wrestled with a chaotic web of separate logins across different institutional systems.",
+      "id": "Alur kerja perjalanan dinas sebelumnya sangat terhambat oleh proses administrasi fisik yang lambat. Hambatan dalam persetujuan bertingkat sering terjadi, pembuatan laporan rekapitulasi memakan waktu berhari-hari, dan staf direpotkan oleh banyaknya akun login terpisah di berbagai sistem institusi."
     },
     "planning": {
-      "en": "Designed a centralized web platform with role-based access control and multi-level approval workflows. Planned SSO integration for unified authentication across institutional systems. Defined clear modules: submission form, approval dashboard, report generation, and admin panel.",
-      "id": "Merancang platform web terpusat dengan kontrol akses berbasis peran dan alur persetujuan multi-level. Merencanakan integrasi SSO untuk autentikasi terpadu di seluruh sistem institusi. Mendefinisikan modul yang jelas: formulir pengajuan, dashboard persetujuan, pembuatan laporan, dan panel admin."
+      "en": "I envisioned a unified, single-entry web platform centered around strict role-based control and multi-tiered digital sign-offs. The blueprint demanded an elegant integration of a centralized authentication system (SSO) to connect disparate services, breaking down the application into dedicated modules for streamlined submissions, responsive dashboards, and automated generation engine.",
+      "id": "Saya merancang sebuah platform web terpadu satu pintu yang berpusat pada kontrol akses berbasis peran serta alur persetujuan digital bertingkat. Cetak biru proyek ini mengintegrasikan sistem autentikasi terpusat (SSO) untuk menghubungkan berbagai layanan terpisah, yang kemudian dipecah menjadi beberapa modul khusus seperti formulir pengajuan, dashboard responsif, dan mesin pelaporan otomatis."
     },
     "architecture": {
-      "en": "Built with Laravel (MVC pattern) and MySQL for structured data storage. Implemented RESTful APIs for inter-system communication. SSO integration uses OAuth2 protocol. Frontend uses server-side Blade templates with responsive design. Deployed on institutional infrastructure.",
-      "id": "Dibangun dengan Laravel (pola MVC) dan MySQL untuk penyimpanan data terstruktur. Mengimplementasikan RESTful API untuk komunikasi antar sistem. Integrasi SSO menggunakan protokol OAuth2. Frontend menggunakan template Blade server-side dengan desain responsif. Di-deploy pada infrastruktur institusi."
+      "en": "I structured the core engine using Laravel's MVC framework paired with MySQL for high-integrity data warehousing. To keep the ecosystem interconnected, I designed robust RESTful endpoints and layered the OAuth2 protocol for secure, single-point authorization. The presentation layer relies on clean, server-side Blade architectures styled for a highly fluid mobile and desktop experience.",
+      "id": "Saya menyusun arsitektur mesin inti menggunakan framework Laravel MVC yang dipasangkan dengan MySQL untuk penyimpanan data berintegritas tinggi. Untuk menjaga ekosistem tetap saling terhubung, saya membangun endpoint RESTful yang kokoh serta menerapkan protokol OAuth2 demi keamanan otorisasi satu pintu. Lapisan antarmuka mengandalkan arsitektur Blade server-side untuk memastikan pengalaman desktop dan mobile yang lancar."
     },
     "result": {
-      "en": "Successfully digitized the entire SPPD workflow, reducing processing time significantly. The system is actively used across departments with SSO providing seamless authentication. Automated reporting saves hours of manual compilation work each month.",
-      "id": "Berhasil mendigitalisasi seluruh alur kerja SPPD, mengurangi waktu pemrosesan secara signifikan. Sistem aktif digunakan di seluruh departemen dengan SSO yang menyediakan autentikasi seamless. Pelaporan otomatis menghemat waktu kompilasi manual setiap bulan."
+      "en": "The implementation completely erased physical travel bureaucracy, drastically slashing processing cycles from days to minutes. Today, the platform lives smoothly across various active departments under a unified login, saving teams hours of manual balance-checking and report-compiling at the close of every month.",
+      "id": "Implementasi ini berhasil memangkas birokrasi dokumen fisik secara signifikan, mengubah waktu pemrosesan dari hitungan hari menjadi menit. Saat ini, platform berjalan lancar di berbagai departemen di bawah satu login terpadu, serta menghemat waktu staf dalam merekap data saldo anggaran dan menyusun laporan di setiap akhir bulan."
     }
   },
   {
     "title": "Inspira LMS",
     "description": {
-      "en": "A Learning Management System built to streamline digital learning between teachers and students. Enables material distribution, assignment submission, attendance tracking, and class management through a centralized web platform.",
-      "id": "Learning Management System yang dibangun untuk mempermudah proses pembelajaran digital antara guru dan siswa. Mendukung distribusi materi, pengumpulan tugas, presensi online, serta manajemen kelas dalam satu platform terpusat."
+      "en": "A modular digital learning canvas crafted to bridge classrooms, streamline assignment flows, and centralize academic collaboration between teachers and students.",
+      "id": "Kanvas pembelajaran digital modular yang dirancang untuk menjembatani ruang kelas, menyederhanakan alur tugas, dan memusatkan kolaborasi akademik antara guru dan siswa."
     },
     "year": "2024",
     "tags": ["Laravel", "Bootstrap", "JavaScript", "MySQL"],
@@ -41,27 +41,27 @@
     "repo": "https://github.com/raflyrzp/inspira",
     "featured": false,
     "problem": {
-      "en": "Schools lacked a unified digital platform for managing learning activities. Teachers distributed materials through various channels (WhatsApp, email), making it hard for students to track assignments. Attendance was paper-based and prone to manipulation.",
-      "id": "Sekolah tidak memiliki platform digital terpadu untuk mengelola aktivitas pembelajaran. Guru mendistribusikan materi melalui berbagai saluran (WhatsApp, email), menyulitkan siswa untuk melacak tugas. Presensi masih berbasis kertas dan rentan manipulasi."
+      "en": "Traditional classrooms lacked a reliable digital harbor. Educational resources were scattered across fragile chat groups and emails, leaving students confused about real assignment deadlines, while daily attendance still relied on fragile paper registries that were highly prone to manipulation.",
+      "id": "Aktivitas pembelajaran sekolah sebelumnya kekurangan wadah digital yang andal. Materi edukasi tersebar di berbagai grup obrolan dan email sehingga menyulitkan siswa melacak tenggat waktu tugas, ditambah proses presensi harian yang masih berbasis kertas sehingga rentan manipulasi data."
     },
     "planning": {
-      "en": "Designed a modular LMS with separate interfaces for teachers and students. Key features planned: course management, material upload/download, assignment submission with deadlines, online attendance with time-based validation, and grade reporting.",
-      "id": "Merancang LMS modular dengan antarmuka terpisah untuk guru dan siswa. Fitur utama yang direncanakan: manajemen mata pelajaran, upload/download materi, pengumpulan tugas dengan batas waktu, presensi online dengan validasi berbasis waktu, dan pelaporan nilai."
+      "en": "My strategy was to partition the workspace into two distinct, intuitive universes: one tailored for instructor-led control and another for student accountability. The roadmap was clear—build real-time course distribution systems, secure upload vaulting with strict deadlines, and a time-validated attendance barrier to maintain structural honesty.",
+      "id": "Strategi saya adalah membagi ruang kerja menjadi dua bagian antarmuka yang intuitif: satu disesuaikan untuk kendali guru dan satu lagi untuk akses siswa. Rencana pengembangan difokuskan pada sistem distribusi materi secara real-time, pengumpulan tugas aman dengan batasan waktu, serta validasi kehadiran berbasis waktu untuk menjaga akurasi data."
     },
     "architecture": {
-      "en": "Built on Laravel with MVC architecture and MySQL database. Bootstrap provides the responsive UI framework. JavaScript handles dynamic interactions like real-time form validation and AJAX-based submissions. File storage managed through Laravel's filesystem abstraction.",
-      "id": "Dibangun di atas Laravel dengan arsitektur MVC dan database MySQL. Bootstrap menyediakan framework UI responsif. JavaScript menangani interaksi dinamis seperti validasi form real-time dan pengiriman berbasis AJAX. Penyimpanan file dikelola melalui abstraksi filesystem Laravel."
+      "en": "I architected the portal over a Laravel MVC foundation and a tailored MySQL schema. Dynamic UI responses—like instant input validation and fluid, page-refresh-free data postings—were brought to life with raw JavaScript and standard Bootstrap wrappers, utilizing an abstracted storage filesystem to organize student materials cleanly.",
+      "id": "Saya membangun arsitektur portal ini menggunakan basis Laravel MVC dan skema basis data MySQL. Respons UI yang dinamis—seperti validasi input instan dan pengiriman data tanpa muat ulang halaman—dikembangkan menggunakan JavaScript murni dan framework Bootstrap, dengan memanfaatkan abstraksi filesystem untuk pengelolaan dokumen materi secara rapi."
     },
     "result": {
-      "en": "Delivered a fully functional LMS that streamlined the learning process. Teachers can manage courses and track student progress from a single dashboard. The attendance system eliminated paper-based processes and improved accuracy.",
-      "id": "Menghasilkan LMS fungsional yang menyederhanakan proses pembelajaran. Guru dapat mengelola mata pelajaran dan melacak kemajuan siswa dari satu dashboard. Sistem presensi menghilangkan proses berbasis kertas dan meningkatkan akurasi."
+      "en": "The final product successfully untangled classroom complexity into a single operational view. Instructors recovered hours of administration time through centralized grade tracking, while the digitized attendance model successfully locked down operational accuracy and eradicated legacy manual loopholes.",
+      "id": "Produk akhir ini berhasil menyederhanakan kompleksitas administrasi kelas ke dalam satu tampilan terpadu. Pengajar dapat menghemat waktu administrasi melalui pelacakan nilai terpusat, sementara model presensi digital sukses meningkatkan akurasi data dan menutup celah manipulasi manual."
     }
   },
   {
     "title": "Academunch",
     "description": {
-      "en": "A digital transaction system for school canteens and banks, allowing students to top up balances and purchase items online. Built to improve transaction efficiency and reduce manual processes within the school environment.",
-      "id": "Sistem transaksi digital untuk kantin dan bank sekolah yang memungkinkan siswa melakukan top up saldo dan pembelian secara online. Dibangun untuk meningkatkan efisiensi transaksi dan mengurangi proses manual."
+      "en": "A secure digital ledger ecosystem engineered to modernize school transactions and eliminate manual cash bottlenecks in canteens and micro-banking systems.",
+      "id": "Ekosistem pembukuan digital aman yang dirancang untuk memodernisasi transaksi sekolah dan menghilangkan hambatan uang tunai manual di kantin dan sistem perbankan mikro."
     },
     "year": "2024",
     "tags": ["Laravel", "Bootstrap", "JavaScript", "MySQL"],
@@ -70,27 +70,27 @@
     "repo": "https://github.com/raflyrzp/academunch",
     "featured": false,
     "problem": {
-      "en": "School canteen transactions were entirely cash-based, causing long queues during breaks, difficulty tracking spending, and challenges in managing canteen inventory. The school bank also lacked a digital system for student balance management.",
-      "id": "Transaksi kantin sekolah sepenuhnya berbasis tunai, menyebabkan antrean panjang saat istirahat, kesulitan melacak pengeluaran, dan tantangan dalam mengelola inventaris kantin. Bank sekolah juga tidak memiliki sistem digital untuk manajemen saldo siswa."
+      "en": "School canteens suffered from heavy physical cash dependencies, resulting in chaotic queues during short break windows, a complete lack of personal expense tracking for students, and an opaque ledger system for institutional school-run banking services.",
+      "id": "Kantin sekolah sering kali menghadapi kendala akibat ketergantungan pada uang tunai fisik, yang memicu antrean panjang saat jam istirahat. Selain itu, siswa kesulitan melacak pengeluaran pribadi dan pihak sekolah kekurangan sistem pencatatan yang transparan untuk layanan perbankan mikro siswa."
     },
     "planning": {
-      "en": "Designed a digital wallet system with modules for: student balance top-up, canteen product catalog, QR/barcode-based checkout, transaction history, and admin dashboard for inventory and financial reporting.",
-      "id": "Merancang sistem dompet digital dengan modul untuk: top-up saldo siswa, katalog produk kantin, checkout berbasis QR/barcode, riwayat transaksi, dan dashboard admin untuk inventaris dan laporan keuangan."
+      "en": "I mapped out an integrated closed-loop digital wallet architecture. The blueprint included distinct, interconnected features: a streamlined credit top-up portal for students, an interactive food catalog, quick QR-based scanning, and a granular reporting system designed for inventory controls and complete ledger audits.",
+      "id": "Saya merancang arsitektur dompet digital loop tertutup (closed-loop) yang terintegrasi. Cetak biru sistem ini mencakup beberapa fitur utama, seperti portal pengisian saldo siswa, katalog menu interaktif, pembayaran cepat berbasis pemindaian QR, serta sistem pelaporan mendalam untuk kontrol inventaris dan audit keuangan."
     },
     "architecture": {
-      "en": "Laravel backend with MySQL handling transactional data with proper ACID compliance. Bootstrap and JavaScript for a responsive and interactive frontend. Implemented middleware for role-based access (student, canteen operator, admin). Database designed with normalization for financial integrity.",
-      "id": "Backend Laravel dengan MySQL yang menangani data transaksional dengan kepatuhan ACID. Bootstrap dan JavaScript untuk frontend yang responsif dan interaktif. Mengimplementasikan middleware untuk akses berbasis peran (siswa, operator kantin, admin). Database dirancang dengan normalisasi untuk integritas keuangan."
+      "en": "I engineered the backend on Laravel, implementing rigid transactional routines inside MySQL to meet strict ACID-compliance for financial safety. The database layout underwent deep normalization cycles to shield currency balances from discrepancies, wrapped in a customized middleware to safeguard sensitive operator and student spaces.",
+      "id": "Saya mengembangkan backend menggunakan Laravel dan mengimplementasikan rutinitas transaksi yang ketat di dalam MySQL guna memenuhi kepatuhan ACID demi keamanan finansial. Struktur database melalui proses normalisasi mendalam untuk menjaga konsistensi saldo, lalu dibungkus dengan middleware kustom guna mengamankan hak akses operator dan siswa."
     },
     "result": {
-      "en": "Reduced canteen queue times and provided complete transaction transparency. Students and parents can track spending history. The admin dashboard gives real-time insights into sales data and inventory levels.",
-      "id": "Mengurangi waktu antrean kantin dan memberikan transparansi transaksi lengkap. Siswa dan orang tua dapat melacak riwayat pengeluaran. Dashboard admin memberikan wawasan real-time tentang data penjualan dan tingkat inventaris."
+      "en": "The platform successfully dissolved long break-time delays and brought uncompromised financial visibility to parents and school operators alike. Financial workflows became fully trackable, turning a slow cash-reliant ecosystem into a modern, data-driven environment.",
+      "id": "Platform ini berhasil mengurai antrean panjang saat jam istirahat dan menghadirkan transparansi keuangan bagi orang tua maupun pengelola sekolah. Seluruh alur transaksi kini dapat dilacak sepenuhnya, mengubah ekosistem konvensional berbasis tunai menjadi lingkungan yang modern dan terukur."
     }
   },
   {
     "title": "64Mart POS System",
     "description": {
-      "en": "A Point of Sale application designed to speed up canteen transactions using barcode scanning and real-time inventory management. Focused on usability, transaction accuracy, and operational efficiency.",
-      "id": "Aplikasi Point of Sale yang dirancang untuk mempercepat transaksi kantin melalui pemindaian barcode dan manajemen stok secara real-time. Fokus pada kemudahan penggunaan, akurasi transaksi, dan efisiensi operasional."
+      "en": "A highly performant, point-of-sale platform refined for instantaneous retail checkouts, high-accuracy item lookups, and unified inventory control.",
+      "id": "Platform kasir (point-of-sale) berperforma tinggi yang disempurnakan untuk transaksi ritel instan, pencarian produk berakurasi tinggi, dan kontrol inventaris terpadu."
     },
     "year": "2023",
     "tags": ["Laravel", "Bootstrap", "JavaScript", "MySQL"],
@@ -99,27 +99,27 @@
     "repo": "https://github.com/raflyrzp/64mart",
     "featured": false,
     "problem": {
-      "en": "The school canteen operated with manual price lookups and handwritten receipts, leading to slow service during peak hours and frequent pricing errors. Inventory tracking was done manually in spreadsheets with no real-time stock visibility.",
-      "id": "Kantin sekolah beroperasi dengan pencarian harga manual dan struk tulisan tangan, menyebabkan layanan lambat saat jam sibuk dan kesalahan harga yang sering terjadi. Pelacakan inventaris dilakukan secara manual di spreadsheet tanpa visibilitas stok real-time."
+      "en": "Operational delays Plagued the school's storefront due to manual pricing lookups and handwritten receipts, causing frequent calculation mistakes and a complete blind spot regarding real-time warehouse inventory and asset depletion.",
+      "id": "Proses operasional toko sekolah sering kali terhambat akibat pencarian harga barang yang masih manual dan struk tulisan tangan. Hal tersebut memicu kesalahan perhitungan harga dan menyulitkan pemantauan jumlah stok barang di gudang secara real-time."
     },
     "planning": {
-      "en": "Designed a POS interface optimized for speed: barcode scanning for instant product lookup, automatic price calculation, receipt generation, and a separate inventory management module with stock alerts.",
-      "id": "Merancang antarmuka POS yang dioptimalkan untuk kecepatan: pemindaian barcode untuk pencarian produk instan, kalkulasi harga otomatis, pembuatan struk, dan modul manajemen inventaris terpisah dengan notifikasi stok."
+      "en": "I aimed to build a lightweight cashier cockpit tailored for immediate action. The design focused heavily on optimizing processing speeds: integrating rapid hardware barcode scanning, automating inline cart mathematical operations, and embedding background alerts for diminishing stock metrics.",
+      "id": "Saya bertujuan membangun aplikasi kasir ringan yang dioptimalkan untuk respons cepat. Fokus utamanya adalah meningkatkan kecepatan pemrosesan transaksi melalui integrasi pemindai barcode, otomatisasi kalkulasi belanja di keranjang, serta penyematan sistem peringatan otomatis saat stok barang mulai menipis."
     },
     "architecture": {
-      "en": "Laravel MVC backend with MySQL. JavaScript handles barcode scanner input and real-time cart updates. Bootstrap ensures the cashier interface is clean and touch-friendly. Database triggers maintain inventory consistency after each transaction.",
-      "id": "Backend Laravel MVC dengan MySQL. JavaScript menangani input pemindai barcode dan pembaruan keranjang real-time. Bootstrap memastikan antarmuka kasir bersih dan ramah sentuh. Trigger database menjaga konsistensi inventaris setelah setiap transaksi."
+      "en": "The backbone runs on Laravel's structured MVC model, tied to an optimized MySQL database. I deployed asynchronous JavaScript to absorb raw barcode reader inputs and update user carts instantly, using automated database triggers to deduct warehouse stock metrics immediately after a successful receipt generation.",
+      "id": "Sistem ini berjalan di atas model MVC Laravel yang terikat pada basis data MySQL yang dioptimalkan. Saya memanfaatkan JavaScript asinkron untuk menangkap input dari alat pemindai barcode dan memperbarui data keranjang secara instan, diikuti penggunaan trigger database untuk otomatis memotong stok gudang begitu struk belanja tercetak."
     },
     "result": {
-      "en": "Transaction speed improved dramatically with barcode scanning. Pricing errors eliminated through automated lookups. Real-time inventory tracking replaced manual spreadsheets, giving operators instant stock visibility.",
-      "id": "Kecepatan transaksi meningkat drastis dengan pemindaian barcode. Kesalahan harga dihilangkan melalui pencarian otomatis. Pelacakan inventaris real-time menggantikan spreadsheet manual, memberikan visibilitas stok instan kepada operator."
+      "en": "The point-of-sale deployment revolutionized the checkout environment, reducing transaction friction significantly and wiping out pricing discrepancies. Store operators achieved absolute transparency over warehouse data, eliminating manual ledger verification forever.",
+      "id": "Penerapan sistem point-of-sale ini berhasil mempercepat proses pembayaran di kasir sekaligus mengeliminasi kesalahan perhitungan harga barang. Pengelola toko kini memiliki visibilitas penuh terhadap data inventaris, tanpa perlu melakukan pengecekan buku stok secara manual."
     }
   },
   {
     "title": "Sistem Informasi Akademik (SIAKAD) V3",
     "description": {
-      "en": "An academic information system for managing student data, course registration, grade reports, and class schedules. Integrated with external APIs to support scalable academic operations.",
-      "id": "Sistem informasi akademik untuk pengelolaan data mahasiswa, pengisian KRS, KHS, jadwal perkuliahan dan bimbingan. Terintegrasi dengan API eksternal untuk mendukung sistem akademik yang skalabel."
+      "en": "A scalable enterprise academic core engineered with non-blocking architectures to manage complex registration, curriculum models, and concurrent database reads smoothly.",
+      "id": "Inti akademik perusahaan yang skalabel, dirancang dengan arsitektur non-blocking untuk mengelola pendaftaran kompleks, model kurikulum, dan pembacaan database konkuren secara mulus."
     },
     "year": "2026",
     "tags": ["Node.js", "Express", "Prisma", "PostgreSQL", "REST API"],
@@ -128,27 +128,27 @@
     "repo": null,
     "featured": true,
     "problem": {
-      "en": "The previous SIAKAD versions suffered from performance issues during peak registration periods, rigid data models that couldn't accommodate curriculum changes, and tightly-coupled architecture making feature updates difficult.",
-      "id": "Versi SIAKAD sebelumnya mengalami masalah performa saat periode pendaftaran puncak, model data yang kaku dan tidak dapat mengakomodasi perubahan kurikulum, serta arsitektur tightly-coupled yang menyulitkan pembaruan fitur."
+      "en": "Legacy platform iterations cracked under heavy traffic spikes during high-stakes course registration windows. Rigid, hard-coded structural schemas failed to mirror frequent curriculum adaptations, while closely-coupled systems made scaling individual modules nearly impossible.",
+      "id": "Platform versi terdahulu kerap mengalami penurunan performa akibat lonjakan lalu lintas data selama periode pendaftaran mata kuliah (KRS). Model data yang kaku juga menyulitkan penyesuaian perubahan kurikulum, ditambah arsitektur sistem yang terlalu mengikat (tightly-coupled) sehingga sulit untuk dikembangkan per bagian."
     },
     "planning": {
-      "en": "Redesigned from scratch with a modern tech stack. Planned modular API endpoints for: student management, course registration (KRS), grade reports (KHS), scheduling, and external system integration. Defined clear database schema with Prisma for type safety.",
-      "id": "Dirancang ulang dari awal dengan tech stack modern. Merencanakan endpoint API modular untuk: manajemen mahasiswa, pengisian KRS, laporan nilai (KHS), penjadwalan, dan integrasi sistem eksternal. Mendefinisikan skema database yang jelas dengan Prisma untuk type safety."
+      "en": "I led a comprehensive, clean-slate rebuild centered on a decoupling strategy. The objective was to design strict, isolated RESTful APIs dedicated to student telemetry, complex scheduling conflicts, and grade rosters, mapping out an explicit, fully typed schema to ensure unbreakable database operations.",
+      "id": "Saya memimpin proses perancangan ulang sistem dari awal dengan fokus pada strategi decoupling (pemisahan modul). Tujuannya adalah membangun API RESTful independen yang didedikasikan khusus untuk manajemen data mahasiswa, validasi jadwal kuliah, dan input nilai, serta menyusun skema database yang fully-typed untuk meminimalkan error."
     },
     "architecture": {
-      "en": "Node.js with Express for a lightweight and performant API. Prisma ORM with PostgreSQL enables type-safe database queries and easy schema migrations. RESTful API design with proper versioning. Connection pooling handles concurrent access during peak loads.",
-      "id": "Node.js dengan Express untuk API yang ringan dan performa tinggi. Prisma ORM dengan PostgreSQL memungkinkan query database type-safe dan migrasi skema yang mudah. Desain RESTful API dengan versioning yang tepat. Connection pooling menangani akses konkuren saat beban puncak."
+      "en": "I selected Node.js paired with Express to build a highly parallel, non-blocking routing engine. Leveraging Prisma ORM with PostgreSQL provided robust type safety and fluid schema migrations, while sophisticated connection pooling layers were added to absorb sudden traffic surges without degrading server availability.",
+      "id": "Saya memilih Node.js dan Express untuk membangun backend API dengan karakteristik non-blocking yang andal. Penggunaan Prisma ORM bersama PostgreSQL memberikan jaminan type-safety saat kueri data dan mempermudah migrasi skema, dilengkapi dengan optimasi connection pooling untuk menangani beban tinggi saat pendaftaran serentak."
     },
     "result": {
-      "en": "Delivered a robust API that handles high concurrent loads during registration periods. Prisma migrations simplified curriculum updates. The modular architecture allows individual modules to be updated without affecting others.",
-      "id": "Menghasilkan API yang handal menangani beban konkuren tinggi saat periode pendaftaran. Migrasi Prisma menyederhanakan pembaruan kurikulum. Arsitektur modular memungkinkan modul individual diperbarui tanpa mempengaruhi modul lainnya."
+      "en": "The resulting engine successfully sustained peak database traffic without a single performance degradation event. Modulating the codebase meant system upgrades could be quietly deployed without ever risking systemic uptime or affecting adjacent micro-services.",
+      "id": "Mesin API yang dikembangkan berhasil menangani beban lalu lintas data puncak dengan stabil tanpa kendala performa. Melalui pendekatan arsitektur yang modular, pembaruan fitur pada modul tertentu kini dapat diterapkan secara aman tanpa mengganggu fungsionalitas sistem lainnya."
     }
   },
   {
     "title": "Personal Portfolio Website",
     "description": {
-      "en": "A personal portfolio website showcasing projects and experience with a modern interface, smooth animations, and responsive design to create a strong first impression for clients and recruiters.",
-      "id": "Website portfolio personal yang menampilkan proyek dan pengalaman dengan tampilan modern, animasi halus, dan desain responsif untuk memberikan kesan profesional kepada klien dan recruiter."
+      "en": "A highly interactive digital profile showcasing production-grade code, tailored experiences, and fluid motion design optimized for professional client and recruiter evaluation.",
+      "id": "Profil digital interaktif yang menampilkan kode kelas produksi, pengalaman yang disesuaikan, dan desain gerak lancar yang dioptimalkan untuk evaluasi klien profesional dan rekruter."
     },
     "year": "2024",
     "tags": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
@@ -157,27 +157,27 @@
     "repo": "https://github.com/raflyrzp/my-portfolio",
     "featured": true,
     "problem": {
-      "en": "Needed a professional online presence to showcase skills and projects effectively. Generic resume formats fail to communicate the depth and quality of technical work. Required multi-language support for broader audience reach.",
-      "id": "Membutuhkan kehadiran online profesional untuk menampilkan keahlian dan proyek secara efektif. Format resume generik gagal mengkomunikasikan kedalaman dan kualitas pekerjaan teknis. Membutuhkan dukungan multi-bahasa untuk jangkauan audiens yang lebih luas."
+      "en": "Standard, flat resumes completely fail to convey the complexity and underlying architecture of technical projects. I needed an accessible online space capable of capturing clean development values while handling seamless, international multi-language routing smoothly.",
+      "id": "Format resume konvensional yang statis kurang mampu merepresentasikan kedalaman teknis dan arsitektur dari proyek-proyek yang telah saya kerjakan. Saya membutuhkan sebuah platform online interaktif untuk menampilkan kualitas kode secara profesional, sekaligus mendukung sistem navigasi multi-bahasa yang mulus."
     },
     "planning": {
-      "en": "Designed a single-page portfolio with dedicated sections: Hero, About, Projects, Experience, Skills, Certificates, and Contact. Planned i18n support (English/Indonesian), dark mode, smooth scroll animations, and a contact form with email integration.",
-      "id": "Merancang portfolio single-page dengan bagian khusus: Hero, About, Projects, Experience, Skills, Certificates, dan Contact. Merencanakan dukungan i18n (Inggris/Indonesia), dark mode, animasi scroll halus, dan form kontak dengan integrasi email."
+      "en": "I organized a unified single-page architecture built around distinct content views, mapping out localized i18n configurations for English and Indonesian languages, smooth scroll-triggered behavior, custom system theme variables, and an authenticated contact tunnel.",
+      "id": "Saya merancang arsitektur single-page website yang terbagi ke dalam beberapa bagian konten utama. Rencana pengembangan mencakup implementasi konfigurasi i18n untuk lokalisasi bahasa (Inggris & Indonesia), animasi interaktif berbasis scroll, manajemen tema sistem (dark/light mode), serta integrasi formulir kontak."
     },
     "architecture": {
-      "en": "Next.js App Router with TypeScript for type safety. Tailwind CSS for utility-first styling with custom CSS variables for theming. Framer Motion for scroll-triggered animations. JSON-based data layer for easy content updates. Deployed on Vercel with optimized build pipeline.",
-      "id": "Next.js App Router dengan TypeScript untuk type safety. Tailwind CSS untuk styling utility-first dengan custom CSS variables untuk theming. Framer Motion untuk animasi berbasis scroll. Data layer berbasis JSON untuk pembaruan konten yang mudah. Di-deploy di Vercel dengan pipeline build yang dioptimalkan."
+      "en": "The system runs on the Next.js App Router framework woven with TypeScript for compile-time structural guarantees. Tailwind CSS drives the minimalist visual aesthetics via strict component utility abstractions, while Framer Motion handles interface physics, all deploying smoothly via an optimized Vercel build infrastructure.",
+      "id": "Sistem ini berjalan di atas framework Next.js App Router yang dipadukan dengan TypeScript untuk menjamin validitas tipe data saat kompilasi. Tailwind CSS digunakan untuk menyusun estetika visual yang minimalis, sementara Framer Motion menangani transisi animasi antarmuka. Seluruh sistem di-deploy melalui infrastruktur Vercel yang dioptimalkan."
     },
     "result": {
-      "en": "A polished, performant portfolio scoring high on Lighthouse metrics. Smooth animations enhance user experience without sacrificing load times. Multi-language support and dark mode provide accessibility for a diverse audience.",
-      "id": "Portfolio yang rapi dan performa tinggi dengan skor Lighthouse yang baik. Animasi halus meningkatkan pengalaman pengguna tanpa mengorbankan waktu muat. Dukungan multi-bahasa dan dark mode memberikan aksesibilitas untuk audiens yang beragam."
+      "en": "The resulting site achieved pristine Lighthouse optimization performance. Fluid layouts deliver an elegant experience across devices without trading off processing time, offering clean, fast access to global audiences regardless of their preferred language or theme.",
+      "id": "Website ini berhasil mencapai nilai optimasi yang tinggi pada metrik Lighthouse. Tata letak yang responsif mampu memberikan pengalaman pengguna yang elegan di berbagai perangkat tanpa mengorbankan waktu muat halaman, serta memberikan akses informasi yang cepat bagi pengunjung."
     }
   },
   {
     "title": "Charivest",
     "description": {
-      "en": "Charivest is a blockchain-based fundraising website I developed to ensure donation transparency and security, featuring immutable and real-time traceable transactions powered by blockchain technology and smart contracts.",
-      "id": "Charivest adalah website penggalangan dana berbasis blockchain yang saya kembangkan untuk memastikan transparansi dan keamanan donasi, dengan pencatatan transaksi yang immutable dan dapat dilacak secara real-time menggunakan teknologi blockchain dan smart contract."
+      "en": "A decentralized, trustless Web3 donation ecosystem that leverages the immutable nature of smart contracts to redefine global fundraising transparency.",
+      "id": "Ekosistem donasi Web3 yang terdesentralisasi dan trustless, memanfaatkan sifat bawaan smart contract yang immutable untuk mendefinisikan ulang transparansi penggalangan dana global."
     },
     "year": "2025",
     "tags": [
@@ -193,27 +193,27 @@
     "repo": "https://github.com/raflyrzp/charivest",
     "featured": false,
     "problem": {
-      "en": "Traditional fundraising platforms lack transparency \u2014 donors cannot verify how their contributions are used. Centralized systems are vulnerable to fraud and data manipulation. There is no immutable audit trail for donation flows.",
-      "id": "Platform penggalangan dana tradisional kurang transparansi \u2014 donatur tidak dapat memverifikasi bagaimana kontribusi mereka digunakan. Sistem terpusat rentan terhadap penipuan dan manipulasi data. Tidak ada jejak audit yang immutable untuk aliran donasi."
+      "en": "Conventional fundraising web apps operate like opaque black boxes. Donors are left blind regarding the actual movement of their capital, while centralized systems remain deeply vulnerable to malicious ledger alteration and administrator financial fraud.",
+      "id": "Platform penggalangan dana konvensional sering kali bekerja seperti kotak hitam yang kurang transparan, di mana donatur kesulitan memverifikasi ke mana aliran dana mereka disalurkan. Selain itu, sistem terpusat memiliki kerentanan terhadap manipulasi data sepihak atau risiko penyalahgunaan dana."
     },
     "planning": {
-      "en": "Designed a decentralized fundraising platform using blockchain for immutable transaction records. Planned smart contracts for automated fund distribution rules. Web3 wallet integration for donor authentication. Next.js frontend for a modern user experience.",
-      "id": "Merancang platform penggalangan dana terdesentralisasi menggunakan blockchain untuk catatan transaksi yang immutable. Merencanakan smart contract untuk aturan distribusi dana otomatis. Integrasi wallet Web3 untuk autentikasi donatur. Frontend Next.js untuk pengalaman pengguna modern."
+      "en": "I set out to engineer an open fundraising alternative where transaction finality is completely handled by public nodes. The goal was to write programmatic conditions to govern capital tracking, weave native Web3 wallet handshakes for decentralized identities, and present it all through a smooth frontend.",
+      "id": "Saya bertujuan membangun alternatif platform penggalangan dana terbuka di mana validitas transaksi dikelola sepenuhnya oleh node publik (blockchain). Rencananya meliputi penulisan kondisi logika terprogram untuk pelacakan alokasi dana, integrasi dompet Web3 sebagai identitas terdesentralisasi, serta penyajian data tersebut melalui frontend yang aman."
     },
     "architecture": {
-      "en": "Next.js with TypeScript for the frontend, styled with Tailwind CSS. Smart contracts written in Solidity handle donation logic, fund allocation, and withdrawal rules on-chain. Web3.js/ethers.js for blockchain interaction. All transactions are verifiable on the blockchain explorer.",
-      "id": "Next.js dengan TypeScript untuk frontend, di-style dengan Tailwind CSS. Smart contract ditulis dalam Solidity menangani logika donasi, alokasi dana, dan aturan penarikan on-chain. Web3.js/ethers.js untuk interaksi blockchain. Semua transaksi dapat diverifikasi di blockchain explorer."
+      "en": "The client app utilizes Next.js with TypeScript and Tailwind CSS. The immutable core logic consists of Solidity smart contracts deployed on-chain to strictly handle donation pooling, conditional lockups, and release parameters, interacting with the node matrix via audited ethers.js interfaces.",
+      "id": "Aplikasi web ini menggunakan Next.js bersama TypeScript dan Tailwind CSS untuk sisi klien. Logika utama sistem diatur melalui smart contract Solidity yang dijalankan on-chain untuk mengelola pengumpulan donasi, aturan penguncian saldo, hingga parameter pencairan dana secara otomatis, yang terhubung melalui library ethers.js."
     },
     "result": {
-      "en": "Created a transparent fundraising platform where every donation is recorded on-chain. Smart contracts ensure funds are distributed according to predefined rules without intermediary manipulation. Donors can trace their contributions in real-time.",
-      "id": "Membuat platform penggalangan dana transparan di mana setiap donasi dicatat on-chain. Smart contract memastikan dana didistribusikan sesuai aturan yang telah ditentukan tanpa manipulasi perantara. Donatur dapat melacak kontribusi mereka secara real-time."
+      "en": "The final decentralized web platform successfully locked down donation integrity by logging every execution directly on the ledger. Automated rules replaced central management, offering donors an immutable window to audit fund trajectories in real-time.",
+      "id": "Platform terdesentralisasi ini berhasil mengunci integritas transaksi dengan mencatat setiap aktivitas donasi langsung ke dalam ledger blockchain. Aturan berbasis kode otomatis menggantikan peran perantara terpusat, memberikan donatur transparansi penuh untuk mengaudit aliran dana secara real-time."
     }
   },
   {
     "title": "Resolvery Consulting Company Profile",
     "description": {
-      "en": "Resolvery Consulting is a company profile website enhanced with recruitment management features, enabling applicants to submit applications and job providers to post vacancies directly through the website, with all data automatically stored in Google Drive and real-time notifications sent via email to ensure an efficient and well-organized workflow.",
-      "id": "Resolvery Consulting adalah website company profile yang dilengkapi fitur manajemen rekrutmen, memungkinkan pelamar mengirimkan data aplikasi dan penyedia lowongan mengajukan informasi posisi secara langsung melalui website, di mana seluruh data akan tersimpan otomatis ke Google Drive dan notifikasi akan dikirimkan melalui email untuk memastikan proses yang efisien dan terorganisir."
+      "en": "A corporate company profile engineered with integrated, cloud-backed recruitment pipelines to automate applicant workflows and secure resource handling.",
+      "id": "Company profile korporat yang dirancang dengan pipeline rekrutmen terintegrasi berbasis cloud untuk mengotomatisasi alur kerja pelamar dan penanganan berkas yang aman."
     },
     "year": "2024",
     "tags": ["Next.js", "TypeScript", "Tailwind CSS"],
@@ -222,27 +222,27 @@
     "repo": "https://github.com/raflyrzp/resolvery-consulting",
     "featured": false,
     "problem": {
-      "en": "The consulting company needed a professional online presence combined with a recruitment pipeline. Manual application handling through email was unorganized, attachments were scattered, and there was no automated notification system for new submissions.",
-      "id": "Perusahaan konsulting membutuhkan kehadiran online profesional yang dikombinasikan dengan pipeline rekrutmen. Penanganan lamaran manual melalui email tidak terorganisir, lampiran tersebar, dan tidak ada sistem notifikasi otomatis untuk pengajuan baru."
+      "en": "The consultancy struggled with a fragmented, disorganized applicant pipeline. Resumes were lost across chaotic internal email chains, data storage lacked structured consolidation, and HR teams suffered from a complete absence of real-time communication triggers for new submissions.",
+      "id": "Perusahaan konsultan ini awalnya menghadapi kendala dalam mengelola berkas lamaran kerja yang masuk secara manual via email. Data dokumen pelamar sering kali tersebar, penyimpanan berkas kurang terorganisir, serta tidak adanya sistem notifikasi otomatis yang memberi tahu tim HR saat ada berkas baru masuk."
     },
     "planning": {
-      "en": "Combined company profile with an integrated recruitment module. Planned features: company information pages, job vacancy listings, application form with file uploads, automatic Google Drive storage for submissions, and email notifications for both applicants and recruiters.",
-      "id": "Menggabungkan company profile dengan modul rekrutmen terintegrasi. Fitur yang direncanakan: halaman informasi perusahaan, daftar lowongan kerja, formulir lamaran dengan upload file, penyimpanan otomatis ke Google Drive, dan notifikasi email untuk pelamar dan recruiter."
+      "en": "I planned a dual-purpose strategy to morph a standard marketing profile into an active acquisition tool. The design encompassed secure file uploading layers, an administrative dashboard to parse live job listings, automated external cloud storage syncs, and dedicated communication feedback loops.",
+      "id": "Saya merancang fungsi ganda pada website company profile ini agar dapat bekerja sebagai alat rekrutmen aktif. Rencana pengembangan meliputi pembuatan fitur unggah berkas yang aman, dashboard administrasi untuk memperbarui lowongan kerja, sinkronisasi penyimpanan awan otomatis, serta sistem notifikasi umpan balik."
     },
     "architecture": {
-      "en": "Next.js with TypeScript and Tailwind CSS for a fast, SEO-friendly frontend. Google Drive API integration for automatic file storage. Email service (Nodemailer/SendGrid) for real-time notifications. Server-side API routes handle form submissions securely.",
-      "id": "Next.js dengan TypeScript dan Tailwind CSS untuk frontend yang cepat dan SEO-friendly. Integrasi Google Drive API untuk penyimpanan file otomatis. Layanan email (Nodemailer/SendGrid) untuk notifikasi real-time. Route API server-side menangani pengiriman formulir dengan aman."
+      "en": "I materialized the platform using Next.js, leveraging server-side API routing to isolate cloud operations safely. File attachments funnel directly into storage spaces using the Google Drive API, while transactional mail services trigger instant notifications, all bound within TypeScript models for type safety.",
+      "id": "Saya mengimplementasikan platform ini menggunakan Next.js dengan memanfaatkan fungsionalitas server-side API routes untuk mengisolasi operasi cloud dengan aman. Dokumen lampiran pelamar langsung disalurkan ke ruang penyimpanan terstruktur menggunakan Google Drive API, disertai layanan email transaksional otomatis yang dikembangkan dalam modul TypeScript."
     },
     "result": {
-      "en": "Delivered a professional company profile that doubles as a recruitment portal. All applications are automatically organized in Google Drive. Real-time email notifications ensure no submission goes unnoticed, streamlining the hiring process.",
-      "id": "Menghasilkan company profile profesional yang berfungsi ganda sebagai portal rekrutmen. Semua lamaran tersimpan otomatis di Google Drive. Notifikasi email real-time memastikan tidak ada pengajuan yang terlewat, menyederhanakan proses perekrutan."
+      "en": "The portal seamlessly bridged corporate storytelling with a robust recruitment engine. HR personnel recovered immense operational clarity with applications cleanly structured in cloud drives, ensuring swift, automated responses to every prospective career candidate.",
+      "id": "Portal ini berhasil memadukan informasi profil perusahaan dengan mesin rekrutmen yang fungsional. Tim HR mendapatkan kemudahan operasional karena seluruh berkas pelamar tersusun rapi di cloud drive, didukung alur respons otomatis yang mempercepat proses seleksi awal kandidat."
     }
   },
   {
     "title": "Trashure",
     "description": {
-      "en": "Trashure is a community-based waste reporting website that implements a leaderboard system to boost public participation and engagement, encouraging users to actively report waste issues while fostering a cleaner environment through collaboration and gamification.",
-      "id": "Trashure adalah website pelaporan sampah berbasis komunitas yang menerapkan sistem leaderboard untuk meningkatkan partisipasi dan antusiasme masyarakat, dengan mendorong pengguna aktif melaporkan permasalahan sampah sekaligus menciptakan lingkungan yang lebih bersih melalui pendekatan kolaboratif dan gamifikasi."
+      "en": "A civic environmental reporting system utilizing community gamification and live leaderboards to incentivize local ecological accountability.",
+      "id": "Sistem pelaporan lingkungan kemasyarakatan yang memanfaatkan gamifikasi komunitas dan papan peringkat langsung untuk memberikan insentif pada tanggung jawab ekologis lokal."
     },
     "year": "2025",
     "tags": ["PHP", "Laravel", "MySQL"],
@@ -251,27 +251,27 @@
     "repo": "https://github.com/raflyrzp/trashure",
     "featured": false,
     "problem": {
-      "en": "Waste management in communities suffered from low public engagement. People noticed illegal dumping or littered areas but had no easy way to report them. Traditional reporting through government channels was slow and lacked feedback, discouraging participation.",
-      "id": "Pengelolaan sampah di komunitas mengalami rendahnya keterlibatan masyarakat. Orang-orang mengetahui pembuangan ilegal atau area kotor tetapi tidak memiliki cara mudah untuk melaporkannya. Pelaporan tradisional melalui saluran pemerintah lambat dan kurang umpan balik, menurunkan partisipasi."
+      "en": "Public environmental motivation was chronically low. Citizens regularly encountered illegal waste sites but had no intuitive reporting tool, while old-school government communication avenues were slow and lacked transparent feedback loops, destroying civic enthusiasm.",
+      "id": "Tingkat partisipasi masyarakat dalam menjaga kebersihan lingkungan sekitar tergolong rendah karena minimnya wadah pelaporan yang praktis. Alur pengaduan konvensional sering kali dinilai lambat dan tidak menyediakan transparansi status tindak lanjut, sehingga menurunkan antusiasme warga."
     },
     "planning": {
-      "en": "Designed a gamified reporting platform with features: location-tagged waste reports with photo evidence, leaderboard ranking based on report activity, point system to incentivize participation, community dashboard showing cleanup progress, and admin moderation tools.",
-      "id": "Merancang platform pelaporan dengan gamifikasi: laporan sampah dengan tag lokasi dan bukti foto, peringkat leaderboard berdasarkan aktivitas pelaporan, sistem poin untuk memberikan insentif partisipasi, dashboard komunitas menampilkan progres pembersihan, dan alat moderasi admin."
+      "en": "I turned to gamification mechanics to foster public behavioral shifts. The plan centered on building a geotagged incident interface backed by image evidence validation, an algorithmic leaderboard ranking system to drive engagement, point allocation matrices, and public progress panels.",
+      "id": "Saya menerapkan konsep gamifikasi untuk mendorong perubahan kebiasaan masyarakat. Rencana pengembangan berfokus pada penyediaan antarmuka laporan ber-geotag yang disertai bukti foto, sistem peringkat papan skor (leaderboard) untuk memicu keaktifan pengguna, serta dashboard pemantauan progres pembersihan."
     },
     "architecture": {
-      "en": "Laravel backend with MySQL. Reports include geolocation data and image uploads. The leaderboard is query-optimized with caching for performance. User authentication with role separation between reporters and administrators.",
-      "id": "Backend Laravel dengan MySQL. Laporan mencakup data geolokasi dan upload gambar. Leaderboard dioptimalkan query-nya dengan caching untuk performa. Autentikasi pengguna dengan pemisahan peran antara pelapor dan administrator."
+      "en": "Built using Laravel and MySQL, the application processes real-time geographical coordinates paired with binary image streams. I deeply optimized the leaderboard calculation logic through query caching layers to prevent database fatigue, keeping administrative and user operations strictly sandboxed via role authentication.",
+      "id": "Aplikasi ini dibangun menggunakan Laravel dan MySQL untuk memproses data koordinat geografis real-time beserta dokumen foto laporan. Saya mengoptimalkan performa kueri papan skor melalui implementasi caching guna mencegah beban berlebih pada database, serta mengamankan hak akses menggunakan otentikasi peran."
     },
     "result": {
-      "en": "The gamification approach successfully increased reporting activity. The leaderboard created healthy competition among community members. Reported areas received faster cleanup responses due to organized and validated reports with photo evidence.",
-      "id": "Pendekatan gamifikasi berhasil meningkatkan aktivitas pelaporan. Leaderboard menciptakan kompetisi sehat antar anggota komunitas. Area yang dilaporkan mendapat respons pembersihan lebih cepat berkat laporan terorganisir dan tervalidasi dengan bukti foto."
+      "en": "The injection of behavioral rewards successfully reversed community apathy, spiking accurate hazard submissions. Cleanups occurred significantly faster because sanitation networks received highly structured, visually verified coordinate payloads, closing the loop on local environmental issues.",
+      "id": "Pendekatan berbasis reward ini berhasil meningkatkan partisipasi aktif masyarakat dalam melaporkan tumpukan sampah ilegal. Proses pembersihan oleh petugas lapangan menjadi jauh lebih cepat karena menerima data koordinat lokasi yang akurat dan tervalidasi secara visual."
     }
   },
   {
     "title": "Danus.in",
     "description": {
-      "en": "A personal portfolio website showcasing projects and experience with a modern interface, smooth animations, and responsive design to create a strong first impression for clients and recruiters.",
-      "id": "Website portfolio personal yang menampilkan proyek dan pengalaman dengan tampilan modern, animasi halus, dan desain responsif untuk memberikan kesan profesional kepada klien dan recruiter."
+      "en": "A centralized, full-stack fundraising ecosystem crafted to streamline campus entrepreneurship, fund management, and campaign telemetry for student organizations.",
+      "id": "Ekosistem penggalangan dana full-stack terpusat yang dirancang untuk menyederhanakan kewirausahaan kampus, manajemen dana, dan telemetri kampanye untuk organisasi mahasiswa."
     },
     "year": "2025",
     "tags": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
@@ -289,27 +289,27 @@
     ],
     "featured": false,
     "problem": {
-      "en": "Student organizations needed a streamlined platform for managing fundraising activities. Existing processes involved manual tracking of contributions, scattered communication, and no centralized reporting for fundraising campaigns.",
-      "id": "Organisasi mahasiswa membutuhkan platform terpadu untuk mengelola kegiatan penggalangan dana. Proses yang ada melibatkan pelacakan kontribusi manual, komunikasi tersebar, dan tidak ada pelaporan terpusat untuk kampanye penggalangan dana."
+      "en": "Student committees frequently struggled with highly unorganized fundraising logistics. Managing sales records and student contributions depended on fragmented chat threads and manual spreadsheets, leading to major accounting discrepancies, scattered tracking, and no centralized platform to broadcast real-time project progress.",
+      "id": "Kepanitiaan mahasiswa sering kali menghadapi kendala dalam mengelola logistik penggalangan dana internal (danus). Pencatatan penjualan dan rekapitulasi iuran anggota yang masih mengandalkan pesan obrolan serta spreadsheet manual memicu risiko selisih pencatatan keuangan dan tidak adanya visualisasi progres target secara real-time."
     },
     "planning": {
-      "en": "Designed a full-stack platform with separate frontend and backend repositories. Planned features: campaign creation, contribution tracking, participant management, real-time progress dashboard, and admin reporting tools.",
-      "id": "Merancang platform full-stack dengan repositori frontend dan backend terpisah. Fitur yang direncanakan: pembuatan kampanye, pelacakan kontribusi, manajemen peserta, dashboard progres real-time, dan alat pelaporan admin."
+      "en": "I set out to engineer a full-stack platform separated cleanly into modular standalone domains. The feature layout was strategically mapped: from flexible merchant campaign initializations and structured transaction tracking to dynamic, component-driven progress monitors and absolute financial auditing utilities for campaign administrators.",
+      "id": "Saya merancang sebuah platform full-stack yang dipisahkan secara terstruktur ke dalam dua domain repositori mandiri. Fitur yang disiapkan meliputi pembuatan kampanye penjualan yang fleksibel, pelacakan histori transaksi, tampilan grafik progres secara dinamis, serta modul audit laporan keuangan bagi panitia inti."
     },
     "architecture": {
-      "en": "Next.js with TypeScript and Tailwind CSS for the frontend SPA. Separate backend API service handles business logic and data persistence. Framer Motion for smooth UI transitions. Clean separation of concerns between frontend and backend enables independent deployment.",
-      "id": "Next.js dengan TypeScript dan Tailwind CSS untuk frontend SPA. Layanan API backend terpisah menangani logika bisnis dan persistensi data. Framer Motion untuk transisi UI yang halus. Pemisahan concern yang bersih antara frontend dan backend memungkinkan deployment independen."
+      "en": "The workspace splits into a modern Next.js client running TypeScript and Tailwind CSS as a lightweight single-page application, decoupled entirely from a separate backend API service managing business flows and ledger operations. Fluid layout feedback uses Framer Motion, while the isolated dual-repository infrastructure guarantees scalable, autonomous build processes.",
+      "id": "Arsitektur sistem dibagi menjadi sisi klien menggunakan Next.js, TypeScript, dan Tailwind CSS sebagai aplikasi single-page yang ringan, terpisah sepenuhnya dari layanan backend API terisolasi yang menangani logika bisnis serta operasi database. Efek transaksional visual menggunakan Framer Motion, sementara infrastruktur dual-repository diterapkan demi mempermudah proses build dan pemeliharaan independen."
     },
     "result": {
-      "en": "Delivered a functional fundraising management platform with clear separation between frontend and backend. The dual-repository architecture demonstrated professional development practices and enabled parallel development workflows.",
-      "id": "Menghasilkan platform manajemen penggalangan dana fungsional dengan pemisahan yang jelas antara frontend dan backend. Arsitektur dual-repository mendemonstrasikan praktik pengembangan profesional dan memungkinkan alur kerja pengembangan paralel."
+      "en": "The decoupled execution delivered a highly dependable funding hub, replacing manual tracking mess with absolute financial visibility. The clean separation of repositories demonstrated rigid enterprise architecture values while unlocking parallel, rapid development cycles across team pipelines.",
+      "id": "Penerapan arsitektur terpisah ini menghasilkan sistem manajemen pendanaan yang andal, menggantikan rekapitulasi manual menjadi pelaporan finansial yang transparan. Struktur dual-repository ini juga mencerminkan praktik pengembangan standar industri serta mempermudah alur kerja paralel di dalam tim."
     }
   },
   {
     "title": "NewsApp",
     "description": {
-      "en": "A mobile news application designed to deliver up-to-date information through a clean and intuitive interface, enabling users to easily browse, read, and stay informed with the latest news anytime and anywhere.",
-      "id": "Aplikasi mobile berita yang dirancang untuk menyajikan informasi terkini melalui antarmuka yang bersih dan intuitif, sehingga pengguna dapat dengan mudah menjelajah, membaca, dan tetap terinformasi kapan saja dan di mana saja."
+      "en": "A distraction-free native mobile content reader optimized for zero asset bloat, instantaneous article parsing, and fluid Material typography.",
+      "id": "Pembaca konten mobile native bebas gangguan yang dioptimalkan untuk performa tanpa beban aset, penguraian artikel instan, dan tipografi Material yang lancar."
     },
     "year": "2023",
     "tags": ["Kotlin", "Mobile App", "Android"],
@@ -318,20 +318,20 @@
     "repo": "https://github.com/raflyrzp/newsapp",
     "featured": false,
     "problem": {
-      "en": "Needed to explore native Android development with Kotlin. Existing news apps are bloated with features and heavy on resources. Wanted to create a minimal, fast news reader that focuses on content delivery without distractions.",
-      "id": "Perlu mengeksplorasi pengembangan Android native dengan Kotlin. Aplikasi berita yang ada terlalu banyak fitur dan berat pada sumber daya. Ingin membuat pembaca berita yang minimal, cepat, dan fokus pada penyajian konten tanpa gangguan."
+      "en": "Modern news aggregators have grown painfully heavy, cluttered with aggressive telemetry and excessive layout features that choke system memory and completely pull user attention away from the core long-form reading experience.",
+      "id": "Banyak aplikasi pembaca berita saat ini terasa lambat dan berat karena dipenuhi beban iklan, pelacakan telemetri yang agresif, serta tata letak yang kompleks. Hal tersebut membebani memori perangkat dan mengurangi kenyamanan pengguna saat membaca artikel teks panjang secara fokus."
     },
     "planning": {
-      "en": "Designed a clean mobile app with features: news feed from external API, category filtering, article detail view, search functionality, and offline reading bookmarks. Followed Material Design guidelines for consistent Android UX.",
-      "id": "Merancang aplikasi mobile bersih dengan fitur: feed berita dari API eksternal, filter kategori, tampilan detail artikel, fungsi pencarian, dan bookmark untuk membaca offline. Mengikuti panduan Material Design untuk UX Android yang konsisten."
+      "en": "I intended to venture into bare-metal Android environments to construct a fast, content-first news reader. The layout plan emphasized clean feed extractions via public news channels, reactive group filters, fluid transitions, and a low-overhead offline archiving layer strictly mirroring global Material Design UX principles.",
+      "id": "Saya bermaksud mengeksplorasi pengembangan Android native untuk membangun aplikasi pembaca berita yang cepat dan minimalis. Fokus perencanaannya meliputi ekstraksi feed data yang bersih dari API publik, pengelompokan kategori yang responsif, transisi antarmuka yang halus, serta penyediaan fitur simpan konten untuk dibaca luring sesuai panduan Material Design."
     },
     "architecture": {
-      "en": "Kotlin with Android SDK following MVVM architecture. Retrofit for API calls to a news data provider. RecyclerView for efficient list rendering. Room database for local caching and bookmarks. Navigation Component for seamless screen transitions.",
-      "id": "Kotlin dengan Android SDK mengikuti arsitektur MVVM. Retrofit untuk panggilan API ke penyedia data berita. RecyclerView untuk rendering daftar yang efisien. Database Room untuk caching lokal dan bookmark. Navigation Component untuk transisi layar yang seamless."
+      "en": "I built the application natively using Kotlin and the Android SDK, executing strict MVVM structural encapsulation. I utilized Retrofit to handle external asynchronous data networks, implemented memory-efficient RecyclerView layers for clean feed lists, and integrated Room SQLite structures for instant local caching and offline bookmark state management.",
+      "id": "Aplikasi ini dibangun secara native menggunakan Kotlin dan Android SDK dengan menerapkan pola arsitektur MVVM. Saya menggunakan library Retrofit untuk menangani integrasi data API eksternal, komponen RecyclerView yang hemat memori untuk menampilkan daftar berita, serta database lokal Room untuk fungsionalitas caching dan manajemen bookmark offline."
     },
     "result": {
-      "en": "Built a lightweight Android news app with fast load times and smooth scrolling. The MVVM architecture ensures clean code separation. Local caching enables offline reading of previously loaded articles.",
-      "id": "Membangun aplikasi berita Android ringan dengan waktu muat cepat dan scrolling halus. Arsitektur MVVM memastikan pemisahan kode yang bersih. Caching lokal memungkinkan pembacaan offline untuk artikel yang sudah dimuat sebelumnya."
+      "en": "The native mobile architecture achieved immediate view render cycles and smooth scrolling. Isolating responsibilities through MVVM patterns guaranteed clean maintenance, while the internal offline caching system empowered users to retain and parse whole articles without any data connectivity.",
+      "id": "Implementasi arsitektur mobile native ini berhasil menghasilkan aplikasi dengan waktu rendering instan dan navigasi scrolling yang mulus. Penggunaan pola MVVM memastikan struktur kode lebih rapi dan mudah dirawat, sementara fitur local caching memungkinkan pengguna tetap membaca artikel yang sudah dimuat meskipun tanpa koneksi internet."
     }
   }
 ]

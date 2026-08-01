@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import type { Bio } from "@/types";
@@ -11,7 +10,6 @@ export default function Footer({ bio }: { bio: Bio }) {
   const t = useTranslations("footer");
   const tNav = useTranslations("nav");
   const currentYear = new Date().getFullYear();
-  const [showBubble, setShowBubble] = useState(false);
 
   const quickLinks = [
     { href: "/", label: tNav("home") },
@@ -114,31 +112,7 @@ export default function Footer({ bio }: { bio: Bio }) {
             © {currentYear} {bio.name}. {t("allRights")}
           </p>
           <p className="text-xs sm:text-sm text-[var(--text-muted)]">
-            {t("builtWith")}{" "}
-            <button
-              type="button"
-              onClick={() => setShowBubble((v) => !v)}
-              className="relative inline-flex items-center cursor-pointer select-none"
-              aria-label="Toggle message"
-            >
-              <span
-                className={`text-[#ec4899] transition-transform duration-300 ${showBubble ? "scale-125" : ""}`}
-              >
-                ♥
-              </span>
-              {/* Speech bubble */}
-              <span
-                className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-2 pointer-events-none transition-all duration-300 ease-out ${
-                  showBubble ? "opacity-100 scale-100" : "opacity-0 scale-90"
-                }`}
-              >
-                <span className="relative block px-3 py-1.5 rounded-lg bg-[#ec4899] text-white text-xs font-semibold whitespace-nowrap shadow-lg">
-                  Yaya
-                  <span className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#ec4899]" />
-                </span>
-              </span>
-            </button>{" "}
-            {t("using")}
+            {t("builtWith")} <span className="text-[#ec4899]">♥</span> {t("using")}
           </p>
         </div>
       </div>
